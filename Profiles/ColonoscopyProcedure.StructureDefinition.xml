@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-02-02T12:10:57.936+00:00" />
+  </meta>
+  <url value="http://cancerregistry.no./fhir/StructureDefinition/Colonoscopy" />
+  <name value="Colonoscopy" />
+  <status value="draft" />
+  <date value="2021-02-02T12:10:57.7042424+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.identifier">
+      <path value="Procedure.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.identifier:scopeId">
+      <path value="Procedure.identifier" />
+      <sliceName value="scopeId" />
+      <min value="1" />
+      <max value="1" />
+      <patternIdentifier>
+        <system value="http://example.org/fhir/NamingSystem/scope-id" />
+      </patternIdentifier>
+    </element>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Procedure.code.coding:NCSP">
+      <path value="Procedure.code.coding" />
+      <sliceName value="NCSP" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="ncsp-code-system" />
+        <code value="colonoscopy" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://simplifier.net/hl7norwayno-basis/nobasispatient" />
+      </type>
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer.function">
+      <path value="Procedure.performer.function" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer.actor">
+      <path value="Procedure.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://cancerregistry.no./fhir/StructureDefinition/ColonoscopyDiagnosticReport" />
+      </type>
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.complication.extension">
+      <path value="Procedure.complication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.complication.extension:consequence">
+      <path value="Procedure.complication.extension" />
+      <sliceName value="consequence" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.complication.coding">
+      <path value="Procedure.complication.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

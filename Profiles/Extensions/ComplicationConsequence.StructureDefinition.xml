@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="80cd0ca2-4d5c-42ce-8f13-dcb7386ea2d7" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-01-26T15:25:41.206+00:00" />
+  </meta>
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+  <name value="ComplicationConsequence" />
+  <status value="draft" />
+  <date value="2021-01-26T15:25:40.9640494+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Procedure.complication" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
