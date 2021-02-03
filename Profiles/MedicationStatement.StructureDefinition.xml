@@ -2,13 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="288fcab8-ceba-4250-adfa-a0abab7f9165" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-02-03T14:49:08.608+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-02-03T15:09:02.105+00:00" />
   </meta>
   <url value="http://cancerregistry.no./fhir/StructureDefinition/ColonoscopyMedicationStatement" />
   <name value="ColonoscopyMedicationStatement" />
+  <title value="Colonoscopy Report MedicationStatement" />
   <status value="draft" />
-  <date value="2021-02-03T14:49:08.3338028+00:00" />
+  <date value="2021-02-03T15:09:01.8472813+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -49,6 +50,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
