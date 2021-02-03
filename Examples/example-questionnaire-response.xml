@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://hl7.org/fhir file:/C:/Users/Marten/OneDrive%20-%20Firely/FHIR/Schemas/R4/bundle.xsd">  
   <type value="collection"/>
-  <!-- Mappings to data sheel variables are in the comments -->
+  <!-- Mappings to data sheet variables are in the comments -->
   <entry>
     <fullUrl value="http://example.org/fhir/QuestionnaireResponse/1"/>
     <resource>
@@ -123,7 +123,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q8"/>
+          <linkId value="Q9"/>
           <!-- variable no. : 29 -->
           <text value="Photo documentation of all findings?"/>
           <answer>
@@ -134,7 +134,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q9"/>
+          <linkId value="Q10"/>
           <!-- variable no. : 18 -->
           <text value="Emptying Quality right colon"/>
           <answer>
@@ -145,7 +145,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q10"/>
+          <linkId value="Q11"/>
           <!-- variable no. : 19 -->
           <text value="Emptying Quality transversum"/>
           <answer>
@@ -156,7 +156,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q11"/>
+          <linkId value="Q12"/>
           <!-- variable no. : 20 -->
           <text value="Emptying Quality left colon"/>
           <answer>
@@ -167,7 +167,7 @@
           </answer>         
         </item>      
         <item>
-          <linkId value="Q12"/>
+          <linkId value="Q13"/>
           <!-- variable no. : 20 -->
           <text value="Was the colonoscopy carried out under general anesthesia?"/>
           <answer>
@@ -175,7 +175,7 @@
           </answer>         
         </item>      
         <item>
-          <linkId value="Q13"/>
+          <linkId value="Q14"/>
           <!-- variable no. : 33 -->
           <text value="Was a clean colon achieved?"/>
           <answer>
@@ -292,10 +292,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/MedicationAdministration/1"/>
-    <resource>
-      <!-- variable no. : 21 -->
+    <fullUrl value="http://example.org/fhir/MedicationStatement/1"/>
+    <resource>     
       <MedicationStatement>
+        <!-- variable no. : 21 -->
         <partOf>
           <reference value="http://example.org/fhir/Procedure/1"/>
         </partOf>
