@@ -82,7 +82,7 @@
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://simplifier.net/hl7norwayno-basis/nobasispatient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
     </element>
     <element id="Procedure.performed[x]">

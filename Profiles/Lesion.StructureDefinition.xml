@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-02-02T11:09:45.391+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-02-03T13:34:54.993+00:00" />
   </meta>
   <url value="http://cancerregistration.no/fhir/StructureDefinition/observation-colonoscopy-report-lesion" />
   <name value="ColonoscopyReportLesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-02-02T11:09:45.0348474+00:00" />
+  <date value="2021-02-03T13:34:54.6771528+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -100,6 +100,27 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:Morphology.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:Morphology.code.coding:sliceCoding">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="morphology" />
+      </patternCoding>
+    </element>
     <element id="Observation.component:Morphology.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
@@ -112,6 +133,27 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:TissueRemovingMethod.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:TissueRemovingMethod.code.coding:sliceCoding">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="tissue-removing-method" />
+      </patternCoding>
     </element>
     <element id="Observation.component:TissueRemovingMethod.value[x]">
       <path value="Observation.component.value[x]" />
@@ -126,6 +168,27 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:EndoscopicalRemoved.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:EndoscopicalRemoved.code.coding:sliceCoding">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="endoscopical-removed" />
+      </patternCoding>
+    </element>
     <element id="Observation.component:EndoscopicalRemoved.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
@@ -139,6 +202,25 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:CancerSuspect.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:CancerSuspect.code.coding:sliceCoding">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="cancer-suspect" />
+      </patternCoding>
+    </element>
     <element id="Observation.component:CancerSuspect.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
@@ -151,6 +233,26 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SentToPathologist.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:SentToPathologist.code.coding:sliceCoding">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="sent-to-pathologist" />
+      </patternCoding>
     </element>
     <element id="Observation.component:SentToPathologist.value[x]">
       <path value="Observation.component.value[x]" />

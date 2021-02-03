@@ -40,6 +40,27 @@
       <path value="DiagnosticReport.code" />
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.code.coding">
+      <path value="DiagnosticReport.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.code.coding:sliceCoding">
+      <path value="DiagnosticReport.code.coding" />
+      <sliceName value="sliceCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http:://example.org/some-code-system" />
+        <code value="colonoscopy-report" />
+      </patternCoding>
+    </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
       <mustSupport value="true" />
@@ -86,9 +107,11 @@
     <element id="DiagnosticReport.conclusionCode:sliceConclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
       <sliceName value="sliceConclusionCode" />
+      <min value="1" />
     </element>
     <element id="DiagnosticReport.conclusionCode:sliceConclusionCode.coding">
       <path value="DiagnosticReport.conclusionCode.coding" />
+      <min value="1" />
       <patternCoding>
         <system value="http://hl7.org/fhir/sid/icd-10" />
       </patternCoding>
