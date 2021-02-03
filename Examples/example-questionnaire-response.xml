@@ -113,17 +113,6 @@
         </item>      
         <item>
           <linkId value="Q8"/>
-          <!-- variable no. : 27 -->
-          <text value="Segment where mucusal biopsy was made"/>
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="caecum"/>
-            </valueCoding>
-          </answer>         
-        </item>
-        <item>
-          <linkId value="Q9"/>
           <!-- variable no. : 29 -->
           <text value="Photo documentation of all findings?"/>
           <answer>
@@ -134,7 +123,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q10"/>
+          <linkId value="Q9"/>
           <!-- variable no. : 18 -->
           <text value="Emptying Quality right colon"/>
           <answer>
@@ -145,7 +134,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q11"/>
+          <linkId value="Q10"/>
           <!-- variable no. : 19 -->
           <text value="Emptying Quality transversum"/>
           <answer>
@@ -156,7 +145,7 @@
           </answer>         
         </item>
         <item>
-          <linkId value="Q12"/>
+          <linkId value="Q11"/>
           <!-- variable no. : 20 -->
           <text value="Emptying Quality left colon"/>
           <answer>
@@ -167,7 +156,7 @@
           </answer>         
         </item>      
         <item>
-          <linkId value="Q13"/>
+          <linkId value="Q12"/>
           <!-- variable no. : 20 -->
           <text value="Was the colonoscopy carried out under general anesthesia?"/>
           <answer>
@@ -175,7 +164,7 @@
           </answer>         
         </item>      
         <item>
-          <linkId value="Q14"/>
+          <linkId value="Q13"/>
           <!-- variable no. : 33 -->
           <text value="Was a clean colon achieved?"/>
           <answer>
@@ -431,12 +420,23 @@
         <code>
           <!-- need proper coding to replace this -->
           <text value="Mucosa"/>
-        </code>
+        </code>     
         <!-- variable no. : 26 -->
         <valueCodeableConcept>
           <!-- need proper coding to replace this -->
           <text value="Normal"/>
         </valueCodeableConcept>
+        <!-- variable no. : 27 -->
+        <note>
+          <text value="some free text"/>
+        </note>
+        <!-- variable no. : 27 -->
+        <bodySite>
+          <coding>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
+            <code value="caecum"/>
+          </coding>
+        </bodySite>        
       </Observation>
     </resource>
   </entry>
