@@ -3,12 +3,13 @@ Opprettelse av FHIR profiler for oversendelse av data til det nye registeret for
 Vi vil bruke en **Bundle** av type **Composition** (Bundle of type Composition)
 
 ### Kort oppsummert prosjektet og use-case
-Det skal opprettes et nytt register for tarmkreftscreening, oppstart høsten 2021. Data registreres i fagsystemer og oversendes registeret med FHIR. 
-Fagsystemene vil pr. oppstart ikke være FHIR baserte. 
+Et nasjonalt program for tarmscreening innføres i Norge med oppstart høsten 2021. Helseforetakene utfører koloskopier, mens Kreftregisteret har ansvar for administrasjon (innkalling mv) og monitorering (kvalitetsovervåkning) av programmet.<br>
+Ved screeningsentrene vil legene dokumentere koloskopier i en strukturert journal. Et uttrekk av data sendes til Tarmscreeningprogrammet v/Kreftregisteret ( IKT-løsningen benevnt «ScreenIT»).<br>
+Transporten av data skal skje ved hjelp av FHIR. Der det er hensiktsmessig kodes variabler og verdisett (valg) med begrep fra SNOMED CT, fortrinnsvis [norsk versjon](https://ehelse.no/kodeverk/snomed-ct).
 
-Dataflyten beskrevet forenklet: 
+Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret Gastronet, som vil etablere et eget mottak for formålet, også dette på FHIR-format. Definisjonen av FHIR-datasettet vil ta utgangspunkt i denne definisjonen. 
 
-[Bilde]
+[Bilde] Dataflyt Tarmkreftregisteret FHIR SCREENIT feb_2021.png
 
 ### Inkluderte resursser i Bundle-en
 Alt er under utarbeidelse, og kan derfor virke uferdig. Terminologi og kodeverk er ikke fastsatt enda.
