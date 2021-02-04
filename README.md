@@ -9,7 +9,8 @@ Transporten av data skal skje ved hjelp av FHIR. Der det er hensiktsmessig kodes
 
 Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret Gastronet, som vil etablere et eget mottak for formålet, også dette på FHIR-format. Definisjonen av FHIR-datasettet vil ta utgangspunkt i denne definisjonen. 
 
-[Bilde] Dataflyt Tarmkreftregisteret FHIR SCREENIT feb_2021.png
+**Dataflyt**
+![Datafly](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/Dataflyt%20Tarmkreftregisteret%20FHIR%20SCREENIT%20feb_2021.png)
 
 ### Inkluderte resursser i Bundle-en
 Alt er under utarbeidelse, og kan derfor virke uferdig. Terminologi og kodeverk er ikke fastsatt enda.
