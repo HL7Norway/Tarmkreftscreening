@@ -7,7 +7,7 @@ Et nasjonalt program for tarmscreening innføres i Norge med oppstart høsten 20
 Ved screeningsentrene vil legene dokumentere koloskopier i en strukturert journal. Et uttrekk av data sendes til Tarmscreeningprogrammet v/Kreftregisteret ( IKT-løsningen benevnt «ScreenIT»).<br>
 Transporten av data skal skje ved hjelp av FHIR. Der det er hensiktsmessig kodes variabler og verdisett (valg) med begrep fra SNOMED CT, fortrinnsvis [norsk versjon](https://ehelse.no/kodeverk/snomed-ct).
 
-Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret Gastronet, som vil etablere et eget mottak for formålet, også dette på FHIR-format. Definisjonen av FHIR-datasettet vil ta utgangspunkt i denne definisjonen. 
+Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret [Gastronet](https://www.sthf.no/helsefaglig/gastronet), som vil etablere et eget mottak for formålet, også dette på FHIR-format. Definisjonen av FHIR-datasettet vil ta utgangspunkt i denne definisjonen. 
 
 **Dataflyt**
 ![Datafly](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/Dataflyt%20Tarmkreftregisteret%20FHIR%20SCREENIT%20feb_2021.png)
