@@ -16,7 +16,7 @@ Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret [Gastronet](h
 ### Inkluderte resursser i Bundle-en
 Alt er under utarbeidelse, og kan derfor virke uferdig. Ikke alle profilene er påbegynt, og Terminologi og kodeverk er ikke fastsatt enda.
 
-![Bundle](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/FHIR%20bundle%20Tarmkreftscreening%2010-02-21.png)
+![Bundle](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/Skjermbilde%202021-02-10%20kl.%2016.28.26.png)
 
 - **Patient**:<br> 
   Ikke laget, men vil basere seg på den norske basisprofilen [no-basis patient](https://simplifier.net/HL7Norwayno-basis/NoBasisPatient/~overview)<br>
