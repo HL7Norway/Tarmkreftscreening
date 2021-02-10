@@ -11,12 +11,19 @@ Tilsvarende data skal sendes til det nasjonale kvalitetsregisteret [Gastronet](h
 
 **Dataflyt**
 ![Datafly](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/Dataflyt%20Tarmkreftregisteret%20FHIR%20SCREENIT%20feb_2021.png)
+[BizTalk brukes for integrasjon]
 
 ### Inkluderte resursser i Bundle-en
-Alt er under utarbeidelse, og kan derfor virke uferdig. Terminologi og kodeverk er ikke fastsatt enda.
+Alt er under utarbeidelse, og kan derfor virke uferdig. Ikke alle profilene er påbegynt, og Terminologi og kodeverk er ikke fastsatt enda.
+
+![Bundle](https://github.com/HL7Norway/Tarmkreftscreening/blob/main/FHIR%20bundle%20Tarmkreftscreening%2010-02-21.png)
 
 - **Patient**:<br> 
   Ikke laget, men vil basere seg på den norske basisprofilen [no-basis patient](https://simplifier.net/HL7Norwayno-basis/NoBasisPatient/~overview)<br>
+  Extentions: ..X..
+  
+- **Practitioner**:<br> 
+  Ikke laget, men vil basere seg på den norske basisprofilen [no-basis practitioner](https://simplifier.net/hl7norwayno-basis/nobasispractitioner)<br>
   Extentions: ..X..
 
 - **Procedure**: Profil [Colonoscopy](https://simplifier.net/norwegiancolonoscopyreport/colonoscopy)  <br>
@@ -34,3 +41,6 @@ Alt er under utarbeidelse, og kan derfor virke uferdig. Terminologi og kodeverk 
 
 - **MedicationStatement**: Profil [Colonoscopy Report MedicationStatement](https://simplifier.net/norwegiancolonoscopyreport/colonoscopymedicationstatement) <br>
 Usikkert hvorvidt hvordan/om den skal brukes
+
+- **QuestionnairResponse**: Profil ikke laget
+Kommer til å innebefatte spørsmål som ikke nødvendigvis passer seg som delkomponenter eller extentions av en av de andre profilene, som f.eks: "Fotodokumentasjon på at cøkum er nådd? (Ja, Nei). For de fleste av disse,  kan man argumentere for at de kan høre hjemme som en ekstensjon i en profil, men av praktiske årsaker gjør vi det ikke. Hvor mange av spørsmålene som ender opp som QuestionnairResponse gjenstår å se. 
