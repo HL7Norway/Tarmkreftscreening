@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="808a0881-57d9-4ccd-8fb6-5d3e27fe59d4" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-02-03T17:22:48.448+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-02-03T17:31:02.478+00:00" />
   </meta>
   <url value="http://cancerregistration.no/fhir/StructureDefinition/observation-colonoscopy-report-mucosa" />
   <name value="ColonoscopyReportMucosa" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-02-03T17:22:48.1107368+00:00" />
+  <date value="2021-02-03T17:22:48.1107368Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -78,14 +78,6 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.note">
-      <path value="Observation.note" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
       <mustSupport value="true" />
     </element>
   </differential>
