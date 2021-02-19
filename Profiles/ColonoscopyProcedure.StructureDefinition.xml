@@ -2,13 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-02-02T12:10:57.936+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-02-09T11:12:57.415+00:00" />
   </meta>
   <url value="http://cancerregistry.no./fhir/StructureDefinition/Colonoscopy" />
   <name value="Colonoscopy" />
   <status value="draft" />
-  <date value="2021-02-02T12:10:57.7042424+00:00" />
+  <date value="2021-02-09T11:12:57.0448137+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -36,6 +36,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:complicationConsequence">
+      <path value="Procedure.extension" />
+      <sliceName value="complicationConsequence" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+      </type>
+    </element>
     <element id="Procedure.identifier">
       <path value="Procedure.identifier" />
       <slicing>
@@ -47,15 +67,6 @@
       </slicing>
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.identifier:scopeId">
-      <path value="Procedure.identifier" />
-      <sliceName value="scopeId" />
-      <min value="1" />
-      <max value="1" />
-      <patternIdentifier>
-        <system value="http://example.org/fhir/NamingSystem/scope-id" />
-      </patternIdentifier>
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
@@ -71,11 +82,19 @@
     <element id="Procedure.code.coding:NCSP">
       <path value="Procedure.code.coding" />
       <sliceName value="NCSP" />
-      <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="ncsp-code-system" />
-        <code value="colonoscopy" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.code.coding:SNOMED-CT">
+      <path value="Procedure.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="73761001" />
       </patternCoding>
     </element>
     <element id="Procedure.subject">
@@ -121,26 +140,6 @@
     </element>
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.complication.extension">
-      <path value="Procedure.complication.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.complication.extension:consequence">
-      <path value="Procedure.complication.extension" />
-      <sliceName value="consequence" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.complication.coding">
