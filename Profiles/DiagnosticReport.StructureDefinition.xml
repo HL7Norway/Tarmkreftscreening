@@ -104,17 +104,46 @@
       </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.conclusionCode:sliceConclusionCode">
-      <path value="DiagnosticReport.conclusionCode" />
-      <sliceName value="sliceConclusionCode" />
+    <element id="DiagnosticReport.conclusionCode.extension">
+      <path value="DiagnosticReport.conclusionCode.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="DiagnosticReport.conclusionCode.extension:IsMainDiagnosis">
+      <path value="DiagnosticReport.conclusionCode.extension" />
+      <sliceName value="IsMainDiagnosis" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.conclusionCode.coding">
+      <path value="DiagnosticReport.conclusionCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
     </element>
-    <element id="DiagnosticReport.conclusionCode:sliceConclusionCode.coding">
+    <element id="DiagnosticReport.conclusionCode.coding:ICD-10">
       <path value="DiagnosticReport.conclusionCode.coding" />
+      <sliceName value="ICD-10" />
       <min value="1" />
+      <max value="1" />
       <patternCoding>
         <system value="http://hl7.org/fhir/sid/icd-10" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
