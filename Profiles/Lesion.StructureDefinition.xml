@@ -73,10 +73,6 @@
         <code value="300577008" />
       </patternCoding>
     </element>
-    <element id="Observation.note">
-      <path value="Observation.note" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
       <mustSupport value="true" />
@@ -192,39 +188,7 @@
     <element id="Observation.component:EndoscopicalRemoved.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
-        <code value="boolean" />
-      </type>
-    </element>
-    <element id="Observation.component:CancerSuspect">
-      <path value="Observation.component" />
-      <sliceName value="CancerSuspect" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.component:CancerSuspect.code.coding">
-      <path value="Observation.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.component:CancerSuspect.code.coding:sliceCoding">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="sliceCoding" />
-      <min value="1" />
-      <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="cancer-suspect" />
-      </patternCoding>
-    </element>
-    <element id="Observation.component:CancerSuspect.value[x]">
-      <path value="Observation.component.value[x]" />
-      <type>
-        <code value="boolean" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Observation.component:SentToPathologist">
@@ -258,6 +222,38 @@
       <path value="Observation.component.value[x]" />
       <type>
         <code value="boolean" />
+      </type>
+    </element>
+    <element id="Observation.component:Size">
+      <path value="Observation.component" />
+      <sliceName value="Size" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:Size.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:Size.code.coding:SNOMED-CT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="246116008" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:Size.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
       </type>
     </element>
   </differential>
