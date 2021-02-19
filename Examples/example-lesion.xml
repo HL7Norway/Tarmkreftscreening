@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://hl7.org/fhir file:/C:/Users/Marten/OneDrive%20-%20Firely/FHIR/Schemas/R4/observation.xsd">  
+  <status value="final"/>
+  <code>
+    <coding>     
+      <system value="http://snomed.info/sct"/>
+      <code value="364636000"/>
+      <display value="Lesion observable (observable entity)"/>
+    </coding>
+  </code>        
+  <bodySite>       
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9040008"/>    
+      <display value="Ascending colon structure (body structure)"/>      
+    </coding>         
+  </bodySite>
+  <component>
+    <code>
+      <coding>
+        <system value= "http://snomed.info/sct"/>
+        <code value ="41329004"/>
+        <display value ="Polyp (morphologic abnormality)"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value= "http://parispc.no"/>
+        <code value ="ii-b-flat"/>
+        <display value ="II b Flat"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value = "http://snomed.info/sct"/>
+        <code value= "246116008"/>
+        <display value ="Lesion size (observable entity) "/>
+      </coding>            
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="mm"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value = "http://canceregistry.no/fhir/CodeSystem/data-elements"/>
+        <code value = "tissue-removing-method"/>
+        <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
+      </coding>            
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <code value = "OTH"/>
+        <display value = "other"/>        
+      </coding>        
+    </valueCodeableConcept>
+  </component>    
+  <component>
+    <code>
+      <coding>
+        <system value = "http://canceregistry.no/fhir/CodeSystem/data-elements"/>
+        <code value = "lesion-sent-to-pathologist"/>
+        <display value = "Vevsprøve sendt til patolog"/>        
+      </coding>            
+    </code>
+    <valueBoolean value="true"/>         
+  </component>        
+</Observation>

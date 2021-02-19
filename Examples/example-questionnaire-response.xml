@@ -1,179 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://hl7.org/fhir file:/C:/Users/Marten/OneDrive%20-%20Firely/FHIR/Schemas/R4/bundle.xsd">  
+<Bundle xmlns="http://hl7.org/fhir">  
   <type value="collection"/>
-  <!-- Mappings to data sheet variables are in the comments -->
-  <entry>
-    <fullUrl value="http://example.org/fhir/QuestionnaireResponse/1"/>
-    <resource>
-      <QuestionnaireResponse>
-        <id value="1"/>
-        <status value="completed"/>
-        <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
-        </subject>        
-        <authored value="2020-12-15T12:00:00+01:00"/>
-        <author>
-          <reference value="http://example.org/fhir/Practitioner/1"/>
-        </author>        
-        <item>
-          <linkId value="Q1"/>
-          <text value="Procedure details"/>
-          <answer>
-            <valueReference>
-              <reference value="http://example.org/fhir/Procedure/1"/>
-            </valueReference>
-          </answer>
-        </item>      
-        <item>
-          <linkId value="Q2"/>
-          <text value="Current and past illnesses (multiple choice allowed - plus text with detailed specification)"/>
-          <!-- variable no. : 9 -->
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-condition-codesystem"/> <!-- maybe ICD-10?  -->
-              <code value="some-condition-code"/>
-            </valueCoding>
-          </answer>
-        </item>  
-        <item>
-          <linkId value="Q2"/>
-          <text value="Medication Use"/>
-          <!-- MedicationStatement, or just a coding? -->
-          <answer>
-            <!-- variable no. : 10 -->
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-medication-codesystem"/> 
-              <code value="some-medication-code"/>
-            </valueCoding>
-          </answer>
-        </item>
-        <item>
-          <linkId value="Q3"/>         
-          <item>
-            <linkId value="Q3.1"/>
-            <text value="Emptying agent"/>
-            <answer>
-              <!-- variable no. : 11 -->
-              <valueCoding>
-                <system value="http://example.org/fhir/CodeSystem/some-medication-codesystem"/> 
-                <code value="some-medication-code"/>
-              </valueCoding>
-            </answer>
-          </item>
-          <item>
-            <linkId value="Q3.2"/>
-            <text value="Taken as a split dose?"/>
-            <!-- variable no. : 12 -->
-            <answer>
-              <valueBoolean value="true"/>
-            </answer>
-          </item>
-        </item>
-        <item>
-          <linkId value="Q4"/>
-          <text value="How far did you get in the colon?"></text>
-          <answer>
-            <!-- variable no. : 13 -->
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="caecum"/>
-            </valueCoding>            
-          </answer>         
-        </item>
-        <item>
-          <!-- variable no. : 14 -->
-          <linkId value="Q5"/>
-          <text value="Was it indicated to intubate the caecum?"></text>
-          <answer>
-            <valueBoolean value="true"/>                      
-          </answer>         
-        </item>
-        <item>        
-          <linkId value="Q6"/>
-          <text value="Time for scope withdrawal"/>
-          <answer>
-            <!-- variable no. : 16 -->
-            <valueQuantity>
-              <value value="5"/>
-              <unit value="min"/>
-              <system value="http://unitsofmeasure.org"/>
-              <code value="min"/>              
-            </valueQuantity>
-          </answer>
-        </item>
-        <item>
-          <linkId value="Q7"/>
-          <!-- variable no. : 17 -->
-          <text value="Photo documentation that the caecum has been reached"/>
-          <answer>
-            <valueBoolean value="true"/>
-          </answer>
-        </item>      
-        <item>
-          <linkId value="Q8"/>
-          <!-- variable no. : 29 -->
-          <text value="Photo documentation of all findings?"/>
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="caecum"/>
-            </valueCoding>
-          </answer>         
-        </item>
-        <item>
-          <linkId value="Q9"/>
-          <!-- variable no. : 18 -->
-          <text value="Emptying Quality right colon"/>
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="1"/>
-            </valueCoding>
-          </answer>         
-        </item>
-        <item>
-          <linkId value="Q10"/>
-          <!-- variable no. : 19 -->
-          <text value="Emptying Quality transversum"/>
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="2"/>
-            </valueCoding>
-          </answer>         
-        </item>
-        <item>
-          <linkId value="Q11"/>
-          <!-- variable no. : 20 -->
-          <text value="Emptying Quality left colon"/>
-          <answer>
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="1"/>
-            </valueCoding>
-          </answer>         
-        </item>      
-        <item>
-          <linkId value="Q12"/>
-          <!-- variable no. : 20 -->
-          <text value="Was the colonoscopy carried out under general anesthesia?"/>
-          <answer>
-            <valueBoolean value="true"/>
-          </answer>         
-        </item>      
-        <item>
-          <linkId value="Q13"/>
-          <!-- variable no. : 33 -->
-          <text value="Was a clean colon achieved?"/>
-          <answer>
-            <valueBoolean value="true"/>
-          </answer>         
-        </item>      
-      </QuestionnaireResponse>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://example.org/fhir/Practitioner/1"/>
     <resource>
@@ -202,29 +29,20 @@
     <fullUrl value="http://example.org/fhir/Procedure/1"/>
     <resource>
       <Procedure>   
-        <!-- variable no. : 7 -->
-        <identifier>
-          <system value="http://example.org/fhir/NamingSystem/scope-id"/>
-          <value value="123374849"/>
-        </identifier>        
         <status value="completed"/>
-        <!-- variable no. : 36 -->
         <code>
           <coding>
-            <system value="ncsp-code-system/"/>
+            <system value="ncsp-code-system"/>
             <code value="colonoscopy"/>
           </coding>
         </code>
         <subject>
           <reference value="http://example.org/fhir/Patient/1"/>
         </subject>
-        <!-- variable no. : 2 -->
         <performedDateTime value="2020-11-01T15:00:00+01:00"/>
-        <!-- variable no. : 3,4,5 -->
         <performer>
           <function>
             <text value="colonoscopist"/>
-            <!-- some role code for colonoscopist -->
           </function>
           <actor>
             <reference value="http://example.org/fhir/Practitioner/2"/>
@@ -233,48 +51,34 @@
         <performer>
           <function>
             <text value="Nurse"/>
-            <!-- some role code for nurse -->
           </function>
           <actor>
             <reference value="http://example.org/fhir/Practitioner/3"/>
           </actor>          
         </performer>
-        <!-- variable no. : 1 -->
         <location>
           <identifier>
             <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
             <value value="6738264923"/>
           </identifier>
         </location>
-        <!-- variable no. : 14 -->
         <reasonCode>
           <text value="Incomplete previous colonoscopy"/>
-          <!-- replace with proper coding -->
         </reasonCode>
         <report>
           <reference value="http://example.org/fhir/DiagnosticReport/1"/>
         </report>        
         <complication>
-          <!-- variable no. : 31 -->
-          <extension url="http://hl7.no/fhir/extension-complication-consequence">
-            <valueCoding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-              <code value="hospitalization"/>
-            </valueCoding>
-          </extension>
-          <!-- variable no. : 30 -->
           <coding>
             <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
             <code value="bleeding"/>
           </coding>
         </complication>
-        <!-- variable no. : 37 -->
         <followUp>
           <coding>
             <system value="http://example.org/fhir/some-valueset"/>
             <code value="CT kolografi"/>
           </coding>
-          <!-- variable no. : 38 -->
           <text value="the patient needs a CT for further diagnostics"/>
         </followUp>
       </Procedure>
@@ -344,33 +148,47 @@
   <entry>
     <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
     <resource>     
-      <Observation>
-        <!-- variable no. : 24,25 -->
+      <Observation xmlns="http://hl7.org/fhir"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://hl7.org/fhir file:/C:/Users/Marten/OneDrive%20-%20Firely/FHIR/Schemas/R4/observation.xsd">  
         <status value="final"/>
         <code>
-          <!-- need proper coding to replace this -->
-          <text value="lesion"/>
+          <coding>     
+            <system value="http://snomed.info/sct"/>
+            <code value="364636000"/>
+            <display value="Lesion observable (observable entity)"/>
+          </coding>
         </code>        
-        <note>
-          <text value="free text field"></text>
-        </note>
         <bodySite>       
-            <coding>
-              <system value="http://example.org/fhir/some-codesystem"/>
-              <code value="ascending"/>          
-            </coding>         
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="9040008"/>    
+            <display value="Ascending colon structure (body structure)"/>      
+          </coding>         
         </bodySite>
         <component>
           <code>
-            <text value="morphology"/>            
+            <coding>
+              <system value= "http://snomed.info/sct"/>
+              <code value ="41329004"/>
+              <display value ="Polyp (morphologic abnormality)"/>
+            </coding>
           </code>
           <valueCodeableConcept>
-            <text value="II b Flat"/>
+            <coding>
+              <system value= "http://parispc.no"/>
+              <code value ="ii-b-flat"/>
+              <display value ="II b Flat"/>
+            </coding>
           </valueCodeableConcept>
         </component>
         <component>
           <code>
-            <text value="Size in diameter (mm)"/>            
+            <coding>
+              <system value = "http://snomed.info/sct"/>
+              <code value= "246116008"/>
+              <display value ="Lesion size (observable entity) "/>
+            </coding>            
           </code>
           <valueQuantity>
             <value value="3"/>
@@ -381,35 +199,31 @@
         </component>
         <component>
           <code>
-            <text value="Method for removing or tissue sample"/>            
+            <coding>
+              <system value = "http://canceregistry.no/fhir/CodeSystem/data-elements"/>
+              <code value = "tissue-removing-method"/>
+              <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
+            </coding>            
           </code>
           <valueCodeableConcept>
-            <text value="Biopsy Tang"/>
+            <coding>
+              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+              <code value = "OTH"/>
+              <display value = "other"/>        
+            </coding>        
           </valueCodeableConcept>
-        </component>
+        </component>    
         <component>
           <code>
-            <text value="Is the lesion endoscopic complete removed (one choice)"/>            
-          </code>
-          <valueCodeableConcept>
-            <text value="no"/>
-          </valueCodeableConcept>
-        </component>
-        <component>
-          <code>
-            <text value="Cancersuspect lesion"/>            
-          </code>
-          <valueCodeableConcept>
-            <text value="no"/>
-          </valueCodeableConcept>
-        </component>       
-        <component>
-          <code>
-            <text value="Tissue sample sent to pathologist"/>            
+            <coding>
+              <system value = "http://canceregistry.no/fhir/CodeSystem/data-elements"/>
+              <code value = "lesion-sent-to-pathologist"/>
+              <display value = "Vevsprøve sendt til patolog"/>        
+            </coding>            
           </code>
           <valueBoolean value="true"/>         
         </component>        
-      </Observation>
+      </Observation>      
     </resource>
   </entry> 
   <entry>
