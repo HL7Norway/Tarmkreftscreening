@@ -5,8 +5,8 @@
     <versionId value="3" />
     <lastUpdated value="2021-02-03T13:34:54.993+00:00" />
   </meta>
-  <url value="http://cancerregistration.no/fhir/StructureDefinition/observation-colonoscopy-report-lesion" />
-  <name value="ColonoscopyReportLesion" />
+  <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
+  <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
   <date value="2021-02-03T13:34:54.6771528+00:00" />

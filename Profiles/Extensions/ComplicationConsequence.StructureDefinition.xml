@@ -5,10 +5,13 @@
     <versionId value="1" />
     <lastUpdated value="2021-01-26T15:25:41.206+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
   <name value="ComplicationConsequence" />
+  <title value="Colonoscopy Report Complication Consequence" />
   <status value="draft" />
   <date value="2021-01-26T15:25:40.9640494+00:00" />
+  <description value="The concequence of the complications that have occured during the procedure" />
+  <purpose value="Specifies the consequense of the complications that have occuered during the procedure" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -27,7 +30,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

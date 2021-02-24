@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="c0078d24-02ef-4e32-8faf-6f06d0f309b7" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2021-02-24T10:22:38.344+00:00" />
+  </meta>
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-problemlist" />
+  <name value="ProblemList" />
+  <title value="Colonoscopy Report Problem List" />
+  <status value="draft" />
+  <date value="2021-02-24T10:22:38.0599391+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/List" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List.status">
+      <path value="List.status" />
+      <fixedCode value="current" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.mode">
+      <path value="List.mode" />
+      <fixedCode value="snapshot" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.code">
+      <path value="List.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.code.coding">
+      <path value="List.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.code.coding:hl7code">
+      <path value="List.code.coding" />
+      <sliceName value="hl7code" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
+        <code value="problems" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -5,8 +5,9 @@
     <versionId value="2" />
     <lastUpdated value="2021-01-26T10:19:54.78+00:00" />
   </meta>
-  <url value="http://cancerregistry.no./fhir/StructureDefinition/ColonoscopyDiagnosticReport" />
-  <name value="ColonoscopyDiagnosticReport" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
+  <name value="DiagnosticReport" />
+  <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
   <date value="2021-01-26T10:19:54.4825683+00:00" />
   <fhirVersion value="4.0.1" />
@@ -80,7 +81,7 @@
       <sliceName value="Lesion" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/observation-colonoscopy-report-lesion" />
+        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -89,7 +90,7 @@
       <sliceName value="Mucosa" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/observation-colonoscopy-report-mucosa" />
+        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -117,7 +118,6 @@
     <element id="DiagnosticReport.conclusionCode.extension:IsMainDiagnosis">
       <path value="DiagnosticReport.conclusionCode.extension" />
       <sliceName value="IsMainDiagnosis" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

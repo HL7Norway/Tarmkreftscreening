@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
-  <name value="IsMainDiagnosis" />
-  <title value="Colonoscopy Report IsMainDiagnosis" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+  <name value="CaecumIntubated" />
   <status value="draft" />
-  <description value="Marks a diagnosis as the main diagnosis" />
-  <purpose value="To mark one of the DiagnosticReport.conclusion element as the main diagnosis" />
+  <description value="Specifies if the caecum was intubated during the colonoscopy" />
+  <purpose value="Specifies if the caecum was intubated during the colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -16,7 +15,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport.conclusionCode" />
+    <expression value="Procedure" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -24,7 +23,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
+      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

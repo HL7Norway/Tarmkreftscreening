@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="808a0881-57d9-4ccd-8fb6-5d3e27fe59d4" />
+  <id value="7fb8c354-a440-41c5-9f5a-87f054bebf68" />
   <meta>
     <versionId value="3" />
-    <lastUpdated value="2021-02-03T17:31:02.478+00:00" />
+    <lastUpdated value="2021-02-24T10:22:15.368+00:00" />
   </meta>
-  <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
-  <name value="Mucosa" />
-  <title value="Colonoscopy Report Lesion" />
+  <url value="http://cancerregistry.no.org/fhir/StructureDefinition/colonoscopyreport-condition" />
+  <name value="Condition" />
+  <title value="Colonoscopy Report Condition" />
   <status value="draft" />
-  <date value="2021-02-03T17:22:48.1107368Z" />
+  <date value="2021-02-24T10:22:15.0787725+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -43,40 +43,40 @@
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code">
-      <path value="Observation.code" />
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
       <slicing>
         <discriminator>
           <type value="value" />
           <path value="$this" />
         </discriminator>
+        <ordered value="true" />
         <rules value="open" />
       </slicing>
-      <min value="1" />
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:sliceCoding">
-      <path value="Observation.code.coding" />
-      <sliceName value="sliceCoding" />
-      <min value="1" />
+    <element id="Condition.code.coding:ICD10">
+      <path value="Condition.code.coding" />
+      <sliceName value="ICD10" />
       <max value="1" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="128145008" />
+        <system value="http://hl7.org/fhir/sid/icd-10" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
       <mustSupport value="true" />
     </element>
