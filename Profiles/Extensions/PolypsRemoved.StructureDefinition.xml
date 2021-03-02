@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="44241461-9686-4eed-a57c-6c3bdd9bf8df" />
+  <id value="45699e17-3a28-45d5-be58-9576cacd4cee" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2021-03-02T11:46:30.412+00:00" />
+    <lastUpdated value="2021-03-02T17:03:04.112+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
-  <name value="IsMainDiagnosis" />
-  <title value="Colonoscopy Report IsMainDiagnosis" />
+  <url value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+  <name value="PolypsRemoved" />
   <status value="draft" />
-  <date value="2021-03-02T11:46:30.2719431+00:00" />
-  <description value="Marks a diagnosis as the main diagnosis" />
-  <purpose value="To mark one of the DiagnosticReport.conclusion element as the main diagnosis" />
+  <date value="2021-03-02T17:03:03.948688+00:00" />
+  <description value="Indicates if all detected polyps are removed" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -22,7 +20,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport.conclusionCode" />
+    <expression value="Procedure" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -30,12 +28,16 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
+      <fixedUri value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="Value of extension (yes/no/unsure)" />
       <type>
-        <code value="boolean" />
+        <code value="code" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
       </type>
     </element>
   </differential>

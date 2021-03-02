@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
-  <name value="CaecumIntubated" />
+  <id value="31b72208-15f0-45cf-9683-42794bcbc448" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-03-02T17:02:50.39+00:00" />
+  </meta>
+  <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
+  <name value="MonthsUntilNextColonoscopy" />
+  <title value="ColonoscopyReport Months Until Next Colonoscopy" />
   <status value="draft" />
-  <description value="Specifies if the caecum was intubated during the colonoscopy" />
-  <purpose value="Specifies if the caecum was intubated during the colonoscopy" />
+  <date value="2021-03-02T17:02:50.1236772+00:00" />
+  <description value="Number of months until next colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -15,7 +21,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Procedure" />
+    <expression value="Procedure.followUp" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -23,12 +29,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+      <fixedUri value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="boolean" />
+        <code value="integer" />
       </type>
     </element>
   </differential>

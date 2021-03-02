@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-01-26T10:19:54.78+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-03-02T11:44:25.489+00:00" />
   </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-01-26T10:19:54.4825683+00:00" />
+  <date value="2021-03-02T11:44:25.319827+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

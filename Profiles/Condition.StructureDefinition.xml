@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="7fb8c354-a440-41c5-9f5a-87f054bebf68" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-02-24T10:22:15.368+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2021-03-02T11:44:48.868+00:00" />
   </meta>
   <url value="http://cancerregistry.no.org/fhir/StructureDefinition/colonoscopyreport-condition" />
   <name value="Condition" />
   <title value="Colonoscopy Report Condition" />
   <status value="draft" />
-  <date value="2021-02-24T10:22:15.0787725+00:00" />
+  <date value="2021-03-02T11:44:48.2896845+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="80cd0ca2-4d5c-42ce-8f13-dcb7386ea2d7" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-01-26T15:25:41.206+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2021-03-02T11:45:50.174+00:00" />
   </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
   <name value="ComplicationConsequence" />
   <title value="Colonoscopy Report Complication Consequence" />
   <status value="draft" />
-  <date value="2021-01-26T15:25:40.9640494+00:00" />
+  <date value="2021-03-02T11:45:49.8895699+00:00" />
   <description value="The concequence of the complications that have occured during the procedure" />
   <purpose value="Specifies the consequense of the complications that have occuered during the procedure" />
   <fhirVersion value="4.0.1" />

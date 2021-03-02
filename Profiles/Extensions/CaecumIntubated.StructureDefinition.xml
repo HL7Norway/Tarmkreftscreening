@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="44241461-9686-4eed-a57c-6c3bdd9bf8df" />
+  <id value="79c5114b-bef5-499f-b254-246986ad5482" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2021-03-02T11:46:30.412+00:00" />
+    <lastUpdated value="2021-03-02T11:45:39.157+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
-  <name value="IsMainDiagnosis" />
-  <title value="Colonoscopy Report IsMainDiagnosis" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+  <name value="CaecumIntubated" />
   <status value="draft" />
-  <date value="2021-03-02T11:46:30.2719431+00:00" />
-  <description value="Marks a diagnosis as the main diagnosis" />
-  <purpose value="To mark one of the DiagnosticReport.conclusion element as the main diagnosis" />
+  <date value="2021-03-02T11:45:39.008439+00:00" />
+  <description value="Specifies if the caecum was intubated during the colonoscopy" />
+  <purpose value="Specifies if the caecum was intubated during the colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -22,7 +21,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="DiagnosticReport.conclusionCode" />
+    <expression value="Procedure" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -30,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
+      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

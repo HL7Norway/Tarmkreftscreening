@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-02-09T11:12:57.415+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2021-03-02T17:03:54.402+00:00" />
   </meta>
-  <url value="http://cancerregistry.no./fhir/StructureDefinition/Colonoscopy" />
-  <name value="Procedure" />
-  <title value="Colonoscopy Report Procedure" />
+  <url value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
+  <name value="Colonoscopy" />
+  <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-02-09T11:12:57.0448137+00:00" />
+  <date value="2021-03-02T17:03:54.215842+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -55,44 +55,110 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/extension-ComplicationConsequence" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:partOfBowelReached">
       <path value="Procedure.extension" />
       <sliceName value="partOfBowelReached" />
       <short value="The furthest part of the bowel is that was reached during the colonoscopy" />
       <definition value="The furthest part of the bowel is that was reached during the colonoscopy" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:caecumIntubated">
       <path value="Procedure.extension" />
       <sliceName value="caecumIntubated" />
       <short value="Specifies if the caecum was intubated during the colonoscopy" />
       <definition value="Specifies if the caecum was intubated during the colonoscopy" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
       </type>
+      <mustSupport value="true" />
     </element>
-    <element id="Procedure.identifier">
-      <path value="Procedure.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
+    <element id="Procedure.extension:duration">
+      <path value="Procedure.extension" />
+      <sliceName value="duration" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:duration.value[x].value">
+      <path value="Procedure.extension.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.extension:duration.value[x].unit">
+      <path value="Procedure.extension.value[x].unit" />
+      <min value="1" />
+      <fixedString value="min" />
+    </element>
+    <element id="Procedure.extension:duration.value[x].system">
+      <path value="Procedure.extension.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Procedure.extension:duration.value[x].code">
+      <path value="Procedure.extension.value[x].code" />
+      <fixedCode value="min" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime">
+      <path value="Procedure.extension" />
+      <sliceName value="withdrawalTime" />
+      <short value="Time from withdrawal from the caecum until the end of the procedure." />
+      <definition value="Time from withdrawal from the caecum until the end of the procedure." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime.value[x].value">
+      <path value="Procedure.extension.value[x].value" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime.value[x].unit">
+      <path value="Procedure.extension.value[x].unit" />
+      <min value="1" />
+      <fixedString value="min" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime.value[x].system">
+      <path value="Procedure.extension.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime.value[x].code">
+      <path value="Procedure.extension.value[x].code" />
+      <fixedCode value="min" />
+    </element>
+    <element id="Procedure.extension:polypsRemoved">
+      <path value="Procedure.extension" />
+      <sliceName value="polypsRemoved" />
+      <short value="Indicates if all detected polyps are removed" />
+      <definition value="Indicates if all detected polyps are removed" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.status">
+      <path value="Procedure.status" />
+      <fixedCode value="completed" />
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
@@ -174,6 +240,29 @@
     </element>
     <element id="Procedure.followUp">
       <path value="Procedure.followUp" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.followUp.extension">
+      <path value="Procedure.followUp.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.followUp.extension:monthsUntilNextColonoscopy">
+      <path value="Procedure.followUp.extension" />
+      <sliceName value="monthsUntilNextColonoscopy" />
+      <short value="Number of months until next colonoscopy" />
+      <definition value="Number of months until next colonoscopy" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
+      </type>
       <mustSupport value="true" />
     </element>
   </differential>

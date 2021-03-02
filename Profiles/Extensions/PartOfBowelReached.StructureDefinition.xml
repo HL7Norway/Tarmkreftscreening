@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="781f703c-fd7f-42a1-a653-ac9f0cd048f3" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-03-02T11:46:17.443+00:00" />
+  </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension" />
   <name value="PartOfBowelReached" />
   <title value="Colonoscopy Report Part Of Bowel Reached" />
   <status value="draft" />
+  <date value="2021-03-02T11:46:17.244557+00:00" />
   <description value="The furthest part of the bowel is that was reached during the colonoscopy" />
   <purpose value="Specifies what the furthest part of the bowel is that was reached during the colonoscopy" />
   <fhirVersion value="4.0.1" />
