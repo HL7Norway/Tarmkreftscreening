@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-03-03T17:20:53.472+00:00" />
+  </meta>
+  <url value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
+  <name value="BostonBowelPreparationScale" />
+  <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
+  <status value="draft" />
+  <date value="2021-03-03T15:27:47.9779071Z" />
+  <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:SNOMED-CT">
+      <path value="Observation.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="722818007" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:rightColon">
+      <path value="Observation.component" />
+      <sliceName value="rightColon" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:rightColon.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:rightColon.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:transferum">
+      <path value="Observation.component" />
+      <sliceName value="transferum" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:transferum.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:transferum.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:leftColon">
+      <path value="Observation.component" />
+      <sliceName value="leftColon" />
+      <max value="1" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.component:leftColon.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:leftColon.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

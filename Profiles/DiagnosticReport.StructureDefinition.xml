@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-03-02T11:44:25.489+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2021-03-03T17:20:31.757+00:00" />
   </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-03-02T11:44:25.319827+00:00" />
+  <date value="2021-03-03T17:20:31.5636993+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -91,6 +91,26 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result:BostonBowelPreparationScale">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="BostonBowelPreparationScale" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result:numberOfLesions">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="numberOfLesions" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-extension" />
       </type>
       <mustSupport value="true" />
     </element>
