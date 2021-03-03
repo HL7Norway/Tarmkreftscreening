@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-03-02T17:03:54.402+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2021-03-03T17:20:43.983+00:00" />
   </meta>
-  <url value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-03-02T17:03:54.215842+00:00" />
+  <date value="2021-03-03T17:20:43.7542937+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -86,7 +86,6 @@
     <element id="Procedure.extension:duration">
       <path value="Procedure.extension" />
       <sliceName value="duration" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -116,7 +115,6 @@
       <sliceName value="withdrawalTime" />
       <short value="Time from withdrawal from the caecum until the end of the procedure." />
       <definition value="Time from withdrawal from the caecum until the end of the procedure." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -148,11 +146,34 @@
       <sliceName value="polypsRemoved" />
       <short value="Indicates if all detected polyps are removed" />
       <definition value="Indicates if all detected polyps are removed" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:medicationGiven">
+      <path value="Procedure.extension" />
+      <sliceName value="medicationGiven" />
+      <short value="Explicitly indicates if there was any medication given during the procedure ." />
+      <definition value="Explicitly indicates if there was any medication given during the procedure ." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:anestheticsGiven">
+      <path value="Procedure.extension" />
+      <sliceName value="anestheticsGiven" />
+      <short value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
+      <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -257,7 +278,6 @@
       <sliceName value="monthsUntilNextColonoscopy" />
       <short value="Number of months until next colonoscopy" />
       <definition value="Number of months until next colonoscopy" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

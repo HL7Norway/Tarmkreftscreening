@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="47516337-7594-4984-89ad-aad8491eb5d4" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-03-03T17:20:01.75+00:00" />
+  </meta>
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+  <name value="AnestheticsGiven" />
+  <title value="Colonoscopy Report Anesthetics Given" />
+  <status value="draft" />
+  <date value="2021-03-03T17:20:01.594666+00:00" />
+  <description value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Procedure" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
