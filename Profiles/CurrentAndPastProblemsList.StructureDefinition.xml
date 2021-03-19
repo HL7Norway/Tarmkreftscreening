@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="c0078d24-02ef-4e32-8faf-6f06d0f309b7" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2021-03-02T11:44:35.766+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2021-03-17T13:44:48.741+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-problemlist" />
-  <name value="ProblemList" />
+  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationlist" />
+  <name value="MedicationList" />
   <title value="Colonoscopy Report Problem List" />
   <status value="draft" />
-  <date value="2021-03-02T11:44:35.4256408+00:00" />
+  <date value="2021-03-17T13:44:48.6468688+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -59,7 +59,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-        <code value="problems" />
+        <code value="medications" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -70,6 +70,13 @@
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="List.entry.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://cancerregistry.no.org/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

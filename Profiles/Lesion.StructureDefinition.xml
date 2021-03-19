@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2021-03-02T11:44:13.776+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2021-03-16T10:19:32.45+00:00" />
   </meta>
   <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-03-02T11:44:13.4217849+00:00" />
+  <date value="2021-03-16T10:19:31.9857759+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -255,6 +255,46 @@
       <type>
         <code value="Quantity" />
       </type>
+    </element>
+    <element id="Observation.component:SuspectOfMalignancy">
+      <path value="Observation.component" />
+      <sliceName value="SuspectOfMalignancy" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:SuspectOfMalignancy.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SuspectOfMalignancy.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SuspectOfMalignancy.code.coding:SNOMED-CT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="9971000202100" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:SuspectOfMalignancy.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

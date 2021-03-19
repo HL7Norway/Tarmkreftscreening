@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="6" />
-    <lastUpdated value="2021-03-03T17:20:31.757+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2021-03-17T09:04:39.072+00:00" />
   </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-03-03T17:20:31.5636993+00:00" />
+  <date value="2021-03-17T09:04:38.7196892+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -85,15 +85,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.result:Mucosa">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Mucosa" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="DiagnosticReport.result:BostonBowelPreparationScale">
       <path value="DiagnosticReport.result" />
       <sliceName value="BostonBowelPreparationScale" />
@@ -116,13 +107,6 @@
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode.extension">

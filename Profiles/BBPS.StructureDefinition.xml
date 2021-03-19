@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-03-03T17:20:53.472+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-03-19T11:36:08.759+00:00" />
   </meta>
   <url value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-03-03T15:27:47.9779071Z" />
+  <date value="2021-03-19T11:36:08.4457997+00:00" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -94,17 +94,17 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:transferum">
+    <element id="Observation.component:transversum">
       <path value="Observation.component" />
-      <sliceName value="transferum" />
+      <sliceName value="transversum" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:transferum.code">
+    <element id="Observation.component:transversum.code">
       <path value="Observation.component.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:transferum.value[x]">
+    <element id="Observation.component:transversum.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
         <code value="CodeableConcept" />
