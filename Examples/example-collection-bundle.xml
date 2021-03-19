@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <type value="collection"/>  
+  <entry>
+    <fullUrl value="http://example.org/fhir/Patient/1"/>
+    <resource>
+      <Patient>
+        <id value="1"/>
+        <identifier>
+          <system value="http://hl7.no/fhir/NamingSystem/FNR"/>
+          <value value="536271738293"/>
+        </identifier>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>    
+    <fullUrl value="http://example.org/fhir/Procedure/1"/>
+    <resource>
+      <Procedure>   
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
+           <valueCodeableConcept>
+             <coding>
+               <system value="http://example.org/fhir/some-codesystem"/>
+               <code value="Hospitalization"/>
+             </coding>
+           </valueCodeableConcept>
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://example.org/fhir/some-codesystem"/>
+              <code value="Caecum"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension">
+          <valueDuration>
+            <value value="30"/>
+            <unit value="min"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="min"/>
+          </valueDuration>          
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime">
+          <valueDuration>
+            <value value="2"/>
+            <unit value="min"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="min"/>
+          </valueDuration>
+        </extension>
+        <extension url="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://example.org/fhir/some-codesystem"/>
+              <code value="removed"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://example.org/fhir/some-codesystem"/>
+              <code value="deep-sedation"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <status value="completed"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="73761001"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>
+        <performedDateTime value="2020-11-01T15:00:00+01:00"/>
+        <performer>
+          <function>
+            <text value="colonoscopist"/>
+          </function>
+          <actor>
+            <reference value="http://example.org/fhir/Practitioner/2"/>
+          </actor>          
+        </performer>
+        <performer>
+          <function>
+            <text value="Nurse"/>
+          </function>
+          <actor>
+            <reference value="http://example.org/fhir/Practitioner/3"/>
+          </actor>          
+        </performer>
+        <location>
+          <identifier>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+            <value value="6738264923"/>
+          </identifier>
+        </location>
+        <reasonCode>
+          <text value="Incomplete previous colonoscopy"/>
+        </reasonCode>
+        <report>
+          <reference value="http://example.org/fhir/DiagnosticReport/1"/>
+        </report>        
+        <complication>
+          <coding>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
+            <code value="bleeding"/>
+          </coding>
+        </complication>
+        <followUp>
+          <extension url="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension">
+            <valueInteger value="6"/>
+          </extension>
+          <coding>
+            <system value="http://example.org/fhir/some-codesystem"/>
+            <code value="CT kolografi"/>
+          </coding>
+          <text value="the patient needs a CT for further diagnostics"/>
+        </followUp>
+      </Procedure>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/MedicationStatement/1"/>
+    <resource>     
+      <MedicationStatement>
+        <partOf>
+          <reference value="http://example.org/fhir/Procedure/1"/>
+        </partOf>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+            <code value="Afentanil"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"></reference>
+        </subject>
+        <effectiveDateTime value="2020-12-15"/>
+        <dosage>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>      
+            </doseQuantity>               
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>   
+    <fullUrl value="http://example.org/fhir/DiagnosticReport/1"/>
+    <resource>
+      <DiagnosticReport>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="73761001"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>
+        <result>
+          <reference value="http://hl7.org/fhir/Observation/lesion-1"/>
+        </result>
+        <result>
+          <reference value= "http://example.org/fhir/Observation/bbps"/>
+        </result>
+        <result>
+          <reference value= "http://example.org/fhir/Observation/numberoflesions"/>
+        </result>
+        <conclusionCode>
+          <extension url="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis">
+            <valueBoolean value="true"/>
+          </extension>          
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="C18.0"/>
+            <display value="Malignant neoplasm of colon - Caecum"/>
+          </coding>
+        </conclusionCode>
+      </DiagnosticReport>        
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
+    <resource>     
+      <Observation xmlns="http://hl7.org/fhir">  
+        <status value="final"/>
+        <code>
+          <coding>     
+            <system value="http://snomed.info/sct"/>
+            <code value="300577008"/>
+          </coding>
+        </code>        
+        <bodySite>       
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="9040008"/>    
+            <display value="Ascending colon structure (body structure)"/>      
+          </coding>         
+        </bodySite>
+        <component>
+          <code>
+            <coding>
+              <system value= "http://snomed.info/sct"/>
+              <code value ="41329004"/>
+              <display value ="Polyp (morphologic abnormality)"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value= "http://parispc.no"/>
+              <code value ="ii-b-flat"/>
+              <display value ="II b Flat"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value = "http://snomed.info/sct"/>
+              <code value= "246116008"/>
+              <display value ="Lesion size (observable entity) "/>
+            </coding>            
+          </code>
+          <valueQuantity>
+            <value value="3"/>
+            <unit value="mm"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm"/>
+          </valueQuantity>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value = "tissue-removing-method"/>
+              <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
+            </coding>            
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+              <code value = "OTH"/>
+              <display value = "other"/>        
+            </coding>        
+          </valueCodeableConcept>
+        </component>    
+        <component>
+          <code>
+            <coding>
+              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value = "lesion-sent-to-pathologist"/>
+              <display value = "Vevsprøve sendt til patolog"/>        
+            </coding>            
+          </code>
+          <valueBoolean value="true"/>         
+        </component>     
+        <component>
+          <code>
+            <coding>
+              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value = "endoscopicaly-removed"/>
+              <display value = "Er lesjonen endoskopisk komplett fjernet (ett valg)"/>        
+            </coding>            
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+              <code value = "UNK"/>
+              <display value = "unknown"/>        
+            </coding>        
+          </valueCodeableConcept>      
+        </component>   
+        <component>
+          <code>
+            <coding>
+              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value = "cancer-suspect"/>
+              <display value = "Cancersuspect lesjon"/>        
+            </coding>            
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+              <code value = "UNK"/>
+              <display value = "unknown"/>        
+            </coding>        
+          </valueCodeableConcept>      
+        </component>   
+      </Observation>      
+    </resource>
+  </entry> 
+  <entry>
+    <fullUrl value="http://example.org/fhir/Observation/bbps"/>
+    <resource>
+      <Observation>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info.sct"/>
+            <code value="722818007"/>
+          </coding>
+        </code>     
+       <component>
+         <code>
+           <coding>
+             <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+             <code value="right-colon"></code>
+           </coding>
+         </code>
+         <valueCodeableConcept>
+           <coding>
+             <system value="http://snomed.info/sct"/>
+             <code value="10291000132101"/>
+           </coding>
+         </valueCodeableConcept>
+       </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value="transversum"></code>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="10301000132102"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+              <code value="left-colon"></code>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="10311000132100"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/List/problem-list"/>
+    <resource>
+      <List>
+        <status value="current"/>
+        <mode value="snapshot"/>
+        <code>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+            <code value="problems"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>
+        <entry>
+          <item>
+            <reference value="http://example.org/fhir/Condition/1"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Condition/1"/>
+    <resource>
+      <Condition>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="E11"/>
+            <display value="Type 2 diabetes mellitus"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>        
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/List/medication-list"/>
+    <resource>
+      <List>
+        <status value="current"/>
+        <mode value="snapshot"/>
+        <code>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+            <code value="medications"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>
+        <entry>
+          <item>
+            <reference value="http://example.org/fhir/MedicationStatement/2"/>
+          </item>
+        </entry>
+        <entry>
+          <item>
+            <reference value="http://example.org/fhir/MedicationStatement/3"/>
+          </item>
+        </entry>
+      </List>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/MedicationStatement/2"/>
+    <resource>     
+      <MedicationStatement>      
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+            <code value="Warfarin"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>      
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/MedicationStatement/3"/>
+    <resource>     
+      <MedicationStatement>      
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
+            <code value="DOAK"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="http://example.org/fhir/Patient/1"/>
+        </subject>      
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Practitioner/1"/>
+    <resource>
+      <Practitioner>
+        <id value="1"/>
+        <identifier>
+          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
+          <value value="465783649328"/>
+        </identifier>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Practitioner/2"/>
+    <resource>
+      <Practitioner>
+        <id value="2"/>
+        <identifier>
+          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
+          <value value="63784293743"/>
+        </identifier>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/Practitioner/3"/>
+    <resource>
+      <Practitioner>
+        <id value="3"/>
+        <identifier>
+          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
+          <value value="63784293743"/>
+        </identifier>
+      </Practitioner>
+    </resource>
+  </entry>
+</Bundle>
