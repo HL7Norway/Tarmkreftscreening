@@ -95,15 +95,24 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.result:numberOfLesions">
+    <element id="DiagnosticReport.result:NumberOfLesions">
       <path value="DiagnosticReport.result" />
-      <sliceName value="numberOfLesions" />
+      <sliceName value="NumberOfLesions" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-extension" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result:Mucosa">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="Mucosa" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
+      </type>
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />

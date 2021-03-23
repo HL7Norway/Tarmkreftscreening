@@ -69,8 +69,7 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="128145008" />
+        <system value="http://example.org/some-code-system" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
@@ -79,6 +78,23 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding">
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.value[x].coding:sliceCoding">
+      <path value="Observation.value[x].coding" />
+      <sliceName value="sliceCoding" />
+      <patternCoding>
+        <system value="http://example.org/some-code-system" />
+      </patternCoding>
     </element>
   </differential>
 </StructureDefinition>
