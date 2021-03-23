@@ -12,24 +12,8 @@
   <date value="2021-03-02T17:04:20.4145722+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
+    <identity value="no-colonoscopy-report" />
+    <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
@@ -51,6 +35,14 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="12" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="27" />
+      </mapping>
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
@@ -73,6 +65,10 @@
         <code value="Quantity" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="27" />
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

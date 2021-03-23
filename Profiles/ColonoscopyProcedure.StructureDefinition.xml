@@ -2,34 +2,18 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="10" />
-    <lastUpdated value="2021-03-16T13:26:13.948+00:00" />
+    <versionId value="11" />
+    <lastUpdated value="2021-03-23T10:58:55.508+00:00" />
   </meta>
   <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-03-16T13:26:13.6815248+00:00" />
+  <date value="2021-03-23T10:58:54.5180795+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
+    <identity value="no-colonoscopy-report" />
+    <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
@@ -59,6 +43,13 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:complicationConsequence.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="54" />
+      </mapping>
+    </element>
     <element id="Procedure.extension:partOfBowelReached">
       <path value="Procedure.extension" />
       <sliceName value="partOfBowelReached" />
@@ -71,6 +62,13 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:partOfBowelReached.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="17" />
+      </mapping>
+    </element>
     <element id="Procedure.extension:caecumIntubated">
       <path value="Procedure.extension" />
       <sliceName value="caecumIntubated" />
@@ -82,6 +80,10 @@
         <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="18" />
+      </mapping>
     </element>
     <element id="Procedure.extension:duration">
       <path value="Procedure.extension" />
@@ -92,6 +94,10 @@
         <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="19" />
+      </mapping>
     </element>
     <element id="Procedure.extension:duration.value[x].value">
       <path value="Procedure.extension.value[x].value" />
@@ -121,6 +127,10 @@
         <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="20" />
+      </mapping>
     </element>
     <element id="Procedure.extension:withdrawalTime.value[x].value">
       <path value="Procedure.extension.value[x].value" />
@@ -153,6 +163,13 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:polypsRemoved.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="56" />
+      </mapping>
+    </element>
     <element id="Procedure.extension:medicationGiven">
       <path value="Procedure.extension" />
       <sliceName value="medicationGiven" />
@@ -165,6 +182,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:medicationGiven.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="26" />
+        <comment value="Medikament gitt før eller under undersøkelsen (ja/nei)" />
+      </mapping>
+    </element>
     <element id="Procedure.extension:anestheticsGiven">
       <path value="Procedure.extension" />
       <sliceName value="anestheticsGiven" />
@@ -176,9 +201,25 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:anestheticsGiven.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="26" />
+        <comment value="Narkose/dyp sedasjon (anstesistøtte)" />
+      </mapping>
+    </element>
     <element id="Procedure.status">
       <path value="Procedure.status" />
       <fixedCode value="completed" />
+    </element>
+    <element id="Procedure.code">
+      <path value="Procedure.code" />
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="59" />
+      </mapping>
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
@@ -222,10 +263,30 @@
         <code value="dateTime" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="2" />
+      </mapping>
     </element>
     <element id="Procedure.performer">
       <path value="Procedure.performer" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="3" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="4" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="5" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="6" />
+      </mapping>
     </element>
     <element id="Procedure.performer.function">
       <path value="Procedure.performer.function" />
@@ -246,10 +307,18 @@
     <element id="Procedure.location.identifier">
       <path value="Procedure.location.identifier" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="1" />
+      </mapping>
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="8" />
+      </mapping>
     </element>
     <element id="Procedure.report">
       <path value="Procedure.report" />
@@ -261,6 +330,10 @@
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="53" />
+      </mapping>
     </element>
     <element id="Procedure.complication.coding">
       <path value="Procedure.complication.coding" />
@@ -269,6 +342,10 @@
     <element id="Procedure.followUp">
       <path value="Procedure.followUp" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="60" />
+      </mapping>
     </element>
     <element id="Procedure.followUp.extension">
       <path value="Procedure.followUp.extension" />
@@ -291,6 +368,13 @@
         <profile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.followUp.extension:monthsUntilNextColonoscopy.value[x]">
+      <path value="Procedure.followUp.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="61" />
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>
