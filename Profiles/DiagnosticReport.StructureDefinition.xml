@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-03-17T09:04:39.072+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2021-03-24T16:50:08.658+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-03-17T09:04:38.7196892+00:00" />
+  <date value="2021-03-24T15:22:41.0918844Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -75,7 +75,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -85,13 +85,9 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-extension" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-extension" />
       </type>
       <mustSupport value="true" />
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="31" />
-      </mapping>
     </element>
     <element id="DiagnosticReport.result:Mucosa">
       <path value="DiagnosticReport.result" />
@@ -108,10 +104,12 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="57" />
+        <comment value="Hoveddiagnose (ICD-10) (if extension IsMainDiagnosis is true)" />
       </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="58" />
+        <comment value="Bidiagnoser (ICD-10)" />
       </mapping>
     </element>
     <element id="DiagnosticReport.conclusionCode.extension">
@@ -130,7 +128,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis" />
       </type>
       <mustSupport value="true" />
     </element>

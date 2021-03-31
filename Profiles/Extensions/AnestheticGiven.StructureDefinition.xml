@@ -5,7 +5,7 @@
     <versionId value="2" />
     <lastUpdated value="2021-03-16T13:27:27.67+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
   <name value="AnestheticsGiven" />
   <title value="Colonoscopy Report Anesthetics Given" />
   <status value="draft" />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

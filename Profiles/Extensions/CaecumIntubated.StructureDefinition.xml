@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2021-03-02T11:45:39.157+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
   <name value="CaecumIntubated" />
   <status value="draft" />
   <date value="2021-03-02T11:45:39.008439+00:00" />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

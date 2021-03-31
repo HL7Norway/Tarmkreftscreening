@@ -17,7 +17,7 @@
     <fullUrl value="http://example.org/fhir/Procedure/1"/>
     <resource>
       <Procedure>   
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
            <valueCodeableConcept>
              <coding>
                <system value="http://example.org/fhir/some-codesystem"/>
@@ -25,7 +25,7 @@
              </coding>
            </valueCodeableConcept>
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension">
           <valueCodeableConcept>
             <coding>
               <system value="http://example.org/fhir/some-codesystem"/>
@@ -33,10 +33,10 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension">
           <valueBoolean value="true"/>
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension">
           <valueDuration>
             <value value="30"/>
             <unit value="min"/>
@@ -44,7 +44,7 @@
             <code value="min"/>
           </valueDuration>          
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime">
           <valueDuration>
             <value value="2"/>
             <unit value="min"/>
@@ -60,10 +60,10 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension">
           <valueBoolean value="true"/>
         </extension>
-        <extension url="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension">
           <valueCodeableConcept>
             <coding>
               <system value="http://example.org/fhir/some-codesystem"/>
@@ -184,7 +184,7 @@
           <reference value= "http://example.org/fhir/Observation/numberoflesions"/>
         </result>
         <conclusionCode>
-          <extension url="http://cancerregistry.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis">
+          <extension url="http://kreftregisteret.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis">
             <valueBoolean value="true"/>
           </extension>          
           <coding>

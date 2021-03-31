@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2021-03-03T17:20:20.947+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
   <name value="MedicationGiven" />
   <title value="Colonoscopy Report Medication Given" />
   <status value="draft" />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

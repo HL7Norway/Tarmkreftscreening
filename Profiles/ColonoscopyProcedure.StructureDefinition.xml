@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2021-03-23T10:58:55.508+00:00" />
+    <versionId value="16" />
+    <lastUpdated value="2021-03-30T13:52:21.592+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-03-23T10:58:54.5180795+00:00" />
+  <date value="2021-03-30T13:52:20.2587386+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -39,7 +39,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -48,6 +48,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="54" />
+        <comment value="Konsekvens av komplikasjon (flervalg tillatt, kun mulig å velge dersom valgt noe annet enn &quot;Ingen&quot; på forrige elemement, og da må det velges minst én)" />
       </mapping>
     </element>
     <element id="Procedure.extension:partOfBowelReached">
@@ -58,7 +59,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -67,6 +68,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="17" />
+        <comment value="Undersøkt til og med angitt segment" />
       </mapping>
     </element>
     <element id="Procedure.extension:caecumIntubated">
@@ -77,26 +79,36 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:caecumIntubated.value[x]">
+      <path value="Procedure.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="18" />
+        <comment value="Var det indisert å intubere cøkum" />
       </mapping>
     </element>
     <element id="Procedure.extension:duration">
       <path value="Procedure.extension" />
       <sliceName value="duration" />
+      <short value="The duration of the procedure" />
+      <definition value="The duration of the procedure" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:duration.value[x]">
+      <path value="Procedure.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="19" />
+        <comment value="Totaltid for undersøkelsen" />
       </mapping>
     </element>
     <element id="Procedure.extension:duration.value[x].value">
@@ -124,12 +136,16 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:withdrawalTime.value[x]">
+      <path value="Procedure.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="20" />
+        <comment value="Tilbaketrekkingstid fra cøkum til avsluttet undersøkelse" />
       </mapping>
     </element>
     <element id="Procedure.extension:withdrawalTime.value[x].value">
@@ -168,6 +184,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="56" />
+        <comment value="Alle påviste polypper fjernet (Clean colon) ?" />
       </mapping>
     </element>
     <element id="Procedure.extension:medicationGiven">
@@ -178,7 +195,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -197,7 +214,7 @@
       <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
       <type>
         <code value="Extension" />
-        <profile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -209,9 +226,79 @@
         <comment value="Narkose/dyp sedasjon (anstesistøtte)" />
       </mapping>
     </element>
+    <element id="Procedure.extension:laxatives">
+      <path value="Procedure.extension" />
+      <sliceName value="laxatives" />
+      <short value="Describes what kind of laxatives were used to empty the bowel before a colonoscopy, and if the laxatives were taken as a split dose or not." />
+      <definition value="Describes what kind of laxatives were used to empty the bowel before a colonoscopy, and if the laxatives were taken as a split dose or not." />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-laxatives-extension" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:laxatives.extension">
+      <path value="Procedure.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:laxatives.extension:type">
+      <path value="Procedure.extension.extension" />
+      <sliceName value="type" />
+      <short value="what kind of laxatives were used to empty the bowel before a colonoscopy" />
+      <definition value="what kind of laxatives were used to empty the bowel before a colonoscopy" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:laxatives.extension:type.value[x]">
+      <path value="Procedure.extension.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="16" />
+        <comment value="Tømmingsmiddel" />
+      </mapping>
+    </element>
+    <element id="Procedure.extension:laxatives.extension:takenAsSplitDose">
+      <path value="Procedure.extension.extension" />
+      <sliceName value="takenAsSplitDose" />
+      <short value="If the laxatives were taken as a split dose or not." />
+      <definition value="If the laxatives were taken as a split dose or not." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:laxatives.extension:takenAsSplitDose.value[x]">
+      <path value="Procedure.extension.extension.value[x]" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="15" />
+        <comment value="Tømmingsmiddel ble tatt som &quot;splittdosering&quot;" />
+      </mapping>
+    </element>
+    <element id="Procedure.extension:photoDocumenationOfCaecumReached">
+      <path value="Procedure.extension" />
+      <sliceName value="photoDocumenationOfCaecumReached" />
+      <short value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
+      <definition value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumreacheddocumentation-extension" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.extension:photoDocumenationOfCaecumReached.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.status">
       <path value="Procedure.status" />
       <fixedCode value="completed" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
@@ -219,6 +306,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="59" />
+        <comment value="Prosedyrekoder (NCMP-NCSP-NCRP)" />
       </mapping>
     </element>
     <element id="Procedure.code.coding">
@@ -239,6 +327,7 @@
       <patternCoding>
         <system value="ncsp-code-system" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:SNOMED-CT">
       <path value="Procedure.code.coding" />
@@ -249,6 +338,7 @@
         <system value="http://snomed.info/sct" />
         <code value="73761001" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
@@ -256,6 +346,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
@@ -266,6 +357,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="2" />
+        <comment value="Dato for u.s." />
       </mapping>
     </element>
     <element id="Procedure.performer">
@@ -274,18 +366,22 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="3" />
+        <comment value="Hovedskopør (depended on performer.function)" />
       </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="4" />
+        <comment value="(depended on performer.function)" />
       </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="5" />
+        <comment value="Sykepleier (depended on performer.function)" />
       </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="6" />
+        <comment value="Assisterende sykepleiere (depended on performer.function)" />
       </mapping>
     </element>
     <element id="Procedure.performer.function">
@@ -310,6 +406,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="1" />
+        <comment value="HF/scr.senter" />
       </mapping>
     </element>
     <element id="Procedure.reasonCode">
@@ -318,14 +415,16 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="8" />
+        <comment value="Indikasjon for undersøkelse (flervalg tillatt, utbrodering i fritekst [red. variabel 9])" />
       </mapping>
     </element>
     <element id="Procedure.report">
       <path value="Procedure.report" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
@@ -333,6 +432,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="53" />
+        <comment value="Komplikasjoner under undersøkelsen (flervalg tillatt, minst ett må velges)" />
       </mapping>
     </element>
     <element id="Procedure.complication.coding">
@@ -345,6 +445,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="60" />
+        <comment value="Videre oppfølging" />
       </mapping>
     </element>
     <element id="Procedure.followUp.extension">
@@ -374,6 +475,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="61" />
+        <comment value="Antall måneder til ny koloskopi" />
       </mapping>
     </element>
   </differential>

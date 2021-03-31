@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-03-19T11:36:08.759+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2021-03-24T15:15:37.783+00:00" />
   </meta>
-  <url value="http://cancerregistry.no./fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-03-19T11:36:08.4457997+00:00" />
+  <date value="2021-03-23T14:12:47.0965167Z" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -70,6 +70,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="22" />
+        <comment value="Tømmingskvalitet høyre kolon (BBPS)" />
       </mapping>
     </element>
     <element id="Observation.component:transversum">
@@ -91,6 +92,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="23" />
+        <comment value="Tømmingskvalitet transversum (BBPS)" />
       </mapping>
     </element>
     <element id="Observation.component:leftColon">
@@ -112,6 +114,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="24" />
+        <comment value="Tømmingskvalitet venstre kolon (BBPS)" />
       </mapping>
     </element>
   </differential>

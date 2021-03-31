@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="67058f2a-c05f-4a83-a15a-7b377b541baf" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-03-30T13:52:46.092+00:00" />
+  </meta>
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-laxatives-extension" />
+  <name value="Laxatives" />
+  <title value="Colonoscopy Report Laxatives" />
+  <status value="draft" />
+  <date value="2021-03-30T13:52:45.8182344+00:00" />
+  <description value="Describes what kind of laxatives were used to empty the bowel before a colonoscopy, and if the laxatives were taken as a split dose or not." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Procedure" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.extension:takenAsSplitDose">
+      <path value="Extension.extension" />
+      <sliceName value="takenAsSplitDose" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:takenAsSplitDose.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="takenAsSplitDose" />
+    </element>
+    <element id="Extension.extension:takenAsSplitDose.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-laxatives-extension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

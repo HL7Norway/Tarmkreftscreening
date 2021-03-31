@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="80cd0ca2-4d5c-42ce-8f13-dcb7386ea2d7" />
+  <id value="49323654-13c3-4a01-814b-1278d8c07278" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-03-02T11:45:50.174+00:00" />
+    <versionId value="1" />
+    <lastUpdated value="2021-03-30T13:52:34.71+00:00" />
   </meta>
-  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
-  <name value="ComplicationConsequence" />
-  <title value="Colonoscopy Report Complication Consequence" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumreacheddocumentation-extension" />
+  <name value="PhotoDocumentationOfCaecumReached" />
+  <title value="Colonoscopy Report Photo Documentation Of Caecum Reached" />
   <status value="draft" />
-  <date value="2021-03-02T11:45:49.8895699+00:00" />
-  <description value="The concequence of the complications that have occured during the procedure" />
-  <purpose value="Specifies the consequense of the complications that have occuered during the procedure" />
+  <date value="2021-03-30T13:52:34.4681201+00:00" />
+  <description value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -30,12 +29,12 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumreacheddocumentation-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="boolean" />
       </type>
     </element>
   </differential>

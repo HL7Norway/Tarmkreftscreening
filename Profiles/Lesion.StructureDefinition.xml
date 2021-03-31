@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2021-03-16T10:19:32.45+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2021-03-24T15:16:13.159+00:00" />
   </meta>
   <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-03-16T10:19:31.9857759+00:00" />
+  <date value="2021-03-23T14:12:07.0133141Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -36,6 +36,11 @@
       <path value="Observation.identifier" />
       <sliceName value="LesionNumber" />
       <max value="1" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="32" />
+        <comment value="Lesjonsnummer" />
+      </mapping>
     </element>
     <element id="Observation.identifier:LesionNumber.system">
       <path value="Observation.identifier.system" />
@@ -78,6 +83,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="33" />
+        <comment value="Tarmsegment hvor lesjon ble påvist" />
       </mapping>
     </element>
     <element id="Observation.component">
@@ -162,6 +168,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="36" />
+        <comment value="Metode for fjerning eller vevsprøve (flervalg)" />
       </mapping>
     </element>
     <element id="Observation.component:EndoscopicalRemoved">
@@ -200,6 +207,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="37" />
+        <comment value="Er lesjonen endoskopisk komplett fjernet (ett valg)" />
       </mapping>
     </element>
     <element id="Observation.component:SentToPathologist">
@@ -237,6 +245,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="39" />
+        <comment value="Vevsprøve sendt til patolog? (slider med default &quot;ja&quot;)" />
       </mapping>
     </element>
     <element id="Observation.component:Size">
@@ -244,6 +253,10 @@
       <sliceName value="Size" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Observation.component:Size.code">
+      <path value="Observation.component.code" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:Size.code.coding">
       <path value="Observation.component.code.coding" />
@@ -264,6 +277,7 @@
         <system value="http://snomed.info/sct" />
         <code value="246116008" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:Size.value[x]">
       <path value="Observation.component.value[x]" />
@@ -313,6 +327,7 @@
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="38" />
+        <comment value="Cancersuspect lesjon (slider med default &quot;nei&quot;)" />
       </mapping>
     </element>
   </differential>

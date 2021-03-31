@@ -5,7 +5,7 @@
     <versionId value="6" />
     <lastUpdated value="2021-03-17T13:44:48.741+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-medicationlist" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationlist" />
   <name value="MedicationList" />
   <title value="Colonoscopy Report Problem List" />
   <status value="draft" />
@@ -75,7 +75,7 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistry.no.org/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
       </type>
     </element>
   </differential>

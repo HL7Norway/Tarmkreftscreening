@@ -5,7 +5,7 @@
     <versionId value="2" />
     <lastUpdated value="2021-03-02T17:03:28.115+00:00" />
   </meta>
-  <url value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
   <name value="WithdrawalTime" />
   <title value="Colonoscopy Report Withdrawal Time" />
   <status value="draft" />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistry.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
