@@ -101,7 +101,6 @@
     <element id="Observation.component:Morphology">
       <path value="Observation.component" />
       <sliceName value="Morphology" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -131,11 +130,16 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="34" />
+        <comment value="Morfologi (Paris polyp classification)" />
+      </mapping>
     </element>
     <element id="Observation.component:TissueRemovingMethod">
       <path value="Observation.component" />
       <sliceName value="TissueRemovingMethod" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -165,6 +169,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="36" />
@@ -174,7 +179,6 @@
     <element id="Observation.component:EndoscopicalRemoved">
       <path value="Observation.component" />
       <sliceName value="EndoscopicalRemoved" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -204,6 +208,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="37" />
@@ -213,7 +218,6 @@
     <element id="Observation.component:SentToPathologist">
       <path value="Observation.component" />
       <sliceName value="SentToPathologist" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -242,6 +246,7 @@
       <type>
         <code value="boolean" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="39" />
@@ -251,7 +256,6 @@
     <element id="Observation.component:Size">
       <path value="Observation.component" />
       <sliceName value="Size" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Observation.component:Size.code">
@@ -284,11 +288,11 @@
       <type>
         <code value="Quantity" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:SuspectOfMalignancy">
       <path value="Observation.component" />
       <sliceName value="SuspectOfMalignancy" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Observation.component:SuspectOfMalignancy.code">
