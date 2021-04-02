@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
+  <name value="GastronetColonoscopy" />
+  <title value="Gastronet Colonoscopy" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="no-colonoscopy-report" />
+    <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:duration">
+      <path value="Procedure.extension" />
+      <sliceName value="duration" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.instantiatesUri">
+      <path value="Procedure.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.partOf">
+      <path value="Procedure.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.statusReason">
+      <path value="Procedure.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.asserter">
+      <path value="Procedure.asserter" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.reasonReference">
+      <path value="Procedure.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.note">
+      <path value="Procedure.note" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.focalDevice">
+      <path value="Procedure.focalDevice" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedReference">
+      <path value="Procedure.usedReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
