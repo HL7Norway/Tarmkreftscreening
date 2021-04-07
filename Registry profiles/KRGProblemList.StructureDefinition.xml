@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-problemlist-krg" />
+  <name value="KRGProblemList" />
+  <title value="KRG Problem List" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-problemlist" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List.identifier">
+      <path value="List.identifier" />
+      <max value="0" />
+    </element>
+    <element id="List.title">
+      <path value="List.title" />
+      <max value="0" />
+    </element>
+    <element id="List.encounter">
+      <path value="List.encounter" />
+      <max value="0" />
+    </element>
+    <element id="List.date">
+      <path value="List.date" />
+      <max value="0" />
+    </element>
+    <element id="List.source">
+      <path value="List.source" />
+      <max value="0" />
+    </element>
+    <element id="List.orderedBy">
+      <path value="List.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="List.note">
+      <path value="List.note" />
+      <max value="0" />
+    </element>
+    <element id="List.entry.flag">
+      <path value="List.entry.flag" />
+      <max value="0" />
+    </element>
+    <element id="List.entry.deleted">
+      <path value="List.entry.deleted" />
+      <max value="0" />
+    </element>
+    <element id="List.entry.date">
+      <path value="List.entry.date" />
+      <max value="0" />
+    </element>
+    <element id="List.entry.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-condition-krg" />
+      </type>
+    </element>
+    <element id="List.emptyReason">
+      <path value="List.emptyReason" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
