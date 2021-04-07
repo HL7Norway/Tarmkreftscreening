@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://www.kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
   <name value="GastronetDiagnosticReport" />
   <title value="Gastronet Diagnostic Report" />
   <status value="draft" />
@@ -46,6 +46,38 @@
     <element id="DiagnosticReport.specimen">
       <path value="DiagnosticReport.specimen" />
       <max value="0" />
+    </element>
+    <element id="DiagnosticReport.result:Lesion">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="Lesion" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.result:BostonBowelPreparationScale">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="BostonBowelPreparationScale" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.result:NumberOfLesions">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="NumberOfLesions" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet" />
+      </type>
+    </element>
+    <element id="DiagnosticReport.result:Mucosa">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="Mucosa" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-mucosa-gastronet" />
+      </type>
     </element>
     <element id="DiagnosticReport.imagingStudy">
       <path value="DiagnosticReport.imagingStudy" />

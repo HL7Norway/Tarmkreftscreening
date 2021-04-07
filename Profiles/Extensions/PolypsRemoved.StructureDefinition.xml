@@ -5,8 +5,9 @@
     <versionId value="1" />
     <lastUpdated value="2021-03-02T17:03:04.112+00:00" />
   </meta>
-  <url value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
   <name value="PolypsRemoved" />
+  <title value="Colonoscopy Report PolypsRemoved" />
   <status value="draft" />
   <date value="2021-03-02T17:03:03.948688+00:00" />
   <description value="Indicates if all detected polyps are removed" />
@@ -28,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

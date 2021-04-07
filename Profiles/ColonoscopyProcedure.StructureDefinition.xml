@@ -175,7 +175,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
       </type>
       <mustSupport value="true" />
     </element>

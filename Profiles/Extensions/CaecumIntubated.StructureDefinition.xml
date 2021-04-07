@@ -2,13 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="79c5114b-bef5-499f-b254-246986ad5482" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-03-02T11:45:39.157+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-04-07T16:29:05.847+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension" />
   <name value="CaecumIntubated" />
+  <title value="Colonoscopy Report Caecum Intubated" />
   <status value="draft" />
-  <date value="2021-03-02T11:45:39.008439+00:00" />
+  <date value="2021-04-07T16:29:05.4775353+00:00" />
   <description value="Specifies if the caecum was intubated during the colonoscopy" />
   <purpose value="Specifies if the caecum was intubated during the colonoscopy" />
   <fhirVersion value="4.0.1" />

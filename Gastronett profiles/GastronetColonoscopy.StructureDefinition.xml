@@ -25,9 +25,19 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="Procedure.extension:caecumIntubated">
+      <path value="Procedure.extension" />
+      <sliceName value="caecumIntubated" />
+      <max value="0" />
+    </element>
     <element id="Procedure.extension:duration">
       <path value="Procedure.extension" />
       <sliceName value="duration" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.extension:polypsRemoved">
+      <path value="Procedure.extension" />
+      <sliceName value="polypsRemoved" />
       <max value="0" />
     </element>
     <element id="Procedure.instantiatesCanonical">
@@ -78,8 +88,19 @@
       <path value="Procedure.outcome" />
       <max value="0" />
     </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
+      </type>
+    </element>
     <element id="Procedure.complicationDetail">
       <path value="Procedure.complicationDetail" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
       <max value="0" />
     </element>
     <element id="Procedure.note">

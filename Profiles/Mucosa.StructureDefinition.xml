@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="808a0881-57d9-4ccd-8fb6-5d3e27fe59d4" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-03-24T15:14:30.198+00:00" />
+    <versionId value="4" />
+    <lastUpdated value="2021-04-02T15:18:25.339+00:00" />
   </meta>
-  <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
   <name value="Mucosa" />
-  <title value="Colonoscopy Report Lesion" />
+  <title value="Colonoscopy Report Mucosa" />
   <status value="draft" />
-  <date value="2021-03-23T14:13:44.3624754Z" />
+  <date value="2021-04-02T15:18:25.12944+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />

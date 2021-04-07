@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-mucosa-gastronet" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-mucosa-gastronet" />
   <name value="GastronetMucosa" />
+  <title value="Gastronet Mucosa" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -11,7 +12,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.basedOn">

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
+  <id value="e96c3fe4-45d0-4fa8-90dd-2e75e880ac28" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-04-02T15:30:37.66+00:00" />
+  </meta>
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
   <name value="GastronetMedicationStatement" />
   <title value="Gastronet MedicationStatement" />
   <status value="draft" />
+  <date value="2021-04-02T15:28:39.9342194Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -18,6 +24,13 @@
     <element id="MedicationStatement.basedOn">
       <path value="MedicationStatement.basedOn" />
       <max value="0" />
+    </element>
+    <element id="MedicationStatement.partOf">
+      <path value="MedicationStatement.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
+      </type>
     </element>
     <element id="MedicationStatement.statusReason">
       <path value="MedicationStatement.statusReason" />

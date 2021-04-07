@@ -12,7 +12,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.basedOn">

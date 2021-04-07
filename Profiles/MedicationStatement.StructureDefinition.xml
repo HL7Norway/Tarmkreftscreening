@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="288fcab8-ceba-4250-adfa-a0abab7f9165" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-03-24T15:15:21.322+00:00" />
+    <versionId value="10" />
+    <lastUpdated value="2021-04-02T15:30:08.832+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
   <name value="MedicationStatement" />
   <title value="Colonoscopy Report MedicationStatement" />
   <status value="draft" />
-  <date value="2021-03-23T14:12:57.4799888Z" />
+  <date value="2021-04-02T15:30:08.6516986+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -25,7 +25,7 @@
       <path value="MedicationStatement.partOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-procedure" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
       </type>
       <mustSupport value="true" />
     </element>

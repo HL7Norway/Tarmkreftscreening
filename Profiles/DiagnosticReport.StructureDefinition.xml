@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="12" />
-    <lastUpdated value="2021-03-24T16:50:08.658+00:00" />
+    <versionId value="14" />
+    <lastUpdated value="2021-04-02T15:18:08.185+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-03-24T15:22:41.0918844Z" />
+  <date value="2021-04-02T15:18:07.864244+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -65,7 +65,7 @@
       <sliceName value="Lesion" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -85,7 +85,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-extension" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -95,8 +95,9 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
