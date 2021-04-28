@@ -2,21 +2,21 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="288fcab8-ceba-4250-adfa-a0abab7f9165" />
   <meta>
-    <versionId value="10" />
-    <lastUpdated value="2021-04-02T15:30:08.832+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2021-04-14T13:31:34.228+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
   <name value="MedicationStatement" />
   <title value="Colonoscopy Report MedicationStatement" />
   <status value="draft" />
-  <date value="2021-04-02T15:30:08.6516986+00:00" />
+  <date value="2021-04-14T13:31:35.7592833+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
-  <abstract value="false" />
+  <abstract value="true" />
   <type value="MedicationStatement" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />

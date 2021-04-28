@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="45699e17-3a28-45d5-be58-9576cacd4cee" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-03-02T17:03:04.112+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-04-14T14:04:35.448+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved" />
   <name value="PolypsRemoved" />
   <title value="Colonoscopy Report PolypsRemoved" />
   <status value="draft" />
-  <date value="2021-03-02T17:03:03.948688+00:00" />
+  <date value="2021-04-14T14:04:36.9292054+00:00" />
   <description value="Indicates if all detected polyps are removed" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -34,9 +34,6 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="Value of extension (yes/no/unsure)" />
-      <type>
-        <code value="code" />
-      </type>
       <type>
         <code value="CodeableConcept" />
       </type>

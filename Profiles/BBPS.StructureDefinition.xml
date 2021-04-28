@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2021-03-24T15:15:37.783+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2021-04-14T13:29:08.1+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-03-23T14:12:47.0965167Z" />
+  <date value="2021-04-14T13:29:09.5911825+00:00" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -17,7 +17,7 @@
     <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
-  <abstract value="false" />
+  <abstract value="true" />
   <type value="Observation" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />

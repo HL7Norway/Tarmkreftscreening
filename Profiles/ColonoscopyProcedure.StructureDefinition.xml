@@ -2,21 +2,21 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="16" />
-    <lastUpdated value="2021-03-30T13:52:21.592+00:00" />
+    <versionId value="19" />
+    <lastUpdated value="2021-04-14T14:03:21.306+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-03-30T13:52:20.2587386+00:00" />
+  <date value="2021-04-14T14:03:22.6698285+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
-  <abstract value="false" />
+  <abstract value="true" />
   <type value="Procedure" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
@@ -212,6 +212,7 @@
       <sliceName value="anestheticsGiven" />
       <short value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
       <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
@@ -283,7 +284,6 @@
       <sliceName value="photoDocumenationOfCaecumReached" />
       <short value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
       <definition value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -333,7 +333,6 @@
       <path value="Procedure.code.coding" />
       <sliceName value="SNOMED-CT" />
       <min value="1" />
-      <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="73761001" />
