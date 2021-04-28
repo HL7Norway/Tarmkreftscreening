@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="fc12b010-e019-42e0-bef3-dcb3a08a6404" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-04-14T13:26:31.202+00:00" />
+  </meta>
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-subprocedure-krg" />
+  <name value="KRGSubProcedure" />
+  <title value="KRG Sub Procedure" />
+  <status value="draft" />
+  <date value="2021-04-14T13:26:32.6265384+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-subprocedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.instantiatesUri">
+      <path value="Procedure.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.statusReason">
+      <path value="Procedure.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.asserter">
+      <path value="Procedure.asserter" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.location">
+      <path value="Procedure.location" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.reasonReference">
+      <path value="Procedure.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.note">
+      <path value="Procedure.note" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.focalDevice">
+      <path value="Procedure.focalDevice" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedReference">
+      <path value="Procedure.usedReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
