@@ -51,5 +51,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Colonoscopy Paris Polyp Classification</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-paris-polyp-class</tt><p>Paris polyp classification, including NA</p></div>"
   },
   "name": "No-colonoscopy-paris-polyp-class",
-  "description": "Paris polyp classification, including NA"
+  "description": "Paris polyp classification, including NA",
+  "publisher": "Norwegian Directorate of e-health"
 }

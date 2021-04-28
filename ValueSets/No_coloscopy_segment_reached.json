@@ -66,5 +66,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Reached</h2><tt>http://ehelse.no/fhir/ValueSet/no-coloscopy-segment-reached</tt><p>Can be used to indicate which segment (part) of colon that has been examined</p></div>"
   },
   "name": "No-coloscopy-segment-reached",
-  "id": "42d9d581-2180-441d-bf01-43254b47d7f7"
+  "id": "42d9d581-2180-441d-bf01-43254b47d7f7",
+  "publisher": "Norwegian Directorate of e-health"
 }

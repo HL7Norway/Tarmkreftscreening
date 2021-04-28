@@ -34,5 +34,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Polyps Removed</h2><tt>http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed</tt></div>"
   },
-  "name": "No-colonoscopy-all-polyps-removed"
+  "name": "No-colonoscopy-all-polyps-removed",
+  "publisher": "Norwegian Directorate of e-health"
 }

@@ -43,5 +43,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Boston Bowel Preparation Scale</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-boston-bowel-preparation-scale</tt><p>Value set for Boston bowel preparation scale, including the ability to set NA.</p></div>"
   },
   "name": "No-colonoscopy-boston-bowel-preparation-scale",
-  "description": "Value set for Boston bowel preparation scale, including the ability to set NA."
+  "description": "Value set for Boston bowel preparation scale, including the ability to set NA.",
+  "publisher": "Norwegian Directorate of e-health"
 }

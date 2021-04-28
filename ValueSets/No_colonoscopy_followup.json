@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/no-colonoscopy-followup",
+  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-followup",
   "title": "Colonoscopy Report Follow Up",
   "status": "draft",
   "compose": {
@@ -46,5 +46,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Follow Up</h2><tt>http://ehelse.no/fhir/no-colonoscopy-followup</tt></div>"
   },
-  "name": "No-colonoscopy-followup"
+  "name": "No-colonoscopy-followup",
+  "publisher": "Norwegian Directorate of e-health"
 }

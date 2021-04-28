@@ -44,5 +44,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Laxatives Split Dose</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-laxatives-split-dose</tt></div>"
   },
-  "name": "No-colonoscopy-laxatives-split-dose"
+  "name": "No-colonoscopy-laxatives-split-dose",
+  "publisher": "Norwegian Directorate of e-health"
 }

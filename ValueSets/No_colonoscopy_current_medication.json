@@ -75,5 +75,6 @@
   },
   "name": "No-colonoscopy-current-medication",
   "id": "228764d6-b442-4724-8149-2aa6a46b6193",
-  "description": "A list of relevant drug categories, for use in reporting in connection with colonoscopy"
+  "description": "A list of relevant drug categories, for use in reporting in connection with colonoscopy",
+  "publisher": "Norwegian Directorate of e-health"
 }

@@ -40,5 +40,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication</tt></div>"
   },
-  "name": "No-colonoscopy-medication"
+  "name": "No-colonoscopy-medication",
+  "publisher": "Norwegian Directorate of e-health"
 }

@@ -87,5 +87,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Indictation</h2><tt>http://ehelse.no/fhir/ValueSet/no-procedure-reason-coloscopy</tt></div>"
   },
   "name": "No-procedure-reason-coloscopy",
-  "id": "6caa34cf-ff95-4fcc-80a5-b3f53f9c791c"
+  "id": "6caa34cf-ff95-4fcc-80a5-b3f53f9c791c",
+  "publisher": "Norwegian Directorate of e-health"
 }
