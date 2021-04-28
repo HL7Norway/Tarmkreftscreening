@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="288fcab8-ceba-4250-adfa-a0abab7f9165" />
+  <id value="0b91d843-721b-4648-9c79-1bfb46157832" />
   <meta>
-    <versionId value="13" />
-    <lastUpdated value="2021-04-28T15:46:24.068+00:00" />
+    <versionId value="1" />
+    <lastUpdated value="2021-04-28T15:47:24.295+00:00" />
   </meta>
-  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
-  <name value="MedicationStatement" />
-  <title value="Colonoscopy Report MedicationStatement" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication" />
+  <name value="CurrentMedication" />
+  <title value="Colonoscopy Report Current Medication" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:39.3637477+00:00" />
-  <description value="Indication of which medication was used before or during the procedure," />
+  <date value="2021-04-28T15:47:40.8713603+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -22,14 +21,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement.partOf">
-      <path value="MedicationStatement.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
       <type>
@@ -38,13 +29,23 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <description value="Indication of which medication was used before or during the procedure, including the ability to put Other. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping" />
-        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication" />
+        <description value="A list of relevant drug categories" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication" />
       </binding>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="12" />
+        <comment value="Medisinbruk" />
+      </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="27" />
         <comment value="Type medikament og dose" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="16" />
+        <comment value="Tømmingsmiddel" />
       </mapping>
     </element>
     <element id="MedicationStatement.subject">

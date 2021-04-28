@@ -25,6 +25,10 @@
       <path value="Condition.code" />
       <min value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-relevant-conditions" />
+      </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="10" />
@@ -41,15 +45,6 @@
         <ordered value="true" />
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Condition.code.coding:ICD10">
-      <path value="Condition.code.coding" />
-      <sliceName value="ICD10" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://hl7.org/fhir/sid/icd-10" />
-      </patternCoding>
-      <mustSupport value="true" />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />

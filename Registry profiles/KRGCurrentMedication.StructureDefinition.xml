@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="f2f8dcbd-e97c-4fec-96e9-2765611dd7fc" />
+  <id value="a1065164-679e-45d5-bbbd-1345c4cf2d79" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2021-04-28T15:46:33.12+00:00" />
+    <lastUpdated value="2021-04-28T15:47:40.444+00:00" />
   </meta>
-  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-krg" />
-  <name value="KRGMedicationStatement" />
-  <title value="KRG MedicationStatement" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication-krg" />
+  <name value="KRGCurrentMedication" />
+  <title value="KRG CurrentMedication" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:49.6370734+00:00" />
+  <date value="2021-04-28T15:47:56.9807002+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -18,7 +18,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationStatement" />
-  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationStatement.basedOn">
@@ -27,6 +27,7 @@
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-krg" />
@@ -39,14 +40,6 @@
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <max value="0" />
-    </element>
-    <element id="MedicationStatement.medication[x]">
-      <path value="MedicationStatement.medication[x]" />
-      <binding>
-        <strength value="required" />
-        <description value="Indication of which medication was used before or during the procedure. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping" />
-        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg" />
-      </binding>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />

@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="7" />
-    <lastUpdated value="2021-04-14T13:29:08.1+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2021-04-28T15:46:10.506+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-04-14T13:29:09.5911825+00:00" />
+  <date value="2021-04-28T15:46:27.0472789+00:00" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -67,6 +67,11 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set for Boston bowel preparation scale, including the ability to set NA." />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-boston-bowel-preparation-scale" />
+      </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="22" />
@@ -89,6 +94,11 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set for Boston bowel preparation scale, including the ability to set NA." />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-boston-bowel-preparation-scale" />
+      </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="23" />
@@ -111,6 +121,11 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Value set for Boston bowel preparation scale, including the ability to set NA." />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-boston-bowel-preparation-scale" />
+      </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="24" />

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="1ffc0e98-07ee-4931-b718-c82103bdcb37" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-04-28T15:48:29.871+00:00" />
+  </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-krg" />
   <name value="KRGColonoscopy" />
   <title value="KRG Colonoscopy" />
   <status value="draft" />
+  <date value="2021-04-28T15:48:46.363685+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -70,6 +76,13 @@
     <element id="Procedure.asserter">
       <path value="Procedure.asserter" />
       <max value="0" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg" />
+      </binding>
     </element>
     <element id="Procedure.reasonReference">
       <path value="Procedure.reasonReference" />
