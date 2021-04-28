@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication",
+  "title": "Colonoscopy Report Medication",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "387560008",
+            "display": "Alfentanil (substance)"
+          },
+          {
+            "code": "373492002",
+            "display": "Fentanyl (substance)"
+          },
+          {
+            "code": "395739004",
+            "display": "Scopolamine butylbromide (substance)"
+          },
+          {
+            "code": "387298007",
+            "display": "Pethidine (substance)"
+          },
+          {
+            "code": "373476007",
+            "display": "Midazolam (substance)"
+          },
+          {
+            "code": "387423006",
+            "display": "Propofol (substance)"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication</tt></div>"
+  },
+  "name": "No_colonoscopy_medication"
+}

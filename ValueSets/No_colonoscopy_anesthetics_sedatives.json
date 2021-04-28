@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-anesthetics-sedatives",
+  "title": "Colonoscopy Report Anesthetics/Sedatives Given",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10821000202101",
+            "display": "Narkose eller dyp sedasjon med anestesistøtte"
+          },
+          {
+            "code": "nil-known",
+            "display": "Nil Known"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Anesthetics/Sedatives Given</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-anesthetics-sedatives</tt></div>"
+  },
+  "name": "No_colonoscopy_anesthetics_sedatives"
+}

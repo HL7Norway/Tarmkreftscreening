@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-04-20T22:44:33.447+10:00"
+  },
+  "url": "http://ehelse.no/fhir/ValueSet/no-procedure-performer-function",
+  "title": "Conoloscopy Report Performer Function",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "8921000202108",
+            "display": "Hovedskopør"
+          },
+          {
+            "code": "8941000202104",
+            "display": "Assisterende skopør"
+          },
+          {
+            "code": "8951000202101",
+            "display": "Sykepleier"
+          },
+          {
+            "code": "8981000202109",
+            "display": "Assisterende sykepleier"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "The role of a healthcare professional in setting procedures. This is independent, but related to the profession and role of the health personnel above an organization: No-basis PractictionerRole uses Volven: 9034 https://volven.no/produkt.asp?id=436905&catID=3&subID=8, but it does not cover the role in connection with a procedure",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Conoloscopy Report Performer Function</h2><tt>http://ehelse.no/fhir/ValueSet/no-procedure-performer-function</tt><p>The role of a healthcare professional in setting procedures. This is independent, but related to the profession and role of the health personnel above an organization: No-basis PractictionerRole uses Volven: 9034 https://volven.no/produkt.asp?id=436905&amp;catID=3&amp;subID=8, but it does not cover the role in connection with a procedure</p></div>"
+  },
+  "name": "No_procedure_performer_function",
+  "id": "64aa346a-71e5-4355-843b-4dbcb5986a44"
+}

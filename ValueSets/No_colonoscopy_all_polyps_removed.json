@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed",
+  "title": "Colonoscopy Report Polyps Removed",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+        "concept": [
+          {
+            "code": "Y",
+            "display": "Yes"
+          },
+          {
+            "code": "N",
+            "display": "No"
+          }
+        ],
+        "version": "2.9"
+      },
+      {
+        "concept": [
+          {
+            "code": "usikker",
+            "display": "Usikker"
+          }
+        ],
+        "system": "Model-specific"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Polyps Removed</h2><tt>http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed</tt></div>"
+  },
+  "name": "No_colonoscopy_all_polyps_removed"
+}
