@@ -33,5 +33,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Anesthetics/Sedatives Given</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-anesthetics-sedatives</tt></div>"
   },
-  "name": "No-colonoscopy-anesthetics-sedatives"
+  "name": "No_colonoscopy_anesthetics_sedatives"
 }

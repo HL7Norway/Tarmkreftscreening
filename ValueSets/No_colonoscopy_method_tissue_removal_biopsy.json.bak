@@ -77,5 +77,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Tissue Removal Method</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-method-tissue-removal-biopsy</tt></div>"
   },
-  "name": "No-colonoscopy-method-tissue-removal-biopsy"
+  "name": "No_colonoscopy_method_tissue_removal_biopsy"
 }

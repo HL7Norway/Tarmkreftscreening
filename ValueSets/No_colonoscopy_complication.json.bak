@@ -69,5 +69,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Complications</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-complication</tt></div>"
   },
-  "name": "No-colonoscopy-complication"
+  "name": "No_colonoscopy_complication"
 }

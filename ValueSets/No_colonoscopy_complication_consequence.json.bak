@@ -61,6 +61,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Complication Consequences</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-complication-consequence</tt></div>"
   },
-  "name": "No-colonoscopy-complication-consequence",
+  "name": "No_colonoscopy_complication_consequence",
   "id": "789bad71-17c2-48ac-8282-36fe9433e3a1"
 }

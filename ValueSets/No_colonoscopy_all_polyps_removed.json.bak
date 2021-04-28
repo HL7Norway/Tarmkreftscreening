@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed",
-  "title": "Colonoscopy Report Lesion Removed",
+  "url": "http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed",
+  "title": "Colonoscopy Report Polyps Removed",
   "status": "draft",
   "contact": [
     {
@@ -41,7 +41,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Lesion Removed</h2><tt>http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed</tt></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Polyps Removed</h2><tt>http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed</tt></div>"
   },
-  "name": "No-colonoscopy-lesion-completely-removed"
+  "name": "No_colonoscopy_all_polyps_removed"
 }

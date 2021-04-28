@@ -43,5 +43,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Lesion Removed</h2><tt>http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed</tt></div>"
   },
-  "name": "No-colonoscopy-lesion-completely-removed"
+  "name": "No_colonoscopy_lesion_completely_removed"
 }

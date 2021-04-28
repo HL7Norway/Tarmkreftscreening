@@ -60,6 +60,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Lesion</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion</tt><p>Used to indicate which part of the colon a lesion has been found</p></div>"
   },
-  "name": "No-colonoscopy-segment-lesion",
+  "name": "No_colonoscopy_segment_lesion",
   "description": "Used to indicate which part of the colon a lesion has been found"
 }

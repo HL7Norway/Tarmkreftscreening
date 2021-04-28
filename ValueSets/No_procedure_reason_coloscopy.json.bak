@@ -55,35 +55,35 @@
             "display": "Polyppkontroll"
           },
           {
-            "code": "ibd-kontroll",
+            "code": "ibd_kontroll",
             "display": "IBD-kontroll"
           },
           {
-            "code": "tidligere-funn-kolo",
+            "code": "tidligere_funn_kolo",
             "display": "Funn ved tidligere koloskopi"
           },
           {
-            "code": "tidligere-funn",
+            "code": "tidligere_funn",
             "display": "Funn ved annen undersøkelse"
           },
           {
-            "code": "prim-screening",
+            "code": "prim_screening",
             "display": "Primær koloskopiscreening i screeningprogram"
           },
           {
-            "code": "pos-ifobt-screening",
+            "code": "pos_ifobt_screening",
             "display": "Positiv iFOBT i screeningprogram"
           },
           {
-            "code": "CRC-kontroll",
+            "code": "CRC_kontroll",
             "display": "CRC kontroll"
           },
           {
-            "code": "ufullstendig-tidl-kolo",
+            "code": "ufullstendig_tidl_kolo",
             "display": "Ufullstendig tidligere koloskopi"
           },
           {
-            "code": "screening-utenom-program",
+            "code": "screening_utenom_program",
             "display": "Screening utenom program"
           }
         ],
@@ -95,6 +95,6 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Indictation</h2><tt>http://ehelse.no/fhir/ValueSet/no-procedure-reason-coloscopy</tt></div>"
   },
-  "name": "No-procedure-reason-coloscopy",
+  "name": "No_procedure_reason_coloscopy",
   "id": "6caa34cf-ff95-4fcc-80a5-b3f53f9c791c"
 }

@@ -1,7 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion",
-  "title": "Colonoscopy Report Segment Lesion",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-04-21T23:39:34.064+10:00"
+  },
+  "url": "http://ehelse.no/fhir/ValueSet/no-coloscopy-segment-reached",
+  "title": "Colonoscopy Report Segment Reached",
   "status": "draft",
   "compose": {
     "include": [
@@ -49,17 +53,18 @@
             "display": "Rectum structure (body structure)"
           },
           {
-            "code": "34381000",
-            "display": "Anal canal structure (body structure)"
+            "code": "41796003",
+            "display": "Anastomosis (morphologic abnormality)"
           }
         ]
       }
     ]
   },
+  "description": "Can be used to indicate which segment (part) of colon that has been examined",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Lesion</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion</tt><p>Used to indicate which part of the colon a lesion has been found</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Reached</h2><tt>http://ehelse.no/fhir/ValueSet/no-coloscopy-segment-reached</tt><p>Can be used to indicate which segment (part) of colon that has been examined</p></div>"
   },
-  "name": "No-colonoscopy-segment-lesion",
-  "description": "Used to indicate which part of the colon a lesion has been found"
+  "name": "No_coloscopy_segment_reached",
+  "id": "42d9d581-2180-441d-bf01-43254b47d7f7"
 }

@@ -82,7 +82,7 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Current Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication</tt><p>A list of relevant drug categories, for use in reporting in connection with colonoscopy</p></div>"
   },
-  "name": "No-colonoscopy-current-medication",
+  "name": "No_colonoscopy_current_medication",
   "id": "228764d6-b442-4724-8149-2aa6a46b6193",
   "description": "A list of relevant drug categories, for use in reporting in connection with colonoscopy"
 }

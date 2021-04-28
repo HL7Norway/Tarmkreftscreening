@@ -61,6 +61,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Relevant Conditions</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-relevant-conditions</tt><p>Categories of relevant conditions for the Norwegian colonoscopy report</p></div>"
   },
-  "name": "No-colonoscopy-relevant-conditions",
+  "name": "No_colonoscopy_relevant_conditions",
   "description": "Categories of relevant conditions for the Norwegian colonoscopy report"
 }

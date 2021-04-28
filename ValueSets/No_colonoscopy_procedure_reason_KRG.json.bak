@@ -45,5 +45,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Indication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg</tt></div>"
   },
-  "name": "No-colonoscopy-procedure-reason-KRG"
+  "name": "No_colonoscopy_procedure_reason_KRG"
 }

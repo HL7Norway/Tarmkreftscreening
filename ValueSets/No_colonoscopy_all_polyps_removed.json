@@ -43,5 +43,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Polyps Removed</h2><tt>http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed</tt></div>"
   },
-  "name": "No_colonoscopy_all_polyps_removed"
+  "name": "No-colonoscopy-all-polyps-removed"
 }
