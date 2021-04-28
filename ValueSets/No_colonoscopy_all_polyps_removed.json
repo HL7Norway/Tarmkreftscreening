@@ -2,16 +2,7 @@
   "resourceType": "ValueSet",
   "url": "http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed",
   "title": "Colonoscopy Report Polyps Removed",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "status": "draft", 
   "compose": {
     "include": [
       {

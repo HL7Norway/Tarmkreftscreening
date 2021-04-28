@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-method-tissue-removal-biopsy",
   "title": "Colonoscopy Report Tissue Removal Method",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

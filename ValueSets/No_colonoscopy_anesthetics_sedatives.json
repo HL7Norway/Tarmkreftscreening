@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-anesthetics-sedatives",
   "title": "Colonoscopy Report Anesthetics/Sedatives Given",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

@@ -7,15 +7,6 @@
   "url": "http://ehelse.no/fhir/valueset/no-colonoscopy-procedure-reason",
   "title": "Colonoscopy Report Indication",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

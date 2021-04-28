@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/no-colonoscopy-followup",
   "title": "Colonoscopy Report Follow Up",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

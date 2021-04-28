@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-relevant-conditions",
   "title": "Colonoscopy Report Relevant Conditions",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

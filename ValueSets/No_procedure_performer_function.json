@@ -7,15 +7,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-procedure-performer-function",
   "title": "Conoloscopy Report Performer Function",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

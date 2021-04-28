@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed",
   "title": "Colonoscopy Report Lesion Removed",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

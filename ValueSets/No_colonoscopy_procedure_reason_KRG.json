@@ -3,15 +3,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg",
   "title": "KRG Indication",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {

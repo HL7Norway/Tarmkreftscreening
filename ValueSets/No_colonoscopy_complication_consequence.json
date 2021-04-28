@@ -7,15 +7,6 @@
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-complication-consequence",
   "title": "Colonoscopy Report Complication Consequences",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {
