@@ -1,66 +1,187 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion",
-  "title": "Colonoscopy Report Segment Lesion",
-  "status": "draft",
-  "compose": {
-    "include": [
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "85774003",
-            "display": "Structure of distal portion of ileum (body structure)"
-          },
-          {
-            "code": "32713005",
-            "display": "Cecum structure (body structure)"
-          },
-          {
-            "code": "9040008",
-            "display": "Ascending colon structure (body structure)"
-          },
-          {
-            "code": "48338005",
-            "display": "Structure of right colic flexure (body structure)"
-          },
-          {
-            "code": "485005",
-            "display": "Transverse colon structure (body structure)"
-          },
-          {
-            "code": "72592005",
-            "display": "Structure of left colic flexure (body structure)"
-          },
-          {
-            "code": "32622004",
-            "display": "Descending colon structure (body structure)"
-          },
-          {
-            "code": "60184004",
-            "display": "Sigmoid colon structure (body structure)"
-          },
-          {
-            "code": "81922002",
-            "display": "Rectosigmoid structure (body structure)"
-          },
-          {
-            "code": "34402009",
-            "display": "Rectum structure (body structure)"
-          },
-          {
-            "code": "34381000",
-            "display": "Anal canal structure (body structure)"
-          }
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Lesion</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion</tt><p>Used to indicate which part of the colon a lesion has been found</p></div>"
+    },
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion",
+    "name": "No-colonoscopy-segment-lesion",
+    "title": "Colonoscopy Report Segment Lesion",
+    "status": "draft",
+    "publisher": "Norwegian Directorate of e-health",
+    "description": "Used to indicate which part of the colon a lesion has been found",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "85774003",
+                        "display": "Terminale ileum",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Structure of distal portion of ileum (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "32713005",
+                        "display": "Cøkum",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Cecum structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "9040008",
+                        "display": "Ascendens",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Ascending colon structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "48338005",
+                        "display": "Høyre fleksur",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Structure of right colic flexure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "485005",
+                        "display": "Transversum",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Transverse colon structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "72592005",
+                        "display": "Venstre fleksur",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Structure of left colic flexure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "32622004",
+                        "display": "Descendens",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Descending colon structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "60184004",
+                        "display": "Sigmoid",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Sigmoid colon structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "81922002",
+                        "display": "Rektosigmoid overgang",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Rectosigmoid structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "34402009",
+                        "display": "Rektum",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Rectum structure (body structure)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "34381000",
+                        "display": "Analkanal/anus",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Anal canal structure (body structure)"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Lesion</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion</tt><p>Used to indicate which part of the colon a lesion has been found</p></div>"
-  },
-  "name": "No-colonoscopy-segment-lesion",
-  "description": "Used to indicate which part of the colon a lesion has been found",
-  "publisher": "Norwegian Directorate of e-health"
+    }
 }

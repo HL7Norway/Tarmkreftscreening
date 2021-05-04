@@ -10,35 +10,98 @@
         "concept": [
           {
             "code": "712510007",
-            "display": "Intestinal hemorrhage (disorder)"
+            "display": "Blødning",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Intestinal hemorrhage (disorder)"
+            }
           },
           {
             "code": "50008003",
-            "display": "Traumatic perforation of large intestine (disorder)"
+            "display": "Perforasjon",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Traumatic perforation of large intestine (disorder)"
+            }
           },
           {
             "code": "10341000202100",
-            "display": "Alvorlig vasovagal reaksjon"
+            "display": "Alvorlig vasovagal reaksjon",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Severe vasovagal reaction (disorder)"
+            }
           },
           {
             "code": "409622000",
-            "display": "Respiratory failure (disorder)"
+            "display": "Respiratorisk",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Respiratory failure (disorder)"
+            }
           },
           {
             "code": "267037003",
-            "display": "Cardiovascular symptoms (finding)"
+            "display": "Kardiovaskulær",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Cardiovascular symptoms (finding)"
+            }
           },
           {
             "code": "416093006",
-            "display": "Allergic reaction caused by drug (disorder)"
+            "display": "Allergisk reaksjon på medikament",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Allergic reaction caused by drug (disorder)"
+            }
           }
         ]
       },
       {
         "concept": [
           {
-            "code": "nul-known",
-            "display": "Nil Known"
+            "code": "nil-known",
+            "display": "Ingen",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Nil Known"
+            }
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/special-values",
@@ -48,7 +111,16 @@
         "concept": [
           {
             "code": "OTH",
-            "display": "Other"
+            "display": "Annet",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Other"
+            }
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",

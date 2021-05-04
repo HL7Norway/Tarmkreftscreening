@@ -1,41 +1,96 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg",
-  "title": "KRG Indication",
-  "status": "draft",
-  "compose": {
-    "include": [
-      {
-        "concept": [
-          {
-            "code": "polyppkontroll",
-            "display": "Polyppkontroll"
-          },
-          {
-            "code": "tidligere-funn-kolo",
-            "display": "Funn ved tidligere koloskopi"
-          },
-          {
-            "code": "prim-screening",
-            "display": "Primær koloskopiscreening i screeningprogram"
-          },
-          {
-            "code": "pos-ifobt-screening",
-            "display": "Positiv iFOBT i screeningprogram"
-          },
-          {
-            "code": "ufullstendig-tidl-kolo",
-            "display": "Ufullstendig tidligere koloskopi"
-          }
-        ],
-        "system": "model-specific"
-      }
-    ]
-  },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Indication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg</tt></div>"
-  },
-  "name": "No-colonoscopy-procedure-reason-KRG",
-  "publisher": "Norwegian Directorate of e-health"
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Indication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg</tt></div>"
+    },
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-procedure-reason-krg",
+    "name": "No-colonoscopy-procedure-reason-KRG",
+    "title": "KRG Indication",
+    "status": "draft",
+    "publisher": "Norwegian Directorate of e-health",
+    "compose": {
+        "include": [
+            {
+                "system": "model-specific",
+                "concept": [
+                    {
+                        "code": "polyppkontroll",
+                        "display": "Polyppkontroll",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Polyppkontroll"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "tidligere-funn-kolo",
+                        "display": "Funn ved tidligere koloskopi",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Funn ved tidligere koloskopi"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "prim-screening",
+                        "display": "Primær koloskopiscreening i screeningprogram",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Primær koloskopiscreening i screeningprogram"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "pos-ifobt-screening",
+                        "display": "Positiv iFOBT i screeningprogram",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Positiv iFOBT i screeningprogram"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "ufullstendig-tidl-kolo",
+                        "display": "Ufullstendig tidligere koloskopi",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Ufullstendig tidligere koloskopi"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }

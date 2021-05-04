@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="20" />
-    <lastUpdated value="2021-04-28T15:45:56.867+00:00" />
+    <versionId value="21" />
+    <lastUpdated value="2021-05-04T15:00:35.832+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:13.1617417+00:00" />
+  <date value="2021-05-04T15:00:36.0877237+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -442,7 +442,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://ehelse.no/fhir/ValueSet/no-procedure-reason-coloscopy" />
+        <valueSet value="http://ehelse.no/fhir/valueset/no-colonoscopy-procedure-reason" />
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />

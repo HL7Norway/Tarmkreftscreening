@@ -1,46 +1,112 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg",
-  "title": "KRG Medication",
-  "status": "draft",
-  "compose": {
-    "include": [
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "387560008",
-            "display": "Alfentanil (substance)"
-          },
-          {
-            "code": "373492002",
-            "display": "Fentanyl (substance)"
-          },
-          {
-            "code": "395739004",
-            "display": "Scopolamine butylbromide (substance)"
-          },
-          {
-            "code": "387298007",
-            "display": "Pethidine (substance)"
-          },
-          {
-            "code": "373476007",
-            "display": "Midazolam (substance)"
-          },
-          {
-            "code": "387423006",
-            "display": "Propofol (substance)"
-          }
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg</tt><p>Indication of which medication was used before or during the procedure, including the ability to put Other. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping</p></div>"
+    },
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg",
+    "name": "No-colonoscopy-medication-krg",
+    "title": "KRG Medication",
+    "status": "draft",
+    "publisher": "Norwegian Directorate of e-health",
+    "description": "Indication of which medication was used before or during the procedure, including the ability to put Other. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "387560008",
+                        "display": "Alfentanil",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Alfentanil (substance)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "373492002",
+                        "display": "Fentanyl",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Fentanyl (substance)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "395739004",
+                        "display": "Buscopan",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Scopolamine butylbromide (substance)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "387298007",
+                        "display": "Petidin",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Pethidine (substance)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "373476007",
+                        "display": "Midazolam",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Midazolam (substance)"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "387423006",
+                        "display": "Propofol",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Propofol (substance)"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
-      }
-    ]
-  },
-  "description": "Indication of which medication was used before or during the procedure, including the ability to put Other. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg</tt><p>Indication of which medication was used before or during the procedure, including the ability to put Other. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping</p></div>"
-  },
-  "name": "No-colonoscopy-medication-krg",
-  "publisher": "Norwegian Directorate of e-health"
+    }
 }

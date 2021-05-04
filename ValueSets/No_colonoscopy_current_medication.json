@@ -1,12 +1,20 @@
 {
   "resourceType": "ValueSet",
+  "id": "228764d6-b442-4724-8149-2aa6a46b6193",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2021-04-21T23:39:16.816+10:00"
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Current Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication</tt><p>A list of relevant drug categories, for use in reporting in connection with colonoscopy</p></div>"
+  },
   "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication",
+  "name": "No-colonoscopy-current-medication",
   "title": "Colonoscopy Report Current Medication",
   "status": "draft",
+  "publisher": "Norwegian Directorate of e-health",
+  "description": "A list of relevant drug categories, for use in reporting in connection with colonoscopy",
   "compose": {
     "include": [
       {
@@ -14,67 +22,158 @@
         "concept": [
           {
             "code": "387458008",
-            "display": "Aspirin (substance)"
+            "display": "Acetylsalisylsyre",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Aspirin (substance)"
+              }
+            ]
           },
           {
             "code": "372756006",
-            "display": "Warfarin (substance)"
+            "display": "Warfarin",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Warfarin (substance)"
+              }
+            ]
           },
           {
             "code": "373294004",
-            "display": "Low molecular weight heparin (substance)"
+            "display": "LMWH",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Low molecular weight heparin (substance)"
+              }
+            ]
           }
         ]
       },
       {
+        "system": "http://terminology.hl7.org/CodeSystem/special-values",
+        "version": "4.0.1",
         "concept": [
           {
             "code": "nil-known",
-            "display": "Nil Known"
+            "display": "Ingen relevante medisiner",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Nil Known"
+              }
+            ]
           }
-        ],
-        "system": "http://terminology.hl7.org/CodeSystem/special-values",
-        "version": "4.0.1"
+        ]
       },
       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "version": "2018-08-12",
         "concept": [
           {
             "code": "OTH",
-            "display": "Other"
+            "display": "Annet",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Other"
+              }
+            ]
           },
           {
             "code": "UNK",
-            "display": "unknown"
+            "display": "Ukjent/mangler opplysninger",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "unknown"
+              }
+            ]
           }
-        ],
-        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-        "version": "2018-08-12"
+        ]
       },
       {
+        "system": "Model-specific",
         "concept": [
           {
             "code": "andre-blodplatehemmere",
-            "display": "Andre blodplatehemmere"
+            "display": "Andre blodplatehemmere",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Andre blodplatehemmere"
+              }
+            ]
           },
           {
             "code": "doak",
-            "display": "DOAK"
+            "display": "DOAK",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "DOAK"
+              }
+            ]
           },
           {
             "code": "andre-antikoagulantia",
-            "display": "Andre antikoagulantia"
+            "display": "Andre antikoagulantia",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Andre antikoagulantia"
+              }
+            ]
           }
-        ],
-        "system": "Model-specific"
+        ]
       }
     ]
-  },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Current Medication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication</tt><p>A list of relevant drug categories, for use in reporting in connection with colonoscopy</p></div>"
-  },
-  "name": "No-colonoscopy-current-medication",
-  "id": "228764d6-b442-4724-8149-2aa6a46b6193",
-  "description": "A list of relevant drug categories, for use in reporting in connection with colonoscopy",
-  "publisher": "Norwegian Directorate of e-health"
+  }
 }

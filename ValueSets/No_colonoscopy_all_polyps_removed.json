@@ -10,11 +10,29 @@
         "concept": [
           {
             "code": "Y",
-            "display": "Yes"
+            "display": "Ja"            ,
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Yes"
+            }
           },
           {
             "code": "N",
-            "display": "No"
+            "display": "Nei",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "No"
+            }
           }
         ],
         "version": "2.9"
@@ -23,7 +41,16 @@
         "concept": [
           {
             "code": "usikker",
-            "display": "Usikker"
+            "display": "Usikker",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Unsikker"
+            }
           }
         ],
         "system": "Model-specific"

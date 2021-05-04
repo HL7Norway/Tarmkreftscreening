@@ -10,11 +10,29 @@
         "concept": [
           {
             "code": "10821000202101",
-            "display": "Narkose eller dyp sedasjon med anestesistøtte"
+            "display": "Narkose eller dyp sedasjon med anestesistøtte",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Narkose eller dyp sedasjon med anestesistøtte"
+            }
           },
           {
             "code": "nil-known",
-            "display": "Nil Known"
+            "display": "Ingen",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value":  "Nil Known"
+            }
           }
         ]
       }

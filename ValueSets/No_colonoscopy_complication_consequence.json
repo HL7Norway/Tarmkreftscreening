@@ -14,15 +14,42 @@
         "concept": [
           {
             "code": "416406003",
-            "display": "Procedure discontinued (situation)"
+            "display": "Undersøkelsen avbrutt",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Procedure discontinued (situation)"
+            }
           },
           {
             "code": "103705002",
-            "display": "Patient status observation (procedure)"
+            "display": "Observasjon uten innleggelse",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Patient status observation (procedure)"
+            }
           },
           {
             "code": "32485007",
-            "display": "Hospital admission (procedure)"
+            "display": "Innleggelse",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Hospital admission (procedure)"
+            }
           }
         ]
       },
@@ -30,7 +57,16 @@
         "concept": [
           {
             "code": "nil-known",
-            "display": "Nil Known"
+            "display": "Ingen (med eller uten forlenget prosedyretid)",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Nil Known"
+            }
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/special-values",
@@ -40,7 +76,16 @@
         "concept": [
           {
             "code": "OTH",
-            "display": "Other"
+            "display": "Other",
+            "designation":{
+              "language": "en",
+              "use": {
+                "system":"http://snomed.info/sct",
+                "code":"900000000000003001",
+                "display": "Fully specified name"
+              },
+              "value": "Annet"
+            }
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
