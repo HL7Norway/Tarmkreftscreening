@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="612e4cfd-a14c-41fc-abcc-665522301f4b" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-05-05T15:29:34.83+00:00" />
+  </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-condition-krg" />
   <name value="KRGCondition" />
+  <title value="KRG Condition" />
   <status value="draft" />
+  <date value="2021-05-05T15:29:36.9900092+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />

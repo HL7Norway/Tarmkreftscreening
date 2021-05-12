@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="16" />
-    <lastUpdated value="2021-04-14T13:30:26.215+00:00" />
+    <versionId value="17" />
+    <lastUpdated value="2021-05-12T15:07:58.784+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-04-14T13:30:27.7140048+00:00" />
+  <date value="2021-05-12T15:08:01.2627296+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -36,14 +36,14 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="DiagnosticReport.code.coding:sliceCoding">
+    <element id="DiagnosticReport.code.coding:SNOMED-CT">
       <path value="DiagnosticReport.code.coding" />
-      <sliceName value="sliceCoding" />
+      <sliceName value="SNOMED-CT" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="colonoscopy-report" />
+        <system value="http://snomed.info/sct" />
+        <code value="128145008" />
       </patternCoding>
     </element>
     <element id="DiagnosticReport.subject">
@@ -86,16 +86,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.result:Mucosa">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Mucosa" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
       </type>
       <mustSupport value="true" />
     </element>

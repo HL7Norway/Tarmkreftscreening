@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="808a0881-57d9-4ccd-8fb6-5d3e27fe59d4" />
   <meta>
-    <versionId value="6" />
-    <lastUpdated value="2021-04-14T13:31:57.354+00:00" />
+    <versionId value="7" />
+    <lastUpdated value="2021-05-12T13:41:24.722+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-mucosa" />
   <name value="Mucosa" />
   <title value="Colonoscopy Report Mucosa" />
   <status value="draft" />
-  <date value="2021-04-14T13:31:57.9814521+00:00" />
+  <date value="2021-05-12T13:41:27.2918189+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -37,13 +37,14 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:sliceCoding">
+    <element id="Observation.code.coding:SNOMED-CT">
       <path value="Observation.code.coding" />
-      <sliceName value="sliceCoding" />
+      <sliceName value="SNOMED-CT" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http://example.org/some-code-system" />
+        <system value="http://snomed.info/sct" />
+        <code value="128145008" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">

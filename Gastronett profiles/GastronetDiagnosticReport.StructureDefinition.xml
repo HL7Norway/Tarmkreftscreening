@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="eb79331a-2048-4fea-ab7f-87c52a568ac5" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-05-12T15:07:42.619+00:00" />
+  </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
   <name value="GastronetDiagnosticReport" />
   <title value="Gastronet Diagnostic Report" />
   <status value="draft" />
+  <date value="2021-05-12T15:07:45.2648438+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -69,14 +75,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet" />
-      </type>
-    </element>
-    <element id="DiagnosticReport.result:Mucosa">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Mucosa" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-mucosa-gastronet" />
       </type>
     </element>
     <element id="DiagnosticReport.imagingStudy">

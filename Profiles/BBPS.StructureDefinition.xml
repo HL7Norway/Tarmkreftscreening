@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-04-28T15:46:10.506+00:00" />
+    <versionId value="11" />
+    <lastUpdated value="2021-05-12T15:08:09.174+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:27.0472789+00:00" />
+  <date value="2021-05-12T15:06:24.4414259Z" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -31,10 +31,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Observation.code.coding:SNOMED-CT">
       <path value="Observation.code.coding" />
       <sliceName value="SNOMED-CT" />
+      <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
@@ -60,6 +62,25 @@
     <element id="Observation.component:rightColon.code">
       <path value="Observation.component.code" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:rightColon.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:rightColon.code.coding:SNOMED-CT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="8901000202102" />
+      </patternCoding>
     </element>
     <element id="Observation.component:rightColon.value[x]">
       <path value="Observation.component.value[x]" />
@@ -88,6 +109,25 @@
       <path value="Observation.component.code" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.component:transversum.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:transversum.code.coding:SNOMED-CT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="8911000202100" />
+      </patternCoding>
+    </element>
     <element id="Observation.component:transversum.value[x]">
       <path value="Observation.component.value[x]" />
       <type>
@@ -114,6 +154,25 @@
     <element id="Observation.component:leftColon.code">
       <path value="Observation.component.code" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:leftColon.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:leftColon.code.coding:SNOMED-CT">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="8891000202103" />
+      </patternCoding>
     </element>
     <element id="Observation.component:leftColon.value[x]">
       <path value="Observation.component.value[x]" />

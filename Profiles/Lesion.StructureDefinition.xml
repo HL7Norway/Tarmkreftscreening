@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="10" />
-    <lastUpdated value="2021-04-28T15:46:42.368+00:00" />
+    <versionId value="13" />
+    <lastUpdated value="2021-05-12T15:05:58.473+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:58.9141107+00:00" />
+  <date value="2021-05-12T15:06:00.9627864+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -30,11 +30,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.identifier:LesionNumber">
       <path value="Observation.identifier" />
       <sliceName value="LesionNumber" />
+      <min value="1" />
       <max value="1" />
       <mapping>
         <identity value="no-colonoscopy-report" />
@@ -45,7 +47,7 @@
     <element id="Observation.identifier:LesionNumber.system">
       <path value="Observation.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://example.org/fhir/some-namingsystem" />
+      <fixedUri value="http://kreftregisteret.no/fhir/NamingSystem/lesion-number" />
     </element>
     <element id="Observation.identifier:LesionNumber.value">
       <path value="Observation.identifier.value" />
@@ -67,9 +69,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:sliceCoding">
+    <element id="Observation.code.coding:SNOMED-CT">
       <path value="Observation.code.coding" />
-      <sliceName value="sliceCoding" />
+      <sliceName value="SNOMED-CT" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
@@ -125,8 +127,8 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="morphology" />
+        <system value="http://snomed.info/sct" />
+        <code value="8961000202103" />
       </patternCoding>
     </element>
     <element id="Observation.component:Morphology.value[x]">
@@ -169,8 +171,8 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="tissue-removing-method" />
+        <system value="Model-specific" />
+        <code value="metode-fjerning-vevsprove" />
       </patternCoding>
     </element>
     <element id="Observation.component:TissueRemovingMethod.value[x]">
@@ -213,8 +215,8 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="endoscopical-removed" />
+        <system value="http://snomed.info/sct" />
+        <code value="10741000202101" />
       </patternCoding>
     </element>
     <element id="Observation.component:EndoscopicalRemoved.value[x]">
@@ -255,8 +257,8 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="http:://example.org/some-code-system" />
-        <code value="sent-to-pathologist" />
+        <system value="http://snomed.info/sct" />
+        <code value="168395004" />
       </patternCoding>
     </element>
     <element id="Observation.component:SentToPathologist.value[x]">
@@ -297,7 +299,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
-        <code value="246116008" />
+        <code value="10291000202102" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

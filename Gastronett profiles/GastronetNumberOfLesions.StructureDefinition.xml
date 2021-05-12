@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="86a78137-3fef-4fd5-95a3-dde1a4ec90ed" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-05-12T15:08:56.772+00:00" />
+  </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet" />
   <name value="GastronetNumberOfLesions" />
   <title value="Gastronet Number Of Lesions" />
   <status value="draft" />
+  <date value="2021-05-12T15:08:59.3948077+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />

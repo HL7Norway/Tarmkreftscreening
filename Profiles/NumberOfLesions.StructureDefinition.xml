@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="5c43ccfd-8eb4-4511-8110-7ec5afc8da11" />
   <meta>
-    <versionId value="6" />
-    <lastUpdated value="2021-04-14T13:32:20.797+00:00" />
+    <versionId value="8" />
+    <lastUpdated value="2021-05-12T15:09:19.24+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
   <name value="NumberOfLesions" />
   <title value="Colonoscopy Report Number Of Lesions" />
   <status value="draft" />
-  <date value="2021-04-14T13:32:21.5368648+00:00" />
+  <date value="2021-05-12T15:09:21.873511+00:00" />
   <description value="The number of lesions detected during a colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -25,6 +25,27 @@
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:SNOMED-CT">
+      <path value="Observation.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="246206008" />
+      </patternCoding>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
