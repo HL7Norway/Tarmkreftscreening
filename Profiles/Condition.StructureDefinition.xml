@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="7fb8c354-a440-41c5-9f5a-87f054bebf68" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-04-14T13:29:34.892+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2021-05-18T14:45:07.71+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-condition" />
   <name value="Condition" />
   <title value="Colonoscopy Report Condition" />
   <status value="draft" />
-  <date value="2021-04-14T13:29:36.4349096+00:00" />
+  <date value="2021-05-18T14:45:16.0138761+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -34,17 +34,6 @@
         <map value="10" />
         <comment value="Sykdommer av betydning for koloskopien" />
       </mapping>
-    </element>
-    <element id="Condition.code.coding">
-      <path value="Condition.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
