@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://ehelse.no/fhir/no-colonoscopy-all-polyps-removed",
+  "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-all-polyps-removed",
   "title": "Colonoscopy Report Polyps Removed",
   "status": "draft", 
   "compose": {

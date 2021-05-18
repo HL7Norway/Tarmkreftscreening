@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="c0078d24-02ef-4e32-8faf-6f06d0f309b7" />
   <meta>
-    <versionId value="12" />
-    <lastUpdated value="2021-05-05T14:55:53.404+00:00" />
+    <versionId value="13" />
+    <lastUpdated value="2021-05-18T14:41:39.633+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-problemlist" />
   <name value="ProblemList" />
   <title value="Colonoscopy Report Problem List" />
   <status value="draft" />
-  <date value="2021-05-05T14:55:55.5175599+00:00" />
+  <date value="2021-05-18T14:41:47.9860987+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -59,7 +59,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-        <code value="medications" />
+        <code value="problems" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

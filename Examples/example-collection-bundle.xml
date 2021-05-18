@@ -20,16 +20,16 @@
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
            <valueCodeableConcept>
              <coding>
-               <system value="http://example.org/fhir/some-codesystem"/>
-               <code value="Hospitalization"/>
+               <system value="http://snomed.info/sct"/>
+               <code value="32485007"/>
              </coding>
            </valueCodeableConcept>
         </extension>
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-partofbowelreached-extension">
           <valueCodeableConcept>
             <coding>
-              <system value="http://example.org/fhir/some-codesystem"/>
-              <code value="Caecum"/>
+              <system value="http://snomed.info/sct"/>
+              <code value="32713005"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -55,8 +55,8 @@
         <extension url="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved">
           <valueCodeableConcept>
             <coding>
-              <system value="http://example.org/fhir/some-codesystem"/>
-              <code value="removed"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value="Y"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -66,8 +66,8 @@
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension">
           <valueCodeableConcept>
             <coding>
-              <system value="http://example.org/fhir/some-codesystem"/>
-              <code value="deep-sedation"/>
+              <system value="http://snomed.info/sct"/>
+              <code value="73761001"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -98,22 +98,26 @@
             <reference value="http://example.org/fhir/Practitioner/3"/>
           </actor>          
         </performer>
-        <location>
+        <location>          
           <identifier>
-            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-            <value value="6738264923"/>
+            <!-- resh OID -->
+            <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
+            <value value="36287639"/>
           </identifier>
         </location>
         <reasonCode>
-          <text value="Incomplete previous colonoscopy"/>
+          <coding>
+            <system value="model-specific"/>
+            <code value="polyppkontroll"/>
+          </coding>
         </reasonCode>
         <report>
           <reference value="http://example.org/fhir/DiagnosticReport/1"/>
         </report>        
         <complication>
           <coding>
-            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/> 
-            <code value="bleeding"/>
+            <system value="http://snomed.info/sct"/> 
+            <code value="712510007"/>
           </coding>
         </complication>
         <followUp>
@@ -121,10 +125,9 @@
             <valueInteger value="6"/>
           </extension>
           <coding>
-            <system value="http://example.org/fhir/some-codesystem"/>
-            <code value="CT kolografi"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="10061000202102"/>
           </coding>
-          <text value="the patient needs a CT for further diagnostics"/>
         </followUp>
       </Procedure>
     </resource>
@@ -139,12 +142,12 @@
         <status value="active"/>
         <medicationCodeableConcept>
           <coding>
-            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-            <code value="Afentanil"/>
+            <system value="http://snomed.info/sct "/>
+            <code value="387560008"/>
           </coding>
         </medicationCodeableConcept>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"></reference>
+          <reference value="http://example.org/fhir/Patient/1"/>
         </subject>
         <effectiveDateTime value="2020-12-15"/>
         <dosage>
@@ -168,14 +171,14 @@
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="73761001"/>
+            <code value="128145008"/>
           </coding>
         </code>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value= "http://example.org/fhir/Patient/1"/>
         </subject>
         <result>
-          <reference value="http://hl7.org/fhir/Observation/lesion-1"/>
+          <reference value= "http://example.org/fhir/Observation/lesion-1"/>
         </result>
         <result>
           <reference value= "http://example.org/fhir/Observation/bbps"/>
@@ -197,6 +200,23 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://example.org/fhir/Observation/numberoflesions"/>
+    <resource>
+      <Observation>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="246206008"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="1"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
     <resource>     
       <Observation xmlns="http://hl7.org/fhir">  
@@ -210,23 +230,23 @@
         <bodySite>       
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="9040008"/>    
-            <display value="Ascending colon structure (body structure)"/>      
+            <code value="32713005"/>    
+            <display value="Cecum structure (body structure)"/>      
           </coding>         
         </bodySite>
         <component>
           <code>
             <coding>
+              <!-- morphology -->
               <system value= "http://snomed.info/sct"/>
-              <code value ="41329004"/>
-              <display value ="Polyp (morphologic abnormality)"/>
+              <code value ="8961000202103"/>
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
-              <system value= "http://parispc.no"/>
-              <code value ="ii-b-flat"/>
-              <display value ="II b Flat"/>
+              <system value= "http://snomed.info/sct"/>
+              <code value ="9161000202106"/>
+              <display value ="Paris polyp classification IIb - completely flat polyp (finding)"/>
             </coding>
           </valueCodeableConcept>
         </component>
@@ -234,8 +254,7 @@
           <code>
             <coding>
               <system value = "http://snomed.info/sct"/>
-              <code value= "246116008"/>
-              <display value ="Lesion size (observable entity) "/>
+              <code value = "10291000202102"/>             
             </coding>            
           </code>
           <valueQuantity>
@@ -248,8 +267,8 @@
         <component>
           <code>
             <coding>
-              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value = "tissue-removing-method"/>
+              <system value = "Model-specific"/>
+              <code value = "metode-fjerning-vevsprove"/>
               <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
             </coding>            
           </code>
@@ -257,51 +276,45 @@
             <coding>
               <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
               <code value = "OTH"/>
-              <display value = "other"/>        
+              <display value = "Other"/>        
             </coding>        
           </valueCodeableConcept>
         </component>    
         <component>
           <code>
+            <!-- Sent to pathologist -->
             <coding>
-              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value = "lesion-sent-to-pathologist"/>
-              <display value = "Vevsprøve sendt til patolog"/>        
+              <system value = "http://snomed.info/sct"/>
+              <code value = "168395004"/>   
             </coding>            
           </code>
           <valueBoolean value="true"/>         
         </component>     
         <component>
           <code>
+            <!-- Endoscopically removed -->
             <coding>
-              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value = "endoscopicaly-removed"/>
+              <system value = "http://snomed.info/sct"/>
+              <code value = "10741000202101"/>
               <display value = "Er lesjonen endoskopisk komplett fjernet (ett valg)"/>        
             </coding>            
           </code>
           <valueCodeableConcept>
             <coding>
-              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-              <code value = "UNK"/>
-              <display value = "unknown"/>        
+              <system value = "http://terminology.hl7.org/CodeSystem/v2-0136"/>
+              <code value = "Y"/> 
             </coding>        
           </valueCodeableConcept>      
         </component>   
         <component>
           <code>
+            <!-- cancer suspect -->
             <coding>
-              <system value = "http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value = "cancer-suspect"/>
-              <display value = "Cancersuspect lesjon"/>        
+              <system value = "http://snomed.info/sct"/>
+              <code value = "9971000202100"/>
             </coding>            
           </code>
-          <valueCodeableConcept>
-            <coding>
-              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-              <code value = "UNK"/>
-              <display value = "unknown"/>        
-            </coding>        
-          </valueCodeableConcept>      
+          <valueBoolean value="true"/>
         </component>   
       </Observation>      
     </resource>
@@ -313,15 +326,17 @@
         <status value="final"/>
         <code>
           <coding>
+            <!-- boston bowel preparation scale -->
             <system value="http://snomed.info.sct"/>
             <code value="722818007"/>
           </coding>
         </code>     
        <component>
          <code>
+           <!-- right colon -->
            <coding>
-             <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-             <code value="right-colon"></code>
+             <system value="http://snomed.info/sct"/>
+             <code value="8901000202102"/>
            </coding>
          </code>
          <valueCodeableConcept>
@@ -333,9 +348,10 @@
        </component>
         <component>
           <code>
+            <!-- transversum -->
             <coding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value="transversum"></code>
+              <system value="http://snomed.info/sct"/>
+              <code value="8911000202100"/>
             </coding>
           </code>
           <valueCodeableConcept>
@@ -347,9 +363,10 @@
         </component>
         <component>
           <code>
+            <!-- left colon -->
             <coding>
-              <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-              <code value="left-colon"></code>
+              <system value="http://snomed.info/sct"/>
+              <code value="8891000202103"/>
             </coding>
           </code>
           <valueCodeableConcept>
@@ -391,9 +408,9 @@
       <Condition>
         <code>
           <coding>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
-            <code value="E11"/>
-            <display value="Type 2 diabetes mellitus"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="73211009"/>
+            <display value="Diabetes mellitus (disorder)"/>
           </coding>
         </code>
         <subject>
@@ -437,8 +454,9 @@
         <status value="active"/>
         <medicationCodeableConcept>
           <coding>
-            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-            <code value="Warfarin"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="372756006"/>
+            <display value="Warfarin (substance)"/>
           </coding>
         </medicationCodeableConcept>
         <subject>
@@ -454,8 +472,9 @@
         <status value="active"/>
         <medicationCodeableConcept>
           <coding>
-            <system value="http://example.org/fhir/CodeSystem/some-codesystem"/>
-            <code value="DOAK"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="387458008"/>
+            <display value="Aspirin (substance)"/>
           </coding>
         </medicationCodeableConcept>
         <subject>

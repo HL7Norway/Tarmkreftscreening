@@ -4,7 +4,7 @@
         "status": "generated",
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Lesion Removed</h2><tt>http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed</tt></div>"
     },
-    "url": "http://ehelse.no/fhir/ValueSet/ no-colonoscopy-lesion-completely-removed",
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-lesion-completely-removed",
     "name": "No-colonoscopy-lesion-completely-removed",
     "title": "Colonoscopy Report Lesion Removed",
     "status": "draft",
