@@ -84,7 +84,11 @@
         <performedDateTime value="2020-11-01T15:00:00+01:00"/>
         <performer>
           <function>
-            <text value="colonoscopist"/>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="8921000202108"/>
+              <display value="Primary performing endoscopist (person)"/>
+            </coding>
           </function>
           <actor>
             <reference value="http://example.org/fhir/Practitioner/2"/>
@@ -92,7 +96,11 @@
         </performer>
         <performer>
           <function>
-            <text value="Nurse"/>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="8951000202101"/>
+              <display value="Main nurse assisting procedure (person)"/>
+            </coding>
           </function>
           <actor>
             <reference value="http://example.org/fhir/Practitioner/3"/>
@@ -481,18 +489,6 @@
           <reference value="http://example.org/fhir/Patient/1"/>
         </subject>      
       </MedicationStatement>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/fhir/Practitioner/1"/>
-    <resource>
-      <Practitioner>
-        <id value="1"/>
-        <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
-          <value value="465783649328"/>
-        </identifier>
-      </Practitioner>
     </resource>
   </entry>
   <entry>

@@ -90,6 +90,26 @@
                         ]
                     }
                 ]
+            },
+            {
+                "system":"http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                "concept": [
+                    {
+                        "code": "MSK",
+                        "display": "masked",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "masked"
+                            }
+                        ]
+                    }
+                ]                
             }
         ]
     }
