@@ -11,20 +11,32 @@
           {
             "code": "10281000132103",
             "display": "0",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation":[
+              {
+                "language": "en",
+                "use": {
+                  "system":"http://snomed.info/sct",
+                  "code":"900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared (finding)"
               },
-              "value": "Unprepared colon segment with mucosa not seen due to solid stool that cannot be cleared (finding)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "mukosa ikke sett, fast avføring tilstede"
+              }
+            ]
           },
           {
             "code": "10291000132101",
             "display": "1",
-            "designation":{
+            "designation":[
+              {
               "language": "en",
               "use": {
                 "system":"http://snomed.info/sct",
@@ -32,12 +44,22 @@
                 "display": "Fully specified name"
               },
               "value": "Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)"
+            },
+            {
+                "language": "no",
+                "use": {
+                    "system": "http://snomed.info/sct",
+                    "code": "900000000000003001",
+                    "display": "Fully specified name"
+                },
+                "value": "mukosa delvis sett, farget væske og avføringsrester tilstede."
             }
+          ]
           },
           {
             "code": "10301000132102",
             "display": "2",            
-            "designation":{
+            "designation":[{
               "language": "en",
               "use": {
                 "system":"http://snomed.info/sct",
@@ -45,12 +67,23 @@
                 "display": "Fully specified name"
               },
               "value": "Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well (finding)"
+            },
+            {
+                "language": "no",
+                "use": {
+                    "system": "http://snomed.info/sct",
+                    "code": "900000000000003001",
+                    "display": "Fully specified name"
+                },
+                "value": "mukosa godt visualisert, små mengder farget væske eller avføring."
             }
+          ]
           },
           {
             "code": "10311000132100",
             "display": "3",
-            "designation":{
+            "designation":[
+              {
               "language": "en",
               "use": {
                 "system":"http://snomed.info/sct",
@@ -58,7 +91,17 @@
                 "display": "Fully specified name"
               },
               "value": "Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid (finding)"
-            }
+              },
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "mukosa komplett visualisert, ingen farget væske eller avføring."
+              }
+            ]
           }
         ]
       },
@@ -67,7 +110,8 @@
           {
             "code": "NA",
             "display": "NA",
-            "designation":{
+            "designation":[
+              {
               "language": "en",
               "use": {
                 "system":"http://snomed.info/sct",
@@ -75,8 +119,10 @@
                 "display": "Fully specified name"
               },
               "value": "not applicable"
-            }
+              }
+            ]
           }
+        
         ],
         "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
         "version": "2018-08-12"

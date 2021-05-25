@@ -27,6 +27,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification Ip - protruded pedunculated polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon Ip - stilket"
                             }
                         ]
                     },
@@ -42,6 +51,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification Is - sessile pedunculated polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon Is - høy bredbaset"
                             }
                         ]
                     },
@@ -57,6 +75,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification IIa - slightly elevated polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon IIa - lav bredbaset"
                             }
                         ]
                     },
@@ -72,6 +99,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification IIb - completely flat polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon IIb - flat"
                             }
                         ]
                     },
@@ -87,6 +123,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification IIc - slightly depressed polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon IIc - nedsunket"
                             }
                         ]
                     },
@@ -102,6 +147,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Paris polyp classification III - ulcerous polyp (finding)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Paris polypp klassifikasjon III - nedsunket ulcerert"
                             }
                         ]
                     }
@@ -123,7 +177,7 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "not applicable"
-                            }
+                            }                           
                         ]
                     }
                 ]

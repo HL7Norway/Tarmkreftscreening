@@ -11,80 +11,146 @@
           {
             "code": "712510007",
             "display": "Blødning",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Intestinal hemorrhage (disorder)"
               },
-              "value": "Intestinal hemorrhage (disorder)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "blødning i tarm"
+              }
+            ]
           },
           {
             "code": "50008003",
             "display": "Perforasjon",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Traumatic perforation of large intestine (disorder)"
               },
-              "value": "Traumatic perforation of large intestine (disorder)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "traumatisk perforasjon av colon"
+              }
+            ]
           },
           {
             "code": "10341000202100",
             "display": "Alvorlig vasovagal reaksjon",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Severe vasovagal reaction (disorder)"
               },
-              "value": "Severe vasovagal reaction (disorder)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "alvorlig vasovagal reaksjon"
+              }
+            ]
           },
           {
             "code": "409622000",
             "display": "Respiratorisk",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Respiratory failure (disorder)"
               },
-              "value": "Respiratory failure (disorder)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "respirasjonssvikt"
+              }
+            ]
           },
           {
             "code": "267037003",
             "display": "Kardiovaskulær",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Cardiovascular symptoms (finding)"
               },
-              "value": "Cardiovascular symptoms (finding)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "kardiovaskulært symptom"
+              }
+            ]
           },
           {
             "code": "416093006",
             "display": "Allergisk reaksjon på medikament",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Allergic reaction caused by drug (disorder)"
               },
-              "value": "Allergic reaction caused by drug (disorder)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "allergisk reaksjon forårsaket av legemiddel"
+              }
+            ]
           }
         ]
       },
@@ -93,15 +159,17 @@
           {
             "code": "nil-known",
             "display": "Ingen",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
-              },
-              "value": "Nil Known"
-            }
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Nil Known"
+              }
+            ]
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/special-values",
@@ -112,15 +180,17 @@
           {
             "code": "OTH",
             "display": "Annet",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
-              },
-              "value": "Other"
-            }
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Other"
+              }
+            ]
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",

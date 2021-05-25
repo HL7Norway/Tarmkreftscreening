@@ -55,7 +55,7 @@
                         "display": "Usikker",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",

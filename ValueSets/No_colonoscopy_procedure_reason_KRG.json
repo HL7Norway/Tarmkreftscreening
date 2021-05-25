@@ -19,7 +19,7 @@
                         "display": "Polyppkontroll",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -34,7 +34,7 @@
                         "display": "Funn ved tidligere koloskopi",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -49,7 +49,7 @@
                         "display": "Primær koloskopiscreening i screeningprogram",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -64,7 +64,7 @@
                         "display": "Positiv iFOBT i screeningprogram",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -79,7 +79,7 @@
                         "display": "Ufullstendig tidligere koloskopi",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",

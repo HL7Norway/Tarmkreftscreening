@@ -31,9 +31,19 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Family history of colorectal cancer (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "kolorektal kreft i familien"
                             }
                         ]
                     },
+                    
                     {
                         "code": "735593008",
                         "display": "Divertikulitt",
@@ -46,6 +56,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Diverticulitis of intestine (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "divertikulitt i tarm"
                             }
                         ]
                     },
@@ -61,6 +80,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Appendicitis (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "betennelse i blindtarm"
                             }
                         ]
                     }
@@ -94,7 +122,7 @@
                         "display": "Symptomer",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -109,7 +137,7 @@
                         "display": "Polyppkontroll",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -124,7 +152,7 @@
                         "display": "IBD-kontroll",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -139,7 +167,7 @@
                         "display": "Funn ved tidligere koloskopi",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -154,7 +182,7 @@
                         "display": "Funn ved annen undersøkelse",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -169,7 +197,7 @@
                         "display": "Primær koloskopiscreening i screeningprogram",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -184,7 +212,7 @@
                         "display": "Positiv iFOBT i screeningprogram",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -199,7 +227,7 @@
                         "display": "CRC kontroll",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -214,7 +242,7 @@
                         "display": "Ufullstendig tidligere koloskopi",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -229,7 +257,7 @@
                         "display": "Screening utenom program",
                         "designation": [
                             {
-                                "language": "en",
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",

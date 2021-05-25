@@ -26,6 +26,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Pinch biopsy of intestine (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "tangbiopsi av tarm"
                             }
                         ]
                     },
@@ -41,6 +50,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Endoscopic mucosal resection of intestine with injection of submucosal fluid (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "endoskopisk mucosal reseksjon av tarm med submucosal injeksjon av væske"
                             }
                         ]
                     },
@@ -56,6 +74,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Total excision of polyp of intestine using cold snare (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "polyppektomi in toto av tarm ved bruk av kald slynge"
                             }
                         ]
                     },
@@ -71,6 +98,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Piecemeal resection of polyp of intestine using cold snare (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "polyppektomi piecemeal av tarm ved bruk av kald slynge"
                             }
                         ]
                     },
@@ -86,6 +122,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Total excision of polyp of intestine using diathermy snare (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "polyppektomi in toto av tarm ved bruk av diatermislynge"
                             }
                         ]
                     },
@@ -101,6 +146,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Piecemeal resection of polyp of intestine using diathermy snare (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "polyppektomi piecemeal av tarm ved bruk av diatermislynge"
                             }
                         ]
                     },
@@ -116,6 +170,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Underwater endoscopic mucosal resection of intestine (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "unnervands endoskopisk mucosal reseksjon av tarm"
                             }
                         ]
                     },
@@ -131,6 +194,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Endoscopic submucosal dissection of gastrointestinal tract (procedure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "endoskopisk submukosal disseksjon av mage-tarm-kanal"
                             }
                         ]
                     }

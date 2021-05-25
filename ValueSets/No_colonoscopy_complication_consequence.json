@@ -15,41 +15,74 @@
           {
             "code": "416406003",
             "display": "Undersøkelsen avbrutt",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Procedure discontinued (situation)"
               },
-              "value": "Procedure discontinued (situation)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "prosedyre avbrutt"
+              }
+            ]
           },
           {
             "code": "103705002",
             "display": "Observasjon uten innleggelse",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Patient status observation (procedure)"
               },
-              "value": "Patient status observation (procedure)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "observasjon av pasientstatus"
+              }
+            ]
           },
           {
             "code": "32485007",
             "display": "Innleggelse",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Hospital admission (procedure)"
               },
-              "value": "Hospital admission (procedure)"
-            }
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "sykehusinnleggelse"
+              }
+            ]
           }
         ]
       },
@@ -58,15 +91,17 @@
           {
             "code": "nil-known",
             "display": "Ingen (med eller uten forlenget prosedyretid)",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
-              },
-              "value": "Nil Known"
-            }
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Nil Known"
+              }
+            ]
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/special-values",
@@ -76,16 +111,18 @@
         "concept": [
           {
             "code": "OTH",
-            "display": "Other",
-            "designation":{
-              "language": "en",
-              "use": {
-                "system":"http://snomed.info/sct",
-                "code":"900000000000003001",
-                "display": "Fully specified name"
-              },
-              "value": "Annet"
-            }
+            "display": "Annet",
+            "designation": [
+              {
+                "language": "en",
+                "use": {
+                  "system": "http://snomed.info/sct",
+                  "code": "900000000000003001",
+                  "display": "Fully specified name"
+                },
+                "value": "Other"
+              }
+            ]
           }
         ],
         "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",

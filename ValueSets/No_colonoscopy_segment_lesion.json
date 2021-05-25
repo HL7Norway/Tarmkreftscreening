@@ -27,6 +27,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Structure of distal portion of ileum (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "terminale ileum"
                             }
                         ]
                     },
@@ -42,6 +51,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Cecum structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "blindtarm"
                             }
                         ]
                     },
@@ -57,6 +75,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Ascending colon structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "colon ascendens"
                             }
                         ]
                     },
@@ -72,6 +99,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Structure of right colic flexure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "flexura coli dextra"
                             }
                         ]
                     },
@@ -87,6 +123,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Transverse colon structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "colon transversum"
                             }
                         ]
                     },
@@ -102,6 +147,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Structure of left colic flexure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "flexura coli sinistra"
                             }
                         ]
                     },
@@ -117,6 +171,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Descending colon structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "colon descendens"
                             }
                         ]
                     },
@@ -132,6 +195,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Sigmoid colon structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "sigmoideum"
                             }
                         ]
                     },
@@ -147,6 +219,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Rectosigmoid structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "rectosigmoid overgang"
                             }
                         ]
                     },
@@ -162,6 +243,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Rectum structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "rektum"
                             }
                         ]
                     },
@@ -177,6 +267,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Anal canal structure (body structure)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "analstruktur"
                             }
                         ]
                     }

@@ -26,6 +26,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "No follow-up (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "ingen oppfølgning"
                             }
                         ]
                     },
@@ -41,6 +50,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Histology result not back (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "avventer histologi"
                             }
                         ]
                     },
@@ -56,6 +74,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Colonoscopy planned (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "koloskopi planlagt"
                             }
                         ]
                     },
@@ -71,6 +98,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Referral to further evaluation and/or treatment (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "viderehenvisning til videre vurdering/behandling"
                             }
                         ]
                     },
@@ -86,6 +122,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Virtual computed tomography colonoscopy planned (situation)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "CT kolografi planlagt"
                             }
                         ]
                     }

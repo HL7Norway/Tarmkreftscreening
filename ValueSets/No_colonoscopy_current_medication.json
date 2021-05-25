@@ -32,6 +32,15 @@
                   "display": "Fully specified name"
                 },
                 "value": "Aspirin (substance)"
+              },
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "acetylsalisylsyre"
               }
             ]
           },
@@ -47,6 +56,15 @@
                   "display": "Fully specified name"
                 },
                 "value": "Warfarin (substance)"
+              },
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "warfarin"
               }
             ]
           },
@@ -62,6 +80,15 @@
                   "display": "Fully specified name"
                 },
                 "value": "Low molecular weight heparin (substance)"
+              },
+              {
+                  "language": "no",
+                  "use": {
+                      "system": "http://snomed.info/sct",
+                      "code": "900000000000003001",
+                      "display": "Fully specified name"
+                  },
+                  "value": "lavmolekylært heparin"
               }
             ]
           }
@@ -132,7 +159,7 @@
             "display": "Andre blodplatehemmere",
             "designation": [
               {
-                "language": "en",
+                "language": "no",
                 "use": {
                   "system": "http://snomed.info/sct",
                   "code": "900000000000003001",
@@ -147,7 +174,7 @@
             "display": "DOAK",
             "designation": [
               {
-                "language": "en",
+                "language": "no",
                 "use": {
                   "system": "http://snomed.info/sct",
                   "code": "900000000000003001",
@@ -162,7 +189,7 @@
             "display": "Andre antikoagulantia",
             "designation": [
               {
-                "language": "en",
+                "language": "no",
                 "use": {
                   "system": "http://snomed.info/sct",
                   "code": "900000000000003001",

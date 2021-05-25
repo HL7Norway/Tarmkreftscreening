@@ -26,6 +26,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Alfentanil (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "alfentanil"
                             }
                         ]
                     },
@@ -41,6 +50,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Fentanyl (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "fentanyl"
                             }
                         ]
                     },
@@ -56,6 +74,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Scopolamine butylbromide (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "scopolaminebutylbromide"
                             }
                         ]
                     },
@@ -71,6 +98,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Pethidine (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "petidin"
                             }
                         ]
                     },
@@ -86,6 +122,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Midazolam (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "midazolam"
                             }
                         ]
                     },
@@ -101,6 +146,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Propofol (substance)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "propofol"
                             }
                         ]
                     }
@@ -122,7 +176,7 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Other"
-                            }
+                            }                            
                         ]
                     }
                 ]

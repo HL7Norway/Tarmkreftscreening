@@ -83,6 +83,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Picoprep/Citrafleet"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Picoprep/Citrafleet"
                             }
                         ]
                     },
@@ -92,6 +101,15 @@
                         "designation": [
                             {
                                 "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Laxabon"
+                            },
+                            {
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",
@@ -113,6 +131,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Endofalk"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Endofalk"
                             }
                         ]
                     },
@@ -128,6 +155,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Plenvu"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Plenvu"
                             }
                         ]
                     },
@@ -137,6 +173,15 @@
                         "designation": [
                             {
                                 "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Moviprep"
+                            },
+                            {
+                                "language": "no",
                                 "use": {
                                     "system": "http://snomed.info/sct",
                                     "code": "900000000000003001",

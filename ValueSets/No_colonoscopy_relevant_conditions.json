@@ -27,6 +27,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Disorder of cardiovascular system (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "kardiovaskulær sykdom"
                             }
                         ]
                     },
@@ -42,6 +51,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Chronic lung disease (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "kronisk lungesykdom"
                             }
                         ]
                     },
@@ -57,6 +75,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Chronic kidney disease (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "kronisk nyresykdom"
                             }
                         ]
                     },
@@ -72,6 +99,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Diabetes mellitus (disorder)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "diabetes mellitus"
                             }
                         ]
                     }
@@ -93,7 +129,7 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Nil Known"
-                            }
+                            }                          
                         ]
                     }
                 ]
@@ -114,7 +150,7 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Other"
-                            }
+                            }                           
                         ]
                     }
                 ]

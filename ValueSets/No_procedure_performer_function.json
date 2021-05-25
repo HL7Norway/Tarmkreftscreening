@@ -32,6 +32,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Primary performing endoscopist (person)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "hovedskopør"
                             }
                         ]
                     },
@@ -47,6 +56,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Assisting endoscopist (person)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "assisterende skopør"
                             }
                         ]
                     },
@@ -62,6 +80,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Main nurse assisting procedure (person)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "primærsykepleier ved prosedyre"
                             }
                         ]
                     },
@@ -77,6 +104,15 @@
                                     "display": "Fully specified name"
                                 },
                                 "value": "Assisting nurse in procedure (person)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "assisterende sykepleier ved prosedyre"
                             }
                         ]
                     }
