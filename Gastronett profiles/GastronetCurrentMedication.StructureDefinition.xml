@@ -5,9 +5,9 @@
     <versionId value="2" />
     <lastUpdated value="2021-04-02T15:30:37.66+00:00" />
   </meta>
-  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
-  <name value="GastronetMedicationStatement" />
-  <title value="Gastronet MedicationStatement" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-currentmedication-gastronet" />
+  <name value="GastronetCurrentMedication" />
+  <title value="Gastronet Current Medication" />
   <status value="draft" />
   <date value="2021-04-02T15:28:39.9342194Z" />
   <fhirVersion value="4.0.1" />
@@ -27,10 +27,7 @@
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
-      </type>
+      <max value="0" />
     </element>
     <element id="MedicationStatement.statusReason">
       <path value="MedicationStatement.statusReason" />
@@ -39,6 +36,13 @@
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <max value="0" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication" />
+      </binding>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />

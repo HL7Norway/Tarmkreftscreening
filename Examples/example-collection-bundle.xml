@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir">
+<Bundle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir ../../../Users/Marten/OneDrive%20-%20Firely/FHIR/Schemas/R4/bundle.xsd"
+ xmlns="http://hl7.org/fhir">
   <type value="collection"/>  
   <entry>
     <fullUrl value="http://example.org/fhir/Patient/1"/>
@@ -10,6 +12,13 @@
           <system value="http://hl7.no/fhir/NamingSystem/FNR"/>
           <value value="536271738293"/>
         </identifier>
+        <name>
+          <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
+            <valueString value="Erik"/>
+          </extension>
+          <family value="Eksempel" />
+          <given value="Espen" />
+        </name>
       </Patient>
     </resource>
   </entry>
@@ -72,6 +81,12 @@
           </valueCodeableConcept>
         </extension>
         <status value="completed"/>
+        <category>
+          <coding>
+            <system value="model-specific"/>
+            <code value="diagnostisk-biopsi"/>           
+          </coding>
+        </category>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>

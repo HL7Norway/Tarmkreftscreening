@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="d405e9c0-a991-4567-878d-e1c61e3b2f8b" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-05-26T15:41:56.529+00:00" />
+  </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationlist-gastronet" />
   <name value="GastronetMedicationList" />
   <title value="Gastronet Medication List" />
   <status value="draft" />
+  <date value="2021-05-26T15:42:13.246649+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -61,7 +67,7 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-currentmedication-gastronet" />
       </type>
     </element>
     <element id="List.emptyReason">

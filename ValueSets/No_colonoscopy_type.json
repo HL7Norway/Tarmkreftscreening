@@ -1,0 +1,66 @@
+{
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>KRG Indication</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-type</tt></div>"
+    },
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-type",
+    "name": "No-colonoscopy-type",
+    "title": "Colonoscopy Type",
+    "status": "draft",
+    "publisher": "Norwegian Directorate of e-health",
+    "compose": {
+        "include": [
+            {
+                "system": "model-specific",
+                "concept": [
+                    {
+                        "code": "terapeutisk",
+                        "display": "Terapeutisk",
+                        "designation": [
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Terapeutisk"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "diagnostisk-biopsi",
+                        "display": "Diagnostisk med biopsi",
+                        "designation": [
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Diagnostisk med biopsi"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "diagnostisk-uten-biopsi",
+                        "display": "Diagnostisk uten biopsi",
+                        "designation": [
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Diagnostisk uten biopsi"
+                            }
+                        ]
+                    }
+                ]                
+            }
+        ]
+    }
+}
