@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="29" />
-    <lastUpdated value="2021-06-29T14:08:38.287+00:00" />
+    <versionId value="30" />
+    <lastUpdated value="2021-07-07T14:11:23.256+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-06-29T14:08:43.0443488+00:00" />
+  <date value="2021-07-07T14:11:24.0600204+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -244,23 +244,23 @@
         <comment value="Medikament gitt før eller under undersøkelsen (ja/nei)" />
       </mapping>
     </element>
-    <element id="Procedure.extension:anestheticsGiven">
+    <element id="Procedure.extension:sedationLevel">
       <path value="Procedure.extension" />
-      <sliceName value="anestheticsGiven" />
+      <sliceName value="sedationLevel" />
       <short value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
       <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-sedationlevel-extension" />
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.extension:anestheticsGiven.value[x]">
+    <element id="Procedure.extension:sedationLevel.value[x]">
       <path value="Procedure.extension.value[x]" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-anesthetics-sedatives" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-sedation-level" />
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />

@@ -29,7 +29,27 @@
   <entry>    
     <fullUrl value="http://example.org/fhir/Procedure/1"/>
     <resource>
-      <Procedure>   
+      <Procedure>  
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-laxatives-extension">
+          <!-- var nr. 17 -->
+          <extension url="type">
+            <valueCodeableConcept>
+              <coding>
+                <system value="Model-specific"/>
+                <code value="laxabon"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <!-- var nr. 18 -->
+          <extension url="takenAsSplitDose">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+                <code value="NA"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </extension>
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
           <!-- var nr. 56 -->
            <valueCodeableConcept>
@@ -48,19 +68,6 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumintubated-extension">
-          <!-- var nr. 22 -->
-          <valueBoolean value="true"/>
-        </extension>
-        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension">
-          <!-- var nr. 23 -->
-          <valueDuration>
-            <value value="30"/>
-            <unit value="min"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="min"/>
-          </valueDuration>          
-        </extension>
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-withdrawaltime">
           <!-- var nr. 24 -->
           <valueDuration>
@@ -70,15 +77,10 @@
             <code value="min"/>
           </valueDuration>
         </extension>
-        <extension url="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved">
-          <!-- var nr. 58 -->
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
-              <code value="Y"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-caecumreacheddocumentation-extension">
+          <!-- var nr. 24 -->
+          <valueBoolean value="true"/>
+        </extension>        
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension">
           <!-- var nr. 29 -->
           <valueBoolean value="true"/>
@@ -156,18 +158,7 @@
             <system value="http://snomed.info/sct"/> 
             <code value="712510007"/>
           </coding>
-        </complication>        
-        <followUp>
-          <!-- var nr. 63 -->
-          <extension url="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension">
-            <valueInteger value="6"/>
-          </extension>
-          <!-- var nr. 62 -->
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="10061000202102"/>
-          </coding>
-        </followUp>
+        </complication>         
       </Procedure>
     </resource>
   </entry>
@@ -226,6 +217,9 @@
         <result>
           <reference value= "http://example.org/fhir/Observation/numberoflesions"/>
         </result>
+        <result>
+          <reference value= "http://example.org/fhir/Observation/lumen"/>
+        </result>
         <conclusionCode>
           <!-- var nr. 59 -->
           <extension url="http://kreftregisteret.no/fhir/StructureDefinition/diagnosticreport-conclusion-ismaindiagnosis">
@@ -263,43 +257,13 @@
     <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
     <resource>     
       <Observation xmlns="http://hl7.org/fhir">  
-        <!-- var nr. 35 -->
-        <identifier>
-          <system value="http://kreftregisteret.no/fhir/NamingSystem/lesion-number"/>
-          <value value="1"/>
-        </identifier>
         <status value="final"/>
         <code>
           <coding>     
             <system value="http://snomed.info/sct"/>
             <code value="300577008"/>
           </coding>
-        </code>      
-        <!-- var nr. 36 -->
-        <bodySite>       
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="32713005"/>    
-            <display value="Cecum structure (body structure)"/>      
-          </coding>         
-        </bodySite>
-        <component>
-          <code>
-            <coding>
-              <!-- morphology -->
-              <system value= "http://snomed.info/sct"/>
-              <code value ="8961000202103"/>
-            </coding>
-          </code>
-          <!-- var nr. 37 -->
-          <valueCodeableConcept>
-            <coding>
-              <system value= "http://snomed.info/sct"/>
-              <code value ="9161000202106"/>
-              <display value ="Paris polyp classification IIb - completely flat polyp (finding)"/>
-            </coding>
-          </valueCodeableConcept>
-        </component>
+        </code>                
         <component>
           <code>
             <coding>
@@ -315,63 +279,7 @@
             <system value="http://unitsofmeasure.org"/>
             <code value="mm"/>
           </valueQuantity>
-        </component>
-        <component>
-          <code>
-            <coding>
-              <system value = "Model-specific"/>
-              <code value = "metode-fjerning-vevsprove"/>
-              <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
-            </coding>            
-          </code>
-          <valueCodeableConcept>
-            <!-- var nr. 39 -->
-            <coding>
-              <system value = "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-              <code value = "OTH"/>
-              <display value = "Other"/>        
-            </coding>        
-          </valueCodeableConcept>
-        </component>    
-        <component>
-          <code>
-            <!-- Sent to pathologist -->
-            <coding>
-              <system value = "http://snomed.info/sct"/>
-              <code value = "168395004"/>   
-            </coding>            
-          </code>
-          <!-- var nr. 42 -->
-          <valueBoolean value="true"/>         
         </component>     
-        <component>
-          <code>
-            <!-- Endoscopically removed -->
-            <coding>
-              <system value = "http://snomed.info/sct"/>
-              <code value = "10741000202101"/>
-              <display value = "Er lesjonen endoskopisk komplett fjernet (ett valg)"/>        
-            </coding>            
-          </code>
-          <!-- var nr. 40 -->
-          <valueCodeableConcept>
-            <coding>
-              <system value = "http://terminology.hl7.org/CodeSystem/v2-0136"/>
-              <code value = "Y"/> 
-            </coding>        
-          </valueCodeableConcept>      
-        </component>   
-        <component>
-          <code>
-            <!-- cancer suspect -->
-            <coding>
-              <system value = "http://snomed.info/sct"/>
-              <code value = "9971000202100"/>
-            </coding>            
-          </code>
-          <!-- var nr. 41 -->
-          <valueBoolean value="true"/>
-        </component>   
       </Observation>      
     </resource>
   </entry> 
@@ -439,44 +347,24 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/List/problem-list"/>
+    <fullUrl value="http://example.org/fhir/Observation/lumen"/>
     <resource>
-      <List>
-        <status value="current"/>
-        <mode value="snapshot"/>
-        <code>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
-            <code value="problems"/>
-          </coding>
-        </code>
-        <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
-        </subject>
-        <entry>
-          <item>
-            <reference value="http://example.org/fhir/Condition/1"/>
-          </item>
-        </entry>
-      </List>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/fhir/Condition/1"/>
-    <resource>
-      <Condition>
-        <!-- var nr. 12 -->
+      <Observation>
+        <!-- var nr. 32 -->
+        <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="73211009"/>
-            <display value="Diabetes mellitus (disorder)"/>
+            <code value="TBD"/>
           </coding>
         </code>
-        <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
-        </subject>        
-      </Condition>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="17621005"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
     </resource>
   </entry>
   <entry>

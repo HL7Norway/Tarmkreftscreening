@@ -5,9 +5,9 @@
     <versionId value="2" />
     <lastUpdated value="2021-03-16T13:27:27.67+00:00" />
   </meta>
-  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
-  <name value="AnestheticsGiven" />
-  <title value="Colonoscopy Report Anesthetics Given" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-sedationlevel-extension" />
+  <name value="SedationLevel" />
+  <title value="Colonoscopy Report Sedation Level" />
   <status value="draft" />
   <date value="2021-03-16T13:27:27.4916013+00:00" />
   <description value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-sedationlevel-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
