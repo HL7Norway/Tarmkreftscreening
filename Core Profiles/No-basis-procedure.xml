@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Procedure" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-06-02T12:21:36.362+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-06-02T13:43:40.793+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-procedure" />
   <name value="NoBasisProcedure" />
   <title value="no-basis-Procedure" />
   <status value="draft" />
-  <date value="2021-06-02T12:22:00.1698776+00:00" />
+  <date value="2021-06-02T13:44:04.7410316+00:00" />
   <description value="Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints.&quot;" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -18,90 +18,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.extension">
-      <path value="Procedure.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.extension:duration">
-      <path value="Procedure.extension" />
-      <sliceName value="duration" />
-      <short value="The duration of the procedure" />
-      <definition value="The duration of the procedure" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-procedureduration-extension" />
-      </type>
-    </element>
-    <element id="Procedure.extension:duration.value[x]">
-      <path value="Procedure.extension.value[x]" />
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="19" />
-        <comment value="Totaltid for undersøkelsen" />
-      </mapping>
-    </element>
-    <element id="Procedure.extension:duration.value[x].value">
-      <path value="Procedure.extension.value[x].value" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.extension:duration.value[x].unit">
-      <path value="Procedure.extension.value[x].unit" />
-      <min value="1" />
-      <fixedString value="min" />
-    </element>
-    <element id="Procedure.extension:duration.value[x].system">
-      <path value="Procedure.extension.value[x].system" />
-      <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="Procedure.extension:duration.value[x].code">
-      <path value="Procedure.extension.value[x].code" />
-      <fixedCode value="min" />
-    </element>
-    <element id="Procedure.extension:medicationGiven">
-      <path value="Procedure.extension" />
-      <sliceName value="medicationGiven" />
-      <short value="Explicitly indicates if there was any medication given during the procedure ." />
-      <definition value="Explicitly indicates if there was any medication given during the procedure ." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationgiven-extension" />
-      </type>
-    </element>
-    <element id="Procedure.extension:medicationGiven.value[x]">
-      <path value="Procedure.extension.value[x]" />
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="26" />
-        <comment value="Medikament gitt før eller under undersøkelsen (ja/nei)" />
-      </mapping>
-    </element>
-    <element id="Procedure.extension:anestheticsGiven">
-      <path value="Procedure.extension" />
-      <sliceName value="anestheticsGiven" />
-      <short value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
-      <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-anestheticsgiven-extension" />
-      </type>
-    </element>
-    <element id="Procedure.extension:anestheticsGiven.value[x]">
-      <path value="Procedure.extension.value[x]" />
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="26" />
-        <comment value="Narkose/dyp sedasjon (anstesistøtte)" />
-      </mapping>
-    </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <slicing>
@@ -115,6 +31,7 @@
     <element id="Procedure.code.coding:NKPK">
       <path value="Procedure.code.coding" />
       <sliceName value="NKPK" />
+      <short value="Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)" />
       <max value="1" />
       <patternCoding>
         <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
@@ -126,6 +43,14 @@
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.code.coding:ICPC-2">
+      <path value="Procedure.code.coding" />
+      <sliceName value="ICPC-2" />
+      <max value="1" />
+      <patternCoding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
       </patternCoding>
     </element>
     <element id="Procedure.subject">
@@ -141,6 +66,12 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
       </type>
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

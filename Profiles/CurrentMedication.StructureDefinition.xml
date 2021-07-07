@@ -2,18 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="0b91d843-721b-4648-9c79-1bfb46157832" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-04-28T15:47:24.295+00:00" />
+    <versionId value="2" />
+    <lastUpdated value="2021-06-23T15:23:37.207+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication" />
   <name value="CurrentMedication" />
   <title value="Colonoscopy Report Current Medication" />
   <status value="draft" />
-  <date value="2021-04-28T15:47:40.8713603+00:00" />
+  <date value="2021-06-23T15:23:39.0090173+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -34,18 +38,44 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="12" />
+        <map value="13" />
         <comment value="Medisinbruk" />
       </mapping>
       <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="27" />
-        <comment value="Type medikament og dose" />
+        <identity value="krg-tech-name" />
+        <map value="relevanteMedisinerIngen_M" />
       </mapping>
       <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="16" />
-        <comment value="Tømmingsmiddel" />
+        <identity value="krg-tech-name" />
+        <map value="acetylsalisylsyre_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="andreBlodplatehemmere_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="warfarin_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="doak_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lmwh_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="andreAntikoagulantia_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="relevanteMedisinerAnnet_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="relevanteMedisinerUkj_M" />
       </mapping>
     </element>
     <element id="MedicationStatement.subject">

@@ -21,7 +21,12 @@
               "value": "Narkose eller dyp sedasjon med anestesistøtte"
             }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/special-values",
+        "concept": [        
           {
             "code": "nil-known",
             "display": "Ingen",

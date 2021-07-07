@@ -2,18 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="25" />
-    <lastUpdated value="2021-06-01T13:45:31.877+00:00" />
+    <versionId value="29" />
+    <lastUpdated value="2021-06-29T14:08:38.287+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-06-01T13:45:47.4052173Z" />
+  <date value="2021-06-29T14:08:43.0443488+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -72,12 +76,16 @@
       <binding>
         <strength value="required" />
         <description value="Can be used to indicate which segment (part) of colon that has been examined" />
-        <valueSet value="http://ehelse.no/fhir/ValueSet/no-coloscopy-segment-reached" />
+        <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-reached" />
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="17" />
+        <map value="21" />
         <comment value="Undersøkt til og med angitt segment" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="segmentUndersokt_M" />
       </mapping>
     </element>
     <element id="Procedure.extension:caecumIntubated">
@@ -96,8 +104,12 @@
       <path value="Procedure.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="18" />
+        <map value="22" />
         <comment value="Var det indisert å intubere cøkum" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="intubereCokumIndisert_M" />
       </mapping>
     </element>
     <element id="Procedure.extension:duration">
@@ -118,6 +130,10 @@
         <identity value="no-colonoscopy-report" />
         <map value="19" />
         <comment value="Totaltid for undersøkelsen" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="totaltidKoloskopi_M" />
       </mapping>
     </element>
     <element id="Procedure.extension:duration.value[x].value">
@@ -153,8 +169,12 @@
       <path value="Procedure.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="20" />
+        <map value="24" />
         <comment value="Tilbaketrekkingstid fra cøkum til avsluttet undersøkelse" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="tilbaketrekkingstid_M" />
       </mapping>
     </element>
     <element id="Procedure.extension:withdrawalTime.value[x].value">
@@ -196,8 +216,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="56" />
+        <map value="58" />
         <comment value="Alle påviste polypper fjernet (Clean colon) ?" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="polypperFjernet_M" />
       </mapping>
     </element>
     <element id="Procedure.extension:medicationGiven">
@@ -281,7 +305,7 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="16" />
+        <map value="17" />
         <comment value="Tømmingsmiddel" />
       </mapping>
     </element>
@@ -300,7 +324,7 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="15" />
+        <map value="18" />
         <comment value="Tømmingsmiddel ble tatt som &quot;splittdosering&quot;" />
       </mapping>
     </element>
@@ -332,14 +356,23 @@
         <strength value="required" />
         <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-type" />
       </binding>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="20" />
+        <comment value="Type koloskopi" />
+      </mapping>
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="59" />
+        <map value="61" />
         <comment value="Prosedyrekoder (NCMP-NCSP-NCRP)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="prosedyrekoder_M" />
       </mapping>
     </element>
     <element id="Procedure.code.coding">
@@ -378,6 +411,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -389,8 +423,12 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="2" />
+        <map value="5" />
         <comment value="Dato for u.s." />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="meldingsdato_M" />
       </mapping>
     </element>
     <element id="Procedure.performer">
@@ -398,23 +436,27 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="3" />
-        <comment value="Hovedskopør (depended on performer.function)" />
-      </mapping>
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="4" />
-        <comment value="(depended on performer.function)" />
-      </mapping>
-      <mapping>
-        <identity value="no-colonoscopy-report" />
-        <map value="5" />
-        <comment value="Sykepleier (depended on performer.function)" />
-      </mapping>
-      <mapping>
-        <identity value="no-colonoscopy-report" />
         <map value="6" />
-        <comment value="Assisterende sykepleiere (depended on performer.function)" />
+        <comment value="Hovedskopør" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="8" />
+        <comment value="Sykepleier" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="9" />
+        <comment value="Assisterende sykepleiere" />
+      </mapping>
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="7" />
+        <comment value="Sykepleier" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="hovedskopor_M" />
       </mapping>
     </element>
     <element id="Procedure.performer.function">
@@ -430,20 +472,22 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.location">
       <path value="Procedure.location" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.location.identifier">
-      <path value="Procedure.location.identifier" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
+        <aggregation value="bundled" />
+      </type>
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="1" />
-        <comment value="HF/scr.senter" />
+        <map value="3" />
+        <comment value="Helseforetak/screeningsenter/sykehus RESH id" />
       </mapping>
     </element>
     <element id="Procedure.reasonCode">
@@ -455,8 +499,28 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="8" />
-        <comment value="Indikasjon for undersøkelse (flervalg tillatt, utbrodering i fritekst [red. variabel 9])" />
+        <map value="11" />
+        <comment value="Indikasjon for undersøkelse" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="indikasjonPolyppkontroll_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="indikasjonFunnKoloskopi_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="indikasjonPrimarScreening_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="indikasjonPositivIfobt_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="indikasjonUfullstendig_M" />
       </mapping>
     </element>
     <element id="Procedure.report">
@@ -464,6 +528,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -476,8 +541,40 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="53" />
+        <map value="55" />
         <comment value="Komplikasjoner under undersøkelsen (flervalg tillatt, minst ett må velges)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonIngen_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonBlodning_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonPerforasjon_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonVasovagal_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonRespSvikt_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonKardiovaskular_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonAllergi_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="komplikasjonAnnet_M" />
       </mapping>
     </element>
     <element id="Procedure.complication.coding">
@@ -493,8 +590,36 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="60" />
+        <map value="62" />
         <comment value="Videre oppfølging" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingIngen_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingAvventerHist_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingAvventerHist_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingNyKoloskopi_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingHenvist_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingCtKolografi_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="oppfolgingAnnet_M" />
       </mapping>
     </element>
     <element id="Procedure.followUp.extension">
@@ -523,8 +648,12 @@
       <path value="Procedure.followUp.extension.value[x]" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="61" />
+        <map value="63" />
         <comment value="Antall måneder til ny koloskopi" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="koloskopiAntMnd_M" />
       </mapping>
     </element>
   </differential>

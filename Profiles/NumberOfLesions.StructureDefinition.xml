@@ -2,19 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="5c43ccfd-8eb4-4511-8110-7ec5afc8da11" />
   <meta>
-    <versionId value="8" />
-    <lastUpdated value="2021-05-12T15:09:19.24+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2021-06-23T15:24:23.032+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
   <name value="NumberOfLesions" />
   <title value="Colonoscopy Report Number Of Lesions" />
   <status value="draft" />
-  <date value="2021-05-12T15:09:21.873511+00:00" />
+  <date value="2021-06-23T15:24:24.810515+00:00" />
   <description value="The number of lesions detected during a colonoscopy" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -55,8 +59,12 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="31" />
+        <map value="34" />
         <comment value="Lesjonsnummer" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lesjonerIngen_M" />
       </mapping>
     </element>
   </differential>

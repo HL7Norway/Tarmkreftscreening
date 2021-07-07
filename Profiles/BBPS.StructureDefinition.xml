@@ -2,19 +2,23 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ff0f67d5-b53c-480c-9803-cc8056a92ac8" />
   <meta>
-    <versionId value="11" />
-    <lastUpdated value="2021-05-12T15:08:09.174+00:00" />
+    <versionId value="12" />
+    <lastUpdated value="2021-06-23T15:25:52.544+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
   <name value="BostonBowelPreparationScale" />
   <title value="Colonoscopy Report Boston Bowel Preparation Scale" />
   <status value="draft" />
-  <date value="2021-05-12T15:06:24.4414259Z" />
+  <date value="2021-06-23T15:25:54.2780668+00:00" />
   <description value="Represents the Boston Bowel Preparation Scale, needed for colonoscopy reports" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -95,8 +99,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="22" />
+        <map value="26" />
         <comment value="Tømmingskvalitet høyre kolon (BBPS)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="tommingskvalitetHoyreKolon_M" />
       </mapping>
     </element>
     <element id="Observation.component:transversum">
@@ -141,8 +149,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="23" />
+        <map value="27" />
         <comment value="Tømmingskvalitet transversum (BBPS)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="tommingskvalitetTransversum_M" />
       </mapping>
     </element>
     <element id="Observation.component:leftColon">
@@ -187,8 +199,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="24" />
+        <map value="29" />
         <comment value="Tømmingskvalitet venstre kolon (BBPS)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="medikamentGitt_M" />
       </mapping>
     </element>
   </differential>

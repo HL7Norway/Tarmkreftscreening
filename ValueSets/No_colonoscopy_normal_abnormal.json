@@ -1,0 +1,70 @@
+{
+    "resourceType": "ValueSet",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Normal/Abnormal</h2><tt>http://ehelse.no/fhir/no-colonoscopy-followup</tt></div>"
+    },
+    "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-normal-abnormal",
+    "name": "no-colonoscopy-normal-abnormal",
+    "title": "Colonoscopy Report Normal/Abnormal",
+    "description": "Indication of whether an observation is normal or not normal. SNOMED CT is used here, as the observation is coded with SNOMED CT, and it is a direct value, not an interpretation of a value. In interpreting whether a value is normal or not, the HL7 coding system Observation Interpretation would probably be more correct: https://www.hl7.org/fhir/v3/ObservationInterpretation/cs.html",
+    "status": "draft",
+    "publisher": "Norwegian Directorate of e-health",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "17621005",
+                        "display": "Normal",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Normal (qualifier value)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Normal"
+                            }
+                        ]
+                    },
+                    {
+                        "code": "263654008",
+                        "display": "Ikke Normal",
+                        "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Abnormal (qualifier value)"
+                            },
+                            {
+                                "language": "no",
+                                "use": {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "900000000000003001",
+                                    "display": "Fully specified name"
+                                },
+                                "value": "Ikke Normal"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

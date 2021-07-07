@@ -2,18 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="17" />
-    <lastUpdated value="2021-05-12T15:07:58.784+00:00" />
+    <versionId value="20" />
+    <lastUpdated value="2021-06-29T14:08:58.56+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-05-12T15:08:01.2627296+00:00" />
+  <date value="2021-06-29T14:09:03.3598224+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -66,6 +70,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -76,6 +81,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -86,6 +92,18 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
+        <aggregation value="bundled" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.result:Lumen">
+      <path value="DiagnosticReport.result" />
+      <sliceName value="Lumen" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lumen" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -94,13 +112,22 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="57" />
+        <map value="58" />
         <comment value="Hoveddiagnose (ICD-10) (if extension IsMainDiagnosis is true)" />
       </mapping>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="58" />
+        <map value="59" />
         <comment value="Bidiagnoser (ICD-10)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="hoveddiagnose_M" />
+        <comment value="if extension IsMainDiagnosis is true" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="bidiagnoser_M" />
       </mapping>
     </element>
     <element id="DiagnosticReport.conclusionCode.extension">

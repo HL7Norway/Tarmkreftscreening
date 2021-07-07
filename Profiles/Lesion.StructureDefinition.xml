@@ -2,18 +2,22 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="13" />
-    <lastUpdated value="2021-05-12T15:05:58.473+00:00" />
+    <versionId value="15" />
+    <lastUpdated value="2021-06-23T15:22:59.809+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-05-12T15:06:00.9627864+00:00" />
+  <date value="2021-06-23T15:23:01.512548+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
     <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <mapping>
+    <identity value="krg-tech-name" />
+    <name value="Technical Name KRG" />
   </mapping>
   <kind value="resource" />
   <abstract value="true" />
@@ -40,8 +44,12 @@
       <max value="1" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="32" />
+        <map value="35" />
         <comment value="Lesjonsnummer" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lesjonsnummer_M" />
       </mapping>
     </element>
     <element id="Observation.identifier:LesionNumber.system">
@@ -88,8 +96,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="33" />
+        <map value="36" />
         <comment value="Tarmsegment hvor lesjon ble påvist" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="segmentFunnet_M" />
       </mapping>
     </element>
     <element id="Observation.component">
@@ -144,8 +156,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="34" />
+        <map value="37" />
         <comment value="Morfologi (Paris polyp classification)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="morfologiParis_M" />
       </mapping>
     </element>
     <element id="Observation.component:TissueRemovingMethod">
@@ -165,9 +181,9 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Observation.component:TissueRemovingMethod.code.coding:SNOMED-CT">
+    <element id="Observation.component:TissueRemovingMethod.code.coding:Model-specific">
       <path value="Observation.component.code.coding" />
-      <sliceName value="SNOMED-CT" />
+      <sliceName value="Model-specific" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
@@ -188,8 +204,48 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="36" />
+        <map value="39" />
         <comment value="Metode for fjerning eller vevsprøve (flervalg)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="vevsproveIngen_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="biopsitang_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="emr_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="kaldSlyngeInToto_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="kaldSlyngePiecemeal_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="diatermislyngeInToto_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="diatermislyngePiecemeal_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="undervannsEmr_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="esd_M" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="vevsproveAnnenMetode_M" />
       </mapping>
     </element>
     <element id="Observation.component:EndoscopicalRemoved">
@@ -231,8 +287,12 @@
       </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="37" />
+        <map value="40" />
         <comment value="Er lesjonen endoskopisk komplett fjernet (ett valg)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lesjonKomplettFjernet_M" />
       </mapping>
     </element>
     <element id="Observation.component:SentToPathologist">
@@ -269,8 +329,12 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="39" />
+        <map value="42" />
         <comment value="Vevsprøve sendt til patolog? (slider med default &quot;ja&quot;)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="vevsproveTilPatolog_M" />
       </mapping>
     </element>
     <element id="Observation.component:Size">
@@ -309,6 +373,15 @@
         <code value="Quantity" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="no-colonoscopy-report" />
+        <map value="38" />
+        <comment value="Størrelse i diameter (mm)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lesjonDiameter_M" />
+      </mapping>
     </element>
     <element id="Observation.component:SuspectOfMalignancy">
       <path value="Observation.component" />
@@ -350,8 +423,12 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="no-colonoscopy-report" />
-        <map value="38" />
+        <map value="41" />
         <comment value="Cancersuspect lesjon (slider med default &quot;nei&quot;)" />
+      </mapping>
+      <mapping>
+        <identity value="krg-tech-name" />
+        <map value="lesjonMistenktKreft_M" />
       </mapping>
     </element>
   </differential>
