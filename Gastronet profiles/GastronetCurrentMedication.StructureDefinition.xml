@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e96c3fe4-45d0-4fa8-90dd-2e75e880ac28" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-04-02T15:30:37.66+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2021-09-07T09:54:01.547+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-currentmedication-gastronet" />
   <name value="GastronetCurrentMedication" />
   <title value="Gastronet Current Medication" />
   <status value="draft" />
-  <date value="2021-04-02T15:28:39.9342194Z" />
+  <date value="2021-09-07T09:54:01.3308991+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -43,6 +43,13 @@
         <strength value="required" />
         <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-current-medication" />
       </binding>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+      </type>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />

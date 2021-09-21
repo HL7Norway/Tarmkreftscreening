@@ -48,7 +48,7 @@
                 ]
             },
             {
-                "system": "Model-specific",
+                "system": "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes",
                 "concept": [
                     {
                         "code": "usikker",

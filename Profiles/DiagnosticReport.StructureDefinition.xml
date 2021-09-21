@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="20" />
-    <lastUpdated value="2021-06-29T14:08:58.56+00:00" />
+    <versionId value="23" />
+    <lastUpdated value="2021-09-07T12:54:28.206+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-06-29T14:09:03.3598224+00:00" />
+  <date value="2021-09-07T12:50:40.849435Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -58,8 +58,8 @@
       <path value="DiagnosticReport.result" />
       <slicing>
         <discriminator>
-          <type value="profile" />
-          <path value="resolve()" />
+          <type value="value" />
+          <path value="resolve().code" />
         </discriminator>
         <rules value="open" />
       </slicing>

@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="612e4cfd-a14c-41fc-abcc-665522301f4b" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-05-05T15:29:34.83+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-09-07T10:57:33.953+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-condition-krg" />
   <name value="KRGCondition" />
   <title value="KRG Condition" />
   <status value="draft" />
-  <date value="2021-05-05T15:29:36.9900092+00:00" />
+  <date value="2021-09-07T10:57:33.6828934+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -40,6 +40,13 @@
     <element id="Condition.bodySite">
       <path value="Condition.bodySite" />
       <max value="0" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg" />
+      </type>
     </element>
     <element id="Condition.encounter">
       <path value="Condition.encounter" />

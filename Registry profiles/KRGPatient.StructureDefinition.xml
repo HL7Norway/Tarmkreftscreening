@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="eec537d6-bcc2-4368-9080-8e9cc8b5d022" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-09-07T09:00:38.205+00:00" />
+  </meta>
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg" />
+  <name value="KRGPatient" />
+  <title value="KRG Patient" />
+  <status value="draft" />
+  <date value="2021-09-07T09:00:38.0606101+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

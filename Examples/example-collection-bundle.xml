@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/bundle.xsd">
+  <meta>
+    <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle-krg"/>
+  </meta>
   <identifier>
     <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-message-id"/>
     <value value="474783273248"/>
@@ -70,7 +73,7 @@
             <code value="min"/>
           </valueDuration>
         </extension>
-        <extension url="http://colonoscopyregistry.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved">
+        <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-polypsremoved">
           <!-- var nr. 58 -->
           <valueCodeableConcept>
             <coding>
@@ -88,7 +91,7 @@
           <valueCodeableConcept>
             <coding>
               <system value="http://snomed.info/sct"/>
-              <code value="73761001"/>
+              <code value="10821000202101"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -96,7 +99,7 @@
         <category>
           <!-- var nr. 20 -->
           <coding>
-            <system value="model-specific"/>
+            <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
             <code value="diagnostisk-biopsi"/>           
           </coding>
         </category>
@@ -138,13 +141,13 @@
           </actor>          
         </performer>
         <location>          
-          <reference value="http://example.org/fhir/Practitioner/1"/>
+          <reference value="http://example.org/fhir/Location/1"/>
         </location>
         <!-- var nr. 11 -->
         <reasonCode>
           <coding>
-            <system value="model-specific"/>
-            <code value="polyppkontroll"/>
+            <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
+            <code value="indikasjon-polyppkontroll"/>
           </coding>
         </reasonCode>
         <report>
@@ -159,7 +162,7 @@
         </complication>        
         <followUp>
           <!-- var nr. 63 -->
-          <extension url="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension">
+          <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension">
             <valueInteger value="6"/>
           </extension>
           <!-- var nr. 62 -->
@@ -319,9 +322,9 @@
         <component>
           <code>
             <coding>
-              <system value = "Model-specific"/>
+              <system value = "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
               <code value = "metode-fjerning-vevsprove"/>
-              <display value = "Metode for fjerning eller vevsprøve (flervalg)"/>        
+              <display value = "Metode for fjerning eller vevsprøve"/>        
             </coding>            
           </code>
           <valueCodeableConcept>

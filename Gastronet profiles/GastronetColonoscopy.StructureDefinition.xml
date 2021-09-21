@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="766a2f3d-b31f-4ed4-986e-146c39da99ac" />
+  <id value="82f2c95b-a47c-407d-b8e1-1187905ed619" />
   <meta>
     <versionId value="1" />
-    <lastUpdated value="2021-04-14T13:27:01.373+00:00" />
+    <lastUpdated value="2021-09-07T12:30:49.478+00:00" />
   </meta>
-  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-subprocedure-gastronet" />
-  <name value="GastronetSubProcedure" />
-  <title value="Gatronet Sub Procedure" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
+  <name value="GastronetColonoscopy" />
+  <title value="Gastronet Colonoscopy" />
   <status value="draft" />
-  <date value="2021-04-14T13:27:02.8915846+00:00" />
+  <date value="2021-09-07T12:29:19.1230905Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
+    <identity value="no-colonoscopy-report" />
+    <name value="Norwegian Colonoscopy Report" />
   </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
-  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-subprocedure" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <derivation value="constraint" />
   <differential>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:caecumIntubated">
+      <path value="Procedure.extension" />
+      <sliceName value="caecumIntubated" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.extension:duration">
+      <path value="Procedure.extension" />
+      <sliceName value="duration" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.extension:polypsRemoved">
+      <path value="Procedure.extension" />
+      <sliceName value="polypsRemoved" />
+      <max value="0" />
+    </element>
     <element id="Procedure.instantiatesCanonical">
       <path value="Procedure.instantiatesCanonical" />
       <max value="0" />
@@ -49,20 +58,23 @@
       <path value="Procedure.basedOn" />
       <max value="0" />
     </element>
+    <element id="Procedure.partOf">
+      <path value="Procedure.partOf" />
+      <max value="0" />
+    </element>
     <element id="Procedure.statusReason">
       <path value="Procedure.statusReason" />
       <max value="0" />
     </element>
-    <element id="Procedure.category">
-      <path value="Procedure.category" />
-      <max value="0" />
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+      </type>
     </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.performed[x]">
-      <path value="Procedure.performed[x]" />
       <max value="0" />
     </element>
     <element id="Procedure.recorder">
@@ -71,18 +83,6 @@
     </element>
     <element id="Procedure.asserter">
       <path value="Procedure.asserter" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.performer">
-      <path value="Procedure.performer" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.location">
-      <path value="Procedure.location" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.reasonCode">
-      <path value="Procedure.reasonCode" />
       <max value="0" />
     </element>
     <element id="Procedure.reasonReference">
@@ -99,11 +99,10 @@
     </element>
     <element id="Procedure.report">
       <path value="Procedure.report" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.complication">
-      <path value="Procedure.complication" />
-      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
+      </type>
     </element>
     <element id="Procedure.complicationDetail">
       <path value="Procedure.complicationDetail" />

@@ -115,7 +115,7 @@
                 ]
             },
             {
-                "system": "model-specific",
+                "system": "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes",
                 "concept": [
                     {
                         "code": "symptomer",

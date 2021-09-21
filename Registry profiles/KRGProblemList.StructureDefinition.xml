@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ee6a8478-c405-4143-b0cf-cb5a5e2b3d8f" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-09-07T11:01:16.001+00:00" />
+  </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-problemlist-krg" />
   <name value="KRGProblemList" />
   <title value="KRG Problem List" />
   <status value="draft" />
+  <date value="2021-09-07T11:00:28.7190087Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -28,6 +34,14 @@
     <element id="List.title">
       <path value="List.title" />
       <max value="0" />
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg" />
+      </type>
     </element>
     <element id="List.encounter">
       <path value="List.encounter" />

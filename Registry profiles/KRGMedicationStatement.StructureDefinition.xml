@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f2f8dcbd-e97c-4fec-96e9-2765611dd7fc" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-04-28T15:46:33.12+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-09-07T10:59:57.342+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-krg" />
   <name value="KRGMedicationStatement" />
   <title value="KRG MedicationStatement" />
   <status value="draft" />
-  <date value="2021-04-28T15:46:49.6370734+00:00" />
+  <date value="2021-09-07T10:59:56.3806835+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -47,6 +47,13 @@
         <description value="Indication of which medication was used before or during the procedure. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping" />
         <valueSet value="http://ehelse.no/fhir/ValueSet/no-colonoscopy-medication-krg" />
       </binding>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg" />
+      </type>
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />

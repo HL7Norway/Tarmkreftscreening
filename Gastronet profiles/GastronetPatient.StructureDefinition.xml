@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="29da2b89-44f2-4e7d-b84d-b482341a854c" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-09-07T09:29:30.079+00:00" />
+  </meta>
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+  <name value="GastronetPatient" />
+  <title value="Gastronet Patient" />
+  <status value="draft" />
+  <date value="2021-09-07T09:29:29.9046439+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

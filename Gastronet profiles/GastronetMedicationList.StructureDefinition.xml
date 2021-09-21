@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="d405e9c0-a991-4567-878d-e1c61e3b2f8b" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-05-26T15:41:56.529+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-09-07T09:49:55.772+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationlist-gastronet" />
   <name value="GastronetMedicationList" />
   <title value="Gastronet Medication List" />
   <status value="draft" />
-  <date value="2021-05-26T15:42:13.246649+00:00" />
+  <date value="2021-09-07T09:49:55.5339826+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -30,6 +30,14 @@
     <element id="List.title">
       <path value="List.title" />
       <max value="0" />
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+      </type>
     </element>
     <element id="List.encounter">
       <path value="List.encounter" />

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/bundle.xsd">
+  <meta>
+    <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet"></profile>
+  </meta>
   <identifier>
     <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-message-id"/>
     <value value="474783273248"/>
@@ -35,7 +38,7 @@
           <extension url="type">
             <valueCodeableConcept>
               <coding>
-                <system value="Model-specific"/>
+                <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
                 <code value="laxabon"/>
               </coding>
             </valueCodeableConcept>
@@ -90,7 +93,7 @@
           <valueCodeableConcept>
             <coding>
               <system value="http://snomed.info/sct"/>
-              <code value="73761001"/>
+              <code value="10821000202101"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -98,7 +101,7 @@
         <category>
           <!-- var nr. 20 -->
           <coding>
-            <system value="model-specific"/>
+            <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
             <code value="diagnostisk-biopsi"/>           
           </coding>
         </category>
@@ -140,13 +143,13 @@
           </actor>          
         </performer>
         <location>          
-          <reference value="http://example.org/fhir/Practitioner/1"/>
+          <reference value="http://example.org/fhir/Location/1"/>
         </location>
         <!-- var nr. 11 -->
         <reasonCode>
           <coding>
-            <system value="model-specific"/>
-            <code value="polyppkontroll"/>
+            <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
+            <code value="indikasjon-polyppkontroll"/>
           </coding>
         </reasonCode>
         <report>

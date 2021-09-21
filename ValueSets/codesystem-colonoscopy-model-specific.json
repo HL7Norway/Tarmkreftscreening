@@ -1,0 +1,147 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "Colonoscopy Model Specific Codes",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-07T21:53:02.895+10:00"
+  },
+  "url": "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "description": "This code system contains concepts that are specifc for the colonoscopy report usecase.",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "symptomer",
+      "display": "Symptomer",
+      "definition": "Symptomer"
+    },
+    {
+      "code": "indikasjon-polyppkontroll",
+      "definition": "Polyppkontroll",
+      "display": "Polyppkontroll"
+    },
+    {
+      "code": "ibd-kontroll",
+      "definition": "IBD-kontroll",
+      "display": "IBD-kontroll"
+    },
+    {
+      "code": "indikasjon-funn-koloskopi",
+      "display": "indikasjon-funn-koloskopi",
+      "definition": "Funn ved tidligere koloskopi"
+    },
+    {
+      "code": "tidligere-funn",
+      "display": "Funn ved annen undersøkelse",
+      "definition": "Funn ved annen undersøkelse"
+    },
+    {
+      "code": "indikasjon-primar-screening",
+      "display": "Primær koloskopiscreening i screeningprogram",
+      "definition": "Primær koloskopiscreening i screeningprogram"
+    },
+    {
+      "code": "indikasjon-positiv-ifobt",
+      "display": "Positiv iFOBT i screeningprogram",
+      "definition": "Positiv iFOBT i screeningprogram"
+    },
+    {
+      "code": "CRC-kontroll",
+      "display": "CRC kontroll",
+      "definition": "CRC kontroll"
+    },
+    {
+      "code": "indikasjon-ufullstendig",
+      "display": "Ufullstendig tidligere koloskopi",
+      "definition": "Ufullstendig tidligere koloskopi"
+    },
+    {
+      "code": "screening-utenom-program",
+      "display": "Screening utenom program",
+      "definition": "Screening utenom program"
+    },
+    {
+      "code": "andre-blodplatehemmere",
+      "display": "Andre blodplatehemmere",
+      "definition": "Andre blodplatehemmere"
+    },
+    {
+      "code": "doak",
+      "display": "DOAK",
+      "definition": "DOAK"
+    },
+    {
+      "code": "andre-antikoagulantia",
+      "display": "Andre antikoagulantia",
+      "definition": "Andre antikoagulantia"
+    },
+    {
+      "code": "picoprep-citrafleet",
+      "display": "Picoprep/Citrafleet",
+      "definition": "Picoprep/Citrafleet"
+    },
+    {
+      "code": "laxabon",
+      "display": "Laxabon",
+      "definition": "Laxabon"
+    },
+    {
+      "code": "endofalk",
+      "display": "Endofalk",
+      "definition": "Endofalk"
+    },
+    {
+      "code": "plenvu",
+      "display": "Plenvu",
+      "definition": "Plenvu"
+    },
+    {
+      "code": "moviprep",
+      "display": "Moviprep",
+      "definition": "Moviprep"
+    },
+    {
+      "code": "usikker",
+      "display": "Usikker",
+      "definition": "Usikker"
+    },
+    {
+      "code": "terapeutisk",
+      "display": "Terapeutisk",
+      "definition": "Terapeutisk"
+    },
+    {
+      "code": "diagnostisk-biopsi",
+      "display": "Diagnostisk med biopsi",
+      "definition": "Diagnostisk med biopsi"
+    },
+    {
+      "code": "diagnostisk-uten-biopsi",
+      "display": "Diagnostisk uten biopsi",
+      "definition": "Diagnostisk uten biopsi"
+    },
+    {
+      "code": "metode-fjerning-vevsprove",
+      "display": "Metode for fjerning eller vevsprøve",
+      "definition": "Metode for fjerning eller vevsprøve"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Model Specific Codes</h2><tt>http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes</tt><p>This code system contains concepts that are specifc for the colonoscopy report usecase.</p></div>"
+  },
+  "publisher": "Norwegian Directorate of e-health",
+  "id": "8fa16e52-cde5-448a-8648-65f57dba05d8",
+  "count": 22,
+  "name": "Colonoscopy_Model_Specific_Codes"
+}

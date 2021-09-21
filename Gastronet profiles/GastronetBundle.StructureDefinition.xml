@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet" />
+  <id value="2e5d3627-b0df-4be5-a66e-af3d005d7e4e" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-09-07T09:45:57.538+00:00" />
+  </meta>
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet" />
   <name value="GastronetBundle" />
+  <title value="Gastronet Bundle" />
   <status value="draft" />
+  <date value="2021-09-07T09:45:57.3570461+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -40,21 +47,11 @@
     </element>
     <element id="Bundle.entry:Colonoscopy.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:Colonoscopy.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:Colonoscopy.search">
       <path value="Bundle.entry.search" />
@@ -108,20 +105,11 @@
     </element>
     <element id="Bundle.entry:MedicationList.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationlist-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:MedicationList.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:MedicationList.search">
       <path value="Bundle.entry.search" />
@@ -145,42 +133,11 @@
     </element>
     <element id="Bundle.entry:DiagnosticReport.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:DiagnosticReport.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:DiagnosticReport.resource.result">
-      <path value="Bundle.entry.resource.result" />
-      <slicing>
-        <discriminator>
-          <type value="profile" />
-          <path value="resolve()" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:DiagnosticReport.resource.conclusionCode.coding">
-      <path value="Bundle.entry.resource.conclusionCode.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:DiagnosticReport.search">
       <path value="Bundle.entry.search" />
@@ -204,120 +161,11 @@
     </element>
     <element id="Bundle.entry:Lesion.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:Lesion.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:Morphology">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="Morphology" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:Morphology.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:TissueRemovingMethod">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="TissueRemovingMethod" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:TissueRemovingMethod.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:EndoscopicalRemoved">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="EndoscopicalRemoved" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:EndoscopicalRemoved.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:SentToPathologist">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="SentToPathologist" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:SentToPathologist.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:Size">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="Size" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:Size.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:SuspectOfMalignancy">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="SuspectOfMalignancy" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource.component:SuspectOfMalignancy.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:Lesion.search">
       <path value="Bundle.entry.search" />
@@ -334,6 +182,7 @@
     <element id="Bundle.entry:NumberOfLesions">
       <path value="Bundle.entry" />
       <sliceName value="NumberOfLesions" />
+      <min value="1" />
     </element>
     <element id="Bundle.entry:NumberOfLesions.link">
       <path value="Bundle.entry.link" />
@@ -341,21 +190,11 @@
     </element>
     <element id="Bundle.entry:NumberOfLesions.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:NumberOfLesions.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:NumberOfLesions.search">
       <path value="Bundle.entry.search" />
@@ -379,63 +218,11 @@
     </element>
     <element id="Bundle.entry:BostonBowelPreparationScale.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:rightColon">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="rightColon" />
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:rightColon.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:transversum">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="transversum" />
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:transversum.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:leftColon">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="leftColon" />
-    </element>
-    <element id="Bundle.entry:BostonBowelPreparationScale.resource.component:leftColon.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:BostonBowelPreparationScale.search">
       <path value="Bundle.entry.search" />
@@ -459,6 +246,7 @@
     </element>
     <element id="Bundle.entry:Lumen.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet" />
@@ -473,6 +261,44 @@
       <max value="0" />
     </element>
     <element id="Bundle.entry:Lumen.response">
+      <path value="Bundle.entry.response" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:Patient">
+      <path value="Bundle.entry" />
+      <sliceName value="Patient" />
+    </element>
+    <element id="Bundle.entry:Patient.link">
+      <path value="Bundle.entry.link" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:Patient.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+      </type>
+    </element>
+    <element id="Bundle.entry:Patient.resource.identifier">
+      <path value="Bundle.entry.resource.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Bundle.entry:Patient.search">
+      <path value="Bundle.entry.search" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:Patient.request">
+      <path value="Bundle.entry.request" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:Patient.response">
       <path value="Bundle.entry.response" />
       <max value="0" />
     </element>
