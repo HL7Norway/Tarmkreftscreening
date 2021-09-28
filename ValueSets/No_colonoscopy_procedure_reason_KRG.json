@@ -15,7 +15,7 @@
                 "system": "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes",
                 "concept": [
                     {
-                        "code": "polyppkontroll",
+                        "code": "indikasjon-polyppkontroll",
                         "display": "Polyppkontroll",
                         "designation": [
                             {
