@@ -51,7 +51,7 @@
       <path value="Bundle.identifier" />
       <sliceName value="messageIdentifier" />
       <patternIdentifier>
-        <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-message-id" />
+        <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id" />
       </patternIdentifier>
     </element>
     <element id="Bundle.identifier:messageIdentifier.system">

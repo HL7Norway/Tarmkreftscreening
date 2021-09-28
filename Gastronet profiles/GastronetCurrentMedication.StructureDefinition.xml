@@ -48,7 +48,7 @@
       <path value="MedicationStatement.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet" />
       </type>
     </element>
     <element id="MedicationStatement.context">

@@ -52,7 +52,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="code.coding" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -76,11 +76,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Observation.component:rightColon.code.coding:SNOMED-CT">
       <path value="Observation.component.code.coding" />
       <sliceName value="SNOMED-CT" />
-      <max value="1" />
+      <min value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="8901000202102" />
@@ -126,11 +127,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Observation.component:transversum.code.coding:SNOMED-CT">
       <path value="Observation.component.code.coding" />
       <sliceName value="SNOMED-CT" />
-      <max value="1" />
+      <min value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="8911000202100" />
@@ -176,11 +178,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Observation.component:leftColon.code.coding:SNOMED-CT">
       <path value="Observation.component.code.coding" />
       <sliceName value="SNOMED-CT" />
-      <max value="1" />
+      <min value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="8891000202103" />

@@ -108,8 +108,8 @@
       <path value="Observation.component" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+          <type value="value" />
+          <path value="code.coding" />
         </discriminator>
         <rules value="open" />
       </slicing>

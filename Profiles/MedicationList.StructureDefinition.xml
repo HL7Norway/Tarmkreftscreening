@@ -59,7 +59,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-        <code value="problems" />
+        <code value="medications" />
       </patternCoding>
       <mustSupport value="true" />
     </element>

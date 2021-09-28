@@ -4,7 +4,7 @@
     <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle-krg"/>
   </meta>
   <identifier>
-    <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-message-id"/>
+    <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id"/>
     <value value="474783273248"/>
   </identifier>
   <type value="collection"/>  
@@ -13,6 +13,9 @@
     <resource>
       <Patient>
         <id value="1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg"/>
+        </meta>
         <!-- var nr. 1 -->
         <identifier>
           <system value="http://hl7.no/fhir/NamingSystem/FNR"/>
@@ -33,12 +36,17 @@
     <fullUrl value="http://example.org/fhir/Procedure/1"/>
     <resource>
       <Procedure>   
+        <id value="1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-krg"/>
+        </meta>
         <extension url="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-complicationconsequence-extension">
           <!-- var nr. 56 -->
            <valueCodeableConcept>
              <coding>
                <system value="http://snomed.info/sct"/>
                <code value="32485007"/>
+               <display value="Hospital admission (procedure)"/>
              </coding>
            </valueCodeableConcept>
         </extension>
@@ -48,6 +56,7 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="32713005"/>
+              <display value="Cecum structure (body structure)"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -92,6 +101,7 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="10821000202101"/>
+              <display value="Narkose eller dyp sedasjon med anestesistøtte"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -100,7 +110,8 @@
           <!-- var nr. 20 -->
           <coding>
             <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
-            <code value="diagnostisk-biopsi"/>           
+            <code value="diagnostisk-biopsi"/>    
+            <display value="Diagnostisk med biopsi"/>
           </coding>
         </category>
         <code>
@@ -108,6 +119,7 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="73761001"/>
+            <display value="Colonoscopy (procedure)"/>
           </coding>
         </code>
         <subject>
@@ -158,6 +170,7 @@
           <coding>
             <system value="http://snomed.info/sct"/> 
             <code value="712510007"/>
+            <display value="Intestinal hemorrhage (disorder)"/>
           </coding>
         </complication>        
         <followUp>
@@ -169,6 +182,7 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="10061000202102"/>
+            <display value="Virtual computed tomography colonoscopy planned (situation)"/>
           </coding>
         </followUp>
       </Procedure>
@@ -178,6 +192,10 @@
     <fullUrl value="http://example.org/fhir/MedicationStatement/1"/>
     <resource>     
       <MedicationStatement>
+        <id value="1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-krg"/>
+        </meta>
         <!-- var nr. 30 -->
         <partOf>
           <reference value="http://example.org/fhir/Procedure/1"/>
@@ -192,7 +210,6 @@
         <subject>
           <reference value="http://example.org/fhir/Patient/1"/>
         </subject>
-        <effectiveDateTime value="2020-12-15"/>
         <dosage>
           <doseAndRate>
             <doseQuantity>
@@ -210,11 +227,16 @@
     <fullUrl value="http://example.org/fhir/DiagnosticReport/1"/>
     <resource>
       <DiagnosticReport>
+        <id value="1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-krg"/>
+        </meta>
         <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="128145008"/>
+            <code value="73761001"/>
+            <display value="Colonoscopy (procedure)"/>
           </coding>
         </code>
         <subject>
@@ -248,12 +270,17 @@
     <fullUrl value="http://example.org/fhir/Observation/numberoflesions"/>
     <resource>
       <Observation>
+        <id value="numberoflesions"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-krg"/>
+        </meta>
         <!-- var nr. 34 -->
         <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="246206008"/>
+            <display value="Number of lesions (observable entity)"/>
           </coding>
         </code>
         <valueQuantity>
@@ -266,6 +293,10 @@
     <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
     <resource>     
       <Observation xmlns="http://hl7.org/fhir">  
+        <id value="lesion-1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion-krg"/>
+        </meta>
         <!-- var nr. 35 -->
         <identifier>
           <system value="http://kreftregisteret.no/fhir/NamingSystem/lesion-number"/>
@@ -276,6 +307,7 @@
           <coding>     
             <system value="http://snomed.info/sct"/>
             <code value="300577008"/>
+            <display value="Finding of lesion (finding)"/>
           </coding>
         </code>      
         <!-- var nr. 36 -->
@@ -289,9 +321,9 @@
         <component>
           <code>
             <coding>
-              <!-- morphology -->
               <system value= "http://snomed.info/sct"/>
               <code value ="8961000202103"/>
+              <display value="Paris endoscopic classification of polyps (assessment scale)"/>
             </coding>
           </code>
           <!-- var nr. 37 -->
@@ -308,7 +340,8 @@
             <coding>
               <!-- lesion diameter -->
               <system value = "http://snomed.info/sct"/>
-              <code value = "10291000202102"/>             
+              <code value = "10291000202102"/>       
+              <display value="Lesion size given by largest diameter (observable entity)"/>
             </coding>            
           </code>
           <!-- var nr. 38 -->
@@ -342,6 +375,7 @@
             <coding>
               <system value = "http://snomed.info/sct"/>
               <code value = "168395004"/>   
+              <display value="Tissue sent for histology (situation)"/>
             </coding>            
           </code>
           <!-- var nr. 42 -->
@@ -361,6 +395,7 @@
             <coding>
               <system value = "http://terminology.hl7.org/CodeSystem/v2-0136"/>
               <code value = "Y"/> 
+              <display value="Yes"/>
             </coding>        
           </valueCodeableConcept>      
         </component>   
@@ -382,27 +417,32 @@
     <fullUrl value="http://example.org/fhir/Observation/bbps"/>
     <resource>
       <Observation>
+        <id value="bbps"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale-krg"/>
+        </meta>
         <status value="final"/>
         <code>
           <coding>
-            <!-- boston bowel preparation scale -->
-            <system value="http://snomed.info.sct"/>
+            <system value="http://snomed.info/sct"/>
             <code value="722818007"/>
+            <display value=" Boston bowel preparation scale (assessment scale)"/>
           </coding>
         </code>     
        <component>
          <!-- var nr. 26 -->
          <code>
-           <!-- right colon -->
            <coding>
              <system value="http://snomed.info/sct"/>
              <code value="8901000202102"/>
+             <display value="Boston bowel preparation skala høyre kolon"/>
            </coding>
          </code>
          <valueCodeableConcept>
            <coding>
              <system value="http://snomed.info/sct"/>
              <code value="10291000132101"/>
+             <display value="Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)/"></display>
            </coding>
          </valueCodeableConcept>
        </component>
@@ -413,12 +453,14 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="8911000202100"/>
+              <display value="Boston bowel preparation skala kolon transversum"/>
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="10301000132102"/>
+              <display value="Minor amount of residual staining, small fragments of stool and/or opaque liquid, but mucosa of colon segment seen well (finding)"/>
             </coding>
           </valueCodeableConcept>
         </component>
@@ -429,12 +471,14 @@
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="8891000202103"/>
+              <display value="Boston bowel preparation skala venstre kolon"/>
             </coding>
           </code>
           <valueCodeableConcept>
             <coding>
               <system value="http://snomed.info/sct"/>
               <code value="10311000132100"/>
+              <display value="Entire mucosa of colon segment seen well with no residual staining, small fragments of stool or opaque liquid (finding)"/>
             </coding>
           </valueCodeableConcept>
         </component>
@@ -445,6 +489,10 @@
     <fullUrl value="http://example.org/fhir/List/problem-list"/>
     <resource>
       <List>
+        <id value="problem-list"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-problemlist-krg"/>
+        </meta>
         <status value="current"/>
         <mode value="snapshot"/>
         <code>
@@ -468,6 +516,10 @@
     <fullUrl value="http://example.org/fhir/Condition/1"/>
     <resource>
       <Condition>
+        <id value="1"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-condition-krg"/>
+        </meta>
         <!-- var nr. 12 -->
         <code>
           <coding>
@@ -486,6 +538,10 @@
     <fullUrl value="http://example.org/fhir/List/medication-list"/>
     <resource>
       <List>
+        <id value="medication-list"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationlist-krg"/>
+        </meta>
         <status value="current"/>
         <mode value="snapshot"/>
         <code>
@@ -513,7 +569,11 @@
   <entry>
     <fullUrl value="http://example.org/fhir/MedicationStatement/2"/>
     <resource>     
-      <MedicationStatement>      
+      <MedicationStatement>     
+        <id value="2"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication-krg"/>
+        </meta>
         <status value="active"/>
         <!-- var nr. 13 -->
         <medicationCodeableConcept>
@@ -533,6 +593,10 @@
     <fullUrl value="http://example.org/fhir/MedicationStatement/3"/>
     <resource>     
       <MedicationStatement>      
+        <id id="3"/>
+        <meta>
+          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication-krg"/>
+        </meta>
         <status value="active"/>
         <medicationCodeableConcept>
           <coding>
@@ -552,6 +616,9 @@
     <resource>
       <Practitioner>
         <id value="2"/>
+        <meta>
+          <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
+        </meta>
         <identifier>
           <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
           <value value="63784293743"/>
@@ -564,6 +631,9 @@
     <resource>
       <Practitioner>
         <id value="3"/>
+        <meta>
+          <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
+        </meta>
         <identifier>
           <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
           <value value="63784293743"/>
@@ -575,6 +645,10 @@
     <fullUrl value="http://example.org/fhir/Location/1"/>
     <resource>
       <Location>
+        <id value="1"/>
+        <meta>
+          <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location"/>
+        </meta>
         <managingOrganization>
           <reference value="http://example.org/fhir/Organization/1"/>
         </managingOrganization>
@@ -585,6 +659,10 @@
     <fullUrl value="http://example.org/fhir/Organization/1"/>
     <resource>
       <Organization>
+        <id value="1"/>
+        <meta>
+          <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization"/>
+        </meta>
         <!-- var nr. 3 -->
         <identifier>
           <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>

@@ -47,7 +47,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
-        <code value="128145008" />
+        <code value="73761001" />
       </patternCoding>
     </element>
     <element id="DiagnosticReport.subject">

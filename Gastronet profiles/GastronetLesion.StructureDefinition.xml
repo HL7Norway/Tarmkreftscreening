@@ -123,9 +123,9 @@
       <sliceName value="SentToPathologist" />
       <max value="0" />
     </element>
-    <element id="Observation.component:Size">
+    <element id="Observation.component:SuspectOfMalignancy">
       <path value="Observation.component" />
-      <sliceName value="Size" />
+      <sliceName value="SuspectOfMalignancy" />
       <max value="0" />
     </element>
   </differential>

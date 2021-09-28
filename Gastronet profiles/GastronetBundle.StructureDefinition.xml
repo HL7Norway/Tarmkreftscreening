@@ -277,7 +277,7 @@
       <min value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+        <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet" />
       </type>
     </element>
     <element id="Bundle.entry:Patient.resource.identifier">

@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2021-09-07T09:29:30.079+00:00" />
   </meta>
-  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-patient" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet" />
   <name value="GastronetPatient" />
   <title value="Gastronet Patient" />
   <status value="draft" />
