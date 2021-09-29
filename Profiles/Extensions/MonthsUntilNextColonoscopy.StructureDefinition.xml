@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2021-03-02T17:02:50.39+00:00" />
   </meta>
-  <url value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
+  <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
   <name value="MonthsUntilNextColonoscopy" />
   <title value="ColonoscopyReport Months Until Next Colonoscopy" />
   <status value="draft" />
@@ -29,7 +29,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://cancerregistration.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
+      <fixedUri value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-monthsuntilnextcolonoscopy-extension" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

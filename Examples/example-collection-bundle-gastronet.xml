@@ -447,7 +447,7 @@
     <fullUrl value="http://example.org/fhir/MedicationStatement/3"/>
     <resource>     
       <MedicationStatement>  
-        <id id="3"/>
+        <id value="3"/>
         <meta>
           <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-current-medication-gastronet"/>
         </meta>

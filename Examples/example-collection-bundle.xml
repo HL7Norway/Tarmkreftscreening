@@ -593,7 +593,7 @@
     <fullUrl value="http://example.org/fhir/MedicationStatement/3"/>
     <resource>     
       <MedicationStatement>      
-        <id id="3"/>
+        <id value="3"/>
         <meta>
           <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-current-medication-krg"/>
         </meta>
