@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3d7cd59e-151b-4ec1-ac71-6fe0bb50f32c" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-10-01T10:04:03.053+00:00" />
+  </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport-krg" />
   <name value="KRGDiagnosticReport" />
   <title value="KRG Diagnostic Report" />
   <status value="draft" />
+  <date value="2021-10-01T10:04:02.8022025+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -70,11 +76,6 @@
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions-krg" />
       </type>
-    </element>
-    <element id="DiagnosticReport.result:Mucosa">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Mucosa" />
-      <max value="0" />
     </element>
     <element id="DiagnosticReport.imagingStudy">
       <path value="DiagnosticReport.imagingStudy" />

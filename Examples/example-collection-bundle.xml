@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/bundle.xsd">
+<Bundle xmlns="http://hl7.org/fhir">
   <meta>
     <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle-krg"/>
   </meta>
@@ -9,7 +9,7 @@
   </identifier>
   <type value="collection"/>  
   <entry>
-    <fullUrl value="http://example.org/fhir/Patient/1"/>
+    <fullUrl value="http://testdata.no/fhir/Patient/1"/>
     <resource>
       <Patient>
         <id value="1"/>
@@ -33,7 +33,7 @@
     </resource>
   </entry>
   <entry>    
-    <fullUrl value="http://example.org/fhir/Procedure/1"/>
+    <fullUrl value="http://testdata.no/fhir/Procedure/1"/>
     <resource>
       <Procedure>   
         <id value="1"/>
@@ -123,7 +123,7 @@
           </coding>
         </code>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>
         <!-- var nr. 5 -->
         <performedDateTime value="2020-11-01T15:00:00+01:00"/>
@@ -137,7 +137,7 @@
             </coding>
           </function>
           <actor>
-            <reference value="http://example.org/fhir/Practitioner/2"/>
+            <reference value="http://testdata.no/fhir/Practitioner/2"/>
           </actor>          
         </performer>
         <performer>
@@ -149,11 +149,11 @@
             </coding>
           </function>
           <actor>
-            <reference value="http://example.org/fhir/Practitioner/3"/>
+            <reference value="http://testdata.no/fhir/Practitioner/3"/>
           </actor>          
         </performer>
         <location>          
-          <reference value="http://example.org/fhir/Location/1"/>
+          <reference value="http://testdata.no/fhir/Location/1"/>
         </location>
         <!-- var nr. 11 -->
         <reasonCode>
@@ -163,7 +163,7 @@
           </coding>
         </reasonCode>
         <report>
-          <reference value="http://example.org/fhir/DiagnosticReport/1"/>
+          <reference value="http://testdata.no/fhir/DiagnosticReport/1"/>
         </report>     
         <!-- var nr. 55 -->
         <complication>
@@ -189,7 +189,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/MedicationStatement/1"/>
+    <fullUrl value="http://testdata.no/fhir/MedicationStatement/1"/>
     <resource>     
       <MedicationStatement>
         <id value="1"/>
@@ -198,17 +198,17 @@
         </meta>
         <!-- var nr. 30 -->
         <partOf>
-          <reference value="http://example.org/fhir/Procedure/1"/>
+          <reference value="http://testdata.no/fhir/Procedure/1"/>
         </partOf>
         <status value="active"/>
         <medicationCodeableConcept>
           <coding>
-            <system value="http://snomed.info/sct "/>
+            <system value="http://snomed.info/sct"/>
             <code value="387560008"/>
           </coding>
         </medicationCodeableConcept>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>
         <dosage>
           <doseAndRate>
@@ -224,7 +224,7 @@
     </resource>
   </entry>
   <entry>   
-    <fullUrl value="http://example.org/fhir/DiagnosticReport/1"/>
+    <fullUrl value="http://testdata.no/fhir/DiagnosticReport/1"/>
     <resource>
       <DiagnosticReport>
         <id value="1"/>
@@ -240,16 +240,16 @@
           </coding>
         </code>
         <subject>
-          <reference value= "http://example.org/fhir/Patient/1"/>
+          <reference value= "http://testdata.no/fhir/Patient/1"/>
         </subject>
         <result>
-          <reference value= "http://example.org/fhir/Observation/lesion-1"/>
+          <reference value= "http://testdata.no/fhir/Observation/lesion-1"/>
         </result>
         <result>
-          <reference value= "http://example.org/fhir/Observation/bbps"/>
+          <reference value= "http://testdata.no/fhir/Observation/bbps"/>
         </result>
         <result>
-          <reference value= "http://example.org/fhir/Observation/numberoflesions"/>
+          <reference value= "http://testdata.no/fhir/Observation/numberoflesions"/>
         </result>
         <conclusionCode>
           <!-- var nr. 59 -->
@@ -260,14 +260,14 @@
           <coding>
             <system value="http://hl7.org/fhir/sid/icd-10"/>
             <code value="C18.0"/>
-            <display value="Malignant neoplasm of colon - Caecum"/>
+            <display value="Malignant neoplasm: Caecum"/>
           </coding>
         </conclusionCode>
       </DiagnosticReport>        
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Observation/numberoflesions"/>
+    <fullUrl value="http://testdata.no/fhir/Observation/numberoflesions"/>
     <resource>
       <Observation>
         <id value="numberoflesions"/>
@@ -290,7 +290,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Observation/lesion-1"/>
+    <fullUrl value="http://testdata.no/fhir/Observation/lesion-1"/>
     <resource>     
       <Observation xmlns="http://hl7.org/fhir">  
         <id value="lesion-1"/>
@@ -414,7 +414,7 @@
     </resource>
   </entry> 
   <entry>
-    <fullUrl value="http://example.org/fhir/Observation/bbps"/>
+    <fullUrl value="http://testdata.no/fhir/Observation/bbps"/>
     <resource>
       <Observation>
         <id value="bbps"/>
@@ -426,7 +426,7 @@
           <coding>
             <system value="http://snomed.info/sct"/>
             <code value="722818007"/>
-            <display value=" Boston bowel preparation scale (assessment scale)"/>
+            <display value="Boston bowel preparation scale (assessment scale)"/>
           </coding>
         </code>     
        <component>
@@ -442,7 +442,7 @@
            <coding>
              <system value="http://snomed.info/sct"/>
              <code value="10291000132101"/>
-             <display value="Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)/"></display>
+             <display value="Portion of mucosa of colon segment seen, but other areas of colon segment not well seen due to staining, residual stool and/or opaque liquid (finding)"/>
            </coding>
          </valueCodeableConcept>
        </component>
@@ -486,7 +486,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/List/problem-list"/>
+    <fullUrl value="http://testdata.no/fhir/List/problem-list"/>
     <resource>
       <List>
         <id value="problem-list"/>
@@ -502,18 +502,18 @@
           </coding>
         </code>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>
         <entry>
           <item>
-            <reference value="http://example.org/fhir/Condition/1"/>
+            <reference value="http://testdata.no/fhir/Condition/1"/>
           </item>
         </entry>
       </List>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Condition/1"/>
+    <fullUrl value="http://testdata.no/fhir/Condition/1"/>
     <resource>
       <Condition>
         <id value="1"/>
@@ -529,13 +529,13 @@
           </coding>
         </code>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>        
       </Condition>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/List/medication-list"/>
+    <fullUrl value="http://testdata.no/fhir/List/medication-list"/>
     <resource>
       <List>
         <id value="medication-list"/>
@@ -551,23 +551,23 @@
           </coding>
         </code>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>
         <entry>
           <item>
-            <reference value="http://example.org/fhir/MedicationStatement/2"/>
+            <reference value="http://testdata.no/fhir/MedicationStatement/2"/>
           </item>
         </entry>
         <entry>
           <item>
-            <reference value="http://example.org/fhir/MedicationStatement/3"/>
+            <reference value="http://testdata.no/fhir/MedicationStatement/3"/>
           </item>
         </entry>
       </List>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/MedicationStatement/2"/>
+    <fullUrl value="http://testdata.no/fhir/MedicationStatement/2"/>
     <resource>     
       <MedicationStatement>     
         <id value="2"/>
@@ -584,13 +584,13 @@
           </coding>
         </medicationCodeableConcept>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>      
       </MedicationStatement>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/MedicationStatement/3"/>
+    <fullUrl value="http://testdata.no/fhir/MedicationStatement/3"/>
     <resource>     
       <MedicationStatement>      
         <id value="3"/>
@@ -606,13 +606,13 @@
           </coding>
         </medicationCodeableConcept>
         <subject>
-          <reference value="http://example.org/fhir/Patient/1"/>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
         </subject>      
       </MedicationStatement>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Practitioner/2"/>
+    <fullUrl value="http://testdata.no/fhir/Practitioner/2"/>
     <resource>
       <Practitioner>
         <id value="2"/>
@@ -627,7 +627,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Practitioner/3"/>
+    <fullUrl value="http://testdata.no/fhir/Practitioner/3"/>
     <resource>
       <Practitioner>
         <id value="3"/>
@@ -642,7 +642,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Location/1"/>
+    <fullUrl value="http://testdata.no/fhir/Location/1"/>
     <resource>
       <Location>
         <id value="1"/>
@@ -650,13 +650,13 @@
           <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location"/>
         </meta>
         <managingOrganization>
-          <reference value="http://example.org/fhir/Organization/1"/>
+          <reference value="http://testdata.no/fhir/Organization/1"/>
         </managingOrganization>
       </Location>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/Organization/1"/>
+    <fullUrl value="http://testdata.no/fhir/Organization/1"/>
     <resource>
       <Organization>
         <id value="1"/>
