@@ -5,8 +5,8 @@
   </meta>
   <identifier>
     <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id"/>
-    <value value="474783273248"/>
-  </identifier>
+    <value value="1b31da0f-d1d4-40ec-b7a6-59269a8b6549"/>
+  </identifier>  
   <type value="collection"/>  
   <entry>
     <fullUrl value="http://testdata.no/fhir/Patient/1"/>
@@ -18,9 +18,16 @@
         </meta>
         <!-- var nr. 1 -->
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/FNR"/>
-          <value value="536271738293"/>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+          <value value="13116900216"/>
         </identifier>
+        <name>
+          <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
+            <valueString value="Erik"/>
+          </extension>
+          <family value="Line"/>
+          <given value="Danser"/>
+        </name>        
         <!-- var nr. 2 -->
         <name>         
           <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
@@ -474,9 +481,9 @@
           <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
         </meta>
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
-          <value value="63784293743"/>
-        </identifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+          <value value="958100012"/>
+        </identifier>        
       </Practitioner>
     </resource>
   </entry>
@@ -489,9 +496,9 @@
           <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
         </meta>
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
-          <value value="63784293743"/>
-        </identifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+          <value value="012345678"/>
+        </identifier>        
       </Practitioner>
     </resource>
   </entry>

@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="30" />
-    <lastUpdated value="2021-07-07T14:11:23.256+00:00" />
+    <versionId value="35" />
+    <lastUpdated value="2021-10-12T08:19:10.184+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-07-07T14:11:24.0600204+00:00" />
+  <date value="2021-10-12T08:19:10.0680653+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -34,12 +34,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Procedure.extension:complicationConsequence">
       <path value="Procedure.extension" />
       <sliceName value="complicationConsequence" />
       <short value="The concequence of the complications that have occured during the procedure" />
       <definition value="The concequence of the complications that have occured during the procedure" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -64,6 +66,7 @@
       <sliceName value="partOfBowelReached" />
       <short value="The furthest part of the bowel is that was reached during the colonoscopy" />
       <definition value="The furthest part of the bowel is that was reached during the colonoscopy" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -93,6 +96,7 @@
       <sliceName value="caecumIntubated" />
       <short value="Specifies if the caecum was intubated during the colonoscopy" />
       <definition value="Specifies if the caecum was intubated during the colonoscopy" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -117,6 +121,7 @@
       <sliceName value="duration" />
       <short value="The duration of the procedure" />
       <definition value="The duration of the procedure" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -158,6 +163,7 @@
       <sliceName value="withdrawalTime" />
       <short value="Time from withdrawal from the caecum until the end of the procedure." />
       <definition value="Time from withdrawal from the caecum until the end of the procedure." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -201,6 +207,7 @@
       <sliceName value="polypsRemoved" />
       <short value="Indicates if all detected polyps are removed" />
       <definition value="Indicates if all detected polyps are removed" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -229,6 +236,7 @@
       <sliceName value="medicationGiven" />
       <short value="Explicitly indicates if there was any medication given during the procedure ." />
       <definition value="Explicitly indicates if there was any medication given during the procedure ." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -249,6 +257,7 @@
       <sliceName value="sedationLevel" />
       <short value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
       <definition value="Explicitly indicates if there were any anesthetics (deep sedation) given during the procedure ." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -273,6 +282,7 @@
       <sliceName value="laxatives" />
       <short value="Describes what kind of laxatives were used to empty the bowel before a colonoscopy, and if the laxatives were taken as a split dose or not." />
       <definition value="Describes what kind of laxatives were used to empty the bowel before a colonoscopy, and if the laxatives were taken as a split dose or not." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -289,12 +299,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Procedure.extension:laxatives.extension:type">
       <path value="Procedure.extension.extension" />
       <sliceName value="type" />
       <short value="what kind of laxatives were used to empty the bowel before a colonoscopy" />
       <definition value="what kind of laxatives were used to empty the bowel before a colonoscopy" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:laxatives.extension:type.value[x]">
@@ -314,6 +326,7 @@
       <sliceName value="takenAsSplitDose" />
       <short value="If the laxatives were taken as a split dose or not." />
       <definition value="If the laxatives were taken as a split dose or not." />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:laxatives.extension:takenAsSplitDose.value[x]">
@@ -333,6 +346,7 @@
       <sliceName value="photoDocumenationOfCaecumReached" />
       <short value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
       <definition value="Indicated if there is any phot documentation that the caecum has been reached during the colonoscopy" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -411,7 +425,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -472,7 +485,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -481,7 +493,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
       <mapping>
@@ -528,7 +539,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -631,12 +641,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="Procedure.followUp.extension:monthsUntilNextColonoscopy">
       <path value="Procedure.followUp.extension" />
       <sliceName value="monthsUntilNextColonoscopy" />
       <short value="Number of months until next colonoscopy" />
       <definition value="Number of months until next colonoscopy" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

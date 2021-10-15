@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="520e8a06-e028-4993-abf8-893850d1c952" />
   <meta>
-    <versionId value="23" />
-    <lastUpdated value="2021-09-07T12:54:28.206+00:00" />
+    <versionId value="30" />
+    <lastUpdated value="2021-10-12T08:28:20.304+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
   <name value="DiagnosticReport" />
   <title value="Colonoscopy Report Diagnostic Report" />
   <status value="draft" />
-  <date value="2021-09-07T12:50:40.849435Z" />
+  <date value="2021-10-12T08:19:42.6326118Z" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -59,7 +59,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="resolve().code" />
+          <path value="resolve().code.coding" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -70,7 +70,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -81,7 +80,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bostonbowelpreparationscale" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -92,7 +90,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-numberoflesions" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -103,7 +100,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lumen" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -139,10 +135,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="DiagnosticReport.conclusionCode.extension:IsMainDiagnosis">
       <path value="DiagnosticReport.conclusionCode.extension" />
       <sliceName value="IsMainDiagnosis" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

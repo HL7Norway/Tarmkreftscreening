@@ -5,30 +5,26 @@
   </meta>
   <identifier>
     <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id"/>
-    <value value="474783273248"/>
-  </identifier>
+    <value value="94419c0f-4ec8-46d1-88f6-db5a13ee4f0f"/>
+  </identifier>  
   <type value="collection"/>  
   <entry>
     <fullUrl value="http://testdata.no/fhir/Patient/1"/>
     <resource>
       <Patient>
         <id value="1"/>
-        <meta>
-          <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg"/>
-        </meta>
         <!-- var nr. 1 -->
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/FNR"/>
-          <value value="536271738293"/>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+          <value value="13116900216"/>
         </identifier>
-        <!-- var nr. 2 -->
-        <name>         
+        <name>
           <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
             <valueString value="Erik"/>
-          </extension>          
-          <family value="Eksempel" />
-          <given value="Espen" />
-        </name>
+          </extension>
+          <family value="Line"/>
+          <given value="Danser"/>
+        </name>        
       </Patient>
     </resource>
   </entry>
@@ -620,9 +616,9 @@
           <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
         </meta>
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
-          <value value="63784293743"/>
-        </identifier>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+          <value value="958100012"/>
+        </identifier>        
       </Practitioner>
     </resource>
   </entry>
@@ -635,8 +631,8 @@
           <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
         </meta>
         <identifier>
-          <system value="http://hl7.no/fhir/NamingSystem/HPR"/>
-          <value value="63784293743"/>
+          <system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+          <value value="012345678"/>
         </identifier>
       </Practitioner>
     </resource>

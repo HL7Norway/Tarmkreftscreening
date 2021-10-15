@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="aa2678ac-6b27-406f-9f97-b0bd929b3e1d" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2021-09-07T09:13:44.199+00:00" />
+    <versionId value="17" />
+    <lastUpdated value="2021-10-12T11:37:11.801+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle" />
   <name value="Bundle" />
   <title value="Colonoscopy Report Bundle" />
   <status value="draft" />
-  <date value="2021-09-07T09:13:43.5489337+00:00" />
+  <date value="2021-10-12T11:37:11.5185724+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -67,11 +67,12 @@
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
-          <type value="type" />
+          <type value="profile" />
           <path value="resource" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="3" />
     </element>
     <element id="Bundle.entry:Colonoscopy">
       <path value="Bundle.entry" />
@@ -210,6 +211,7 @@
     </element>
     <element id="Bundle.entry:Patient.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
