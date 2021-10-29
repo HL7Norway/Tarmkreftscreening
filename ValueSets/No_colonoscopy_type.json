@@ -12,12 +12,21 @@
     "compose": {
         "include": [
             {
-                "system": "http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes",
+                "system": "http://snomed.info/sct",
                 "concept": [
                     {
-                        "code": "terapeutisk",
+                        "code": "303587008",
                         "display": "Terapeutisk",
                         "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                  "system": "http://snomed.info/sct",
+                                  "code": "900000000000003001",
+                                  "display": "Fully specified name"
+                                },
+                                "value": "Therapeutic colonoscopy (procedure)"
+                            },
                             {
                                 "language": "no",
                                 "use": {
@@ -30,9 +39,18 @@
                         ]
                     },
                     {
-                        "code": "diagnostisk-biopsi",
+                        "code": "446745002",
                         "display": "Diagnostisk med biopsi",
                         "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                  "system": "http://snomed.info/sct",
+                                  "code": "900000000000003001",
+                                  "display": "Fully specified name"
+                                },
+                                "value": "Colonoscopy and biopsy of colon (procedure)"
+                            },
                             {
                                 "language": "no",
                                 "use": {
@@ -45,9 +63,18 @@
                         ]
                     },
                     {
-                        "code": "diagnostisk-uten-biopsi",
+                        "code": "73761001",
                         "display": "Diagnostisk uten biopsi",
                         "designation": [
+                            {
+                                "language": "en",
+                                "use": {
+                                  "system": "http://snomed.info/sct",
+                                  "code": "900000000000003001",
+                                  "display": "Fully specified name"
+                                },
+                                "value": "Colonoscopy (procedure)"
+                            },
                             {
                                 "language": "no",
                                 "use": {

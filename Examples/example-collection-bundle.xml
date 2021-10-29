@@ -105,8 +105,8 @@
         <category>
           <!-- var nr. 20 -->
           <coding>
-            <system value="http://ehelse.no/fhir/CodeSystem/colonoscopy-model-specific-codes"/>
-            <code value="diagnostisk-biopsi"/>    
+            <system value="http://snomed.info/sct"/>
+            <code value="446745002"/>     
             <display value="Diagnostisk med biopsi"/>
           </coding>
         </category>
