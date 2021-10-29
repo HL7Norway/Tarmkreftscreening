@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="88cca6ff-c5ca-40ac-8aa7-84a93896b1b0" />
   <meta>
-    <versionId value="4" />
-    <lastUpdated value="2021-09-07T09:33:01.982+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2021-10-27T08:38:40.001+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lumen" />
   <name value="Lumen" />
   <title value="Colonoscopy Report Lumen" />
   <status value="draft" />
-  <date value="2021-09-07T09:33:01.7775815+00:00" />
+  <date value="2021-10-27T08:38:39.6576744+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -44,7 +44,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
-        <code value="TBD" />
+        <code value="15991000202102" />
       </patternCoding>
     </element>
     <element id="Observation.value[x]">
