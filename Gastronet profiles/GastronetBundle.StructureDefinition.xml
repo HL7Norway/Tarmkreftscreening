@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="2e5d3627-b0df-4be5-a66e-af3d005d7e4e" />
   <meta>
-    <versionId value="1" />
-    <lastUpdated value="2021-09-07T09:45:57.538+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2021-11-24T16:16:29.351+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet" />
   <name value="GastronetBundle" />
   <title value="Gastronet Bundle" />
   <status value="draft" />
-  <date value="2021-09-07T09:45:57.3570461+00:00" />
+  <date value="2021-11-24T16:16:28.8298603+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -37,6 +37,10 @@
   <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle" />
   <derivation value="constraint" />
   <differential>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp" />
+      <min value="1" />
+    </element>
     <element id="Bundle.entry:Colonoscopy">
       <path value="Bundle.entry" />
       <sliceName value="Colonoscopy" />
@@ -72,6 +76,24 @@
     <element id="Bundle.entry:SubProcedure.link">
       <path value="Bundle.entry.link" />
       <max value="0" />
+    </element>
+    <element id="Bundle.entry:SubProcedure.resource">
+      <path value="Bundle.entry.resource" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-subprocedure-gastronet" />
+      </type>
+    </element>
+    <element id="Bundle.entry:SubProcedure.resource.code.coding">
+      <path value="Bundle.entry.resource.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
     </element>
     <element id="Bundle.entry:SubProcedure.search">
       <path value="Bundle.entry.search" />
@@ -279,16 +301,6 @@
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:Patient.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:Patient.search">
       <path value="Bundle.entry.search" />

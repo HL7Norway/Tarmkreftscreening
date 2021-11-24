@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="a9392e68-e6d9-44b3-9295-ff248626c66d" />
   <meta>
-    <versionId value="35" />
-    <lastUpdated value="2021-10-12T08:19:10.184+00:00" />
+    <versionId value="37" />
+    <lastUpdated value="2021-11-16T15:14:44.49+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy" />
   <name value="Colonoscopy" />
   <title value="Colonoscopy Report Colonoscopy" />
   <status value="draft" />
-  <date value="2021-10-12T08:19:10.0680653+00:00" />
+  <date value="2021-11-16T15:14:43.5230326+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -22,7 +22,7 @@
   <kind value="resource" />
   <abstract value="true" />
   <type value="Procedure" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure" />
   <derivation value="constraint" />
   <differential>
     <element id="Procedure.extension">
@@ -391,31 +391,18 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Procedure.code.coding:NKPK">
       <path value="Procedure.code.coding" />
       <sliceName value="NKPK" />
-      <max value="1" />
-      <patternCoding>
-        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:SNOMED-CT">
       <path value="Procedure.code.coding" />
       <sliceName value="SNOMED-CT" />
       <min value="1" />
-      <max value="1" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="73761001" />
       </patternCoding>
       <mustSupport value="true" />

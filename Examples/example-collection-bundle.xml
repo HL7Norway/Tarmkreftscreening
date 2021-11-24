@@ -8,6 +8,7 @@
     <value value="94419c0f-4ec8-46d1-88f6-db5a13ee4f0f"/>
   </identifier>  
   <type value="collection"/>  
+  <timestamp value="2021-11-16T13:28:17.239+01:00"/>
   <entry>
     <fullUrl value="http://testdata.no/fhir/Patient/1"/>
     <resource>

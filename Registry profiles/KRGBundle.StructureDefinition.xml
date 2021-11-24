@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db9ed8c1-27f5-4d7d-a08f-5273bf7ca37e" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2021-09-07T10:01:34.116+00:00" />
+    <versionId value="1" />
+    <lastUpdated value="2021-11-16T15:48:39.978+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle-krg" />
   <name value="KRGBundle" />
   <title value="KRG Bundle" />
   <status value="draft" />
-  <date value="2021-09-07T10:01:33.8653108+00:00" />
+  <date value="2021-11-16T15:48:39.7373993+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -37,6 +37,10 @@
   <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-bundle" />
   <derivation value="constraint" />
   <differential>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp" />
+      <min value="1" />
+    </element>
     <element id="Bundle.total">
       <path value="Bundle.total" />
       <max value="0" />
@@ -333,16 +337,6 @@
         <code value="Resource" />
         <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-patient-krg" />
       </type>
-    </element>
-    <element id="Bundle.entry:Patient.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:Patient.search">
       <path value="Bundle.entry.search" />

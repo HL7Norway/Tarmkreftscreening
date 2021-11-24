@@ -5,7 +5,7 @@
     <versionId value="5" />
     <lastUpdated value="2021-09-07T09:54:01.547+00:00" />
   </meta>
-  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-currentmedication-gastronet" />
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-current-medication-gastronet" />
   <name value="GastronetCurrentMedication" />
   <title value="Gastronet Current Medication" />
   <status value="draft" />

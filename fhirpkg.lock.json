@@ -1,19 +1,14 @@
 {
-  "updated": "2021-10-27T10:32:55.0359302+02:00",
+  "updated": "2021-11-16T15:11:31.1677893+01:00",
   "dependencies": {
-    "hl7.fhir.no.basis": "2.0.14",
-    "simplifier.core.r4": "4.0.2",
-    "simplifier.core.r4.extensions": "4.0.0",
-    "simplifier.core.r4.profiles": "4.0.0",
-    "simplifier.core.r4.searchparameters": "4.0.0",
-    "simplifier.core.r4.tx": "4.0.0",
-    "simplifier.core.r4.conceptmaps": "4.0.0",
-    "simplifier.core.r4.valuesets": "4.0.0",
-    "simplifier.core.r4.v3codesystems": "4.0.0",
-    "simplifier.core.r4.v2tables": "4.0.0",
-    "simplifier.core.r4.base": "4.0.1",
-    "simplifier.core.r4.types": "4.0.0",
-    "simplifier.core.r4.resources": "4.0.1"
+    "hl7.fhir.no.basis": "2.1.1",
+    "hl7.fhir.core": "4.0.1",
+    "hl7.fhir.r4.core": "4.0.1"
   },
-  "missing": {}
+  "missing": {
+    "hl7.fhir.r3.core": "4.0.1",
+    "hl7.fhir.r3.examples": "4.0.1",
+    "hl7.fhir.r3.expansions": "4.0.1",
+    "hl7.fhir.r3.elements": "4.0.1"
+  }
 }

@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="be307a1a-e36d-4096-8ef6-d22b505aa412" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-06-16T11:09:54.975+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2021-11-16T15:48:18.088+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-subprocedure" />
   <name value="SubProcedure" />
   <title value="Colonoscopy Report Sub Procedure" />
   <status value="draft" />
-  <date value="2021-06-16T11:10:04.0833015+00:00" />
+  <date value="2021-11-16T15:48:17.7717691+00:00" />
   <description value="Describes a part of a procedure. In this case, a part of the colonoscopy like removing a polyp from the colon." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -35,7 +35,7 @@
   <kind value="resource" />
   <abstract value="true" />
   <type value="Procedure" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <baseDefinition value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure" />
   <derivation value="constraint" />
   <differential>
     <element id="Procedure.partOf">
@@ -52,31 +52,18 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:NKPK">
       <path value="Procedure.code.coding" />
       <sliceName value="NKPK" />
-      <patternCoding>
-        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:SNOMED-CT">
       <path value="Procedure.code.coding" />
       <sliceName value="SNOMED-CT" />
       <min value="1" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Procedure.subject">

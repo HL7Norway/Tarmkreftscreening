@@ -75,7 +75,7 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-currentmedication-gastronet" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-current-medication-gastronet" />
       </type>
     </element>
     <element id="List.emptyReason">
