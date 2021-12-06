@@ -10,7 +10,7 @@
         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Indictation</h2><tt>http://ehelse.no/fhir/ValueSet/no-procedure-reason-coloscopy</tt></div>"
     },
     "url": "http://ehelse.no/fhir/valueset/no-colonoscopy-procedure-reason",
-    "name": "No-procedure-reason-coloscopy",
+    "name": "No-procedure-reason-colonoscopy",
     "title": "Colonoscopy Report Indication",
     "status": "draft",
     "publisher": "Norwegian Directorate of e-health",
