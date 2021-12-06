@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="766a2f3d-b31f-4ed4-986e-146c39da99ac" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-09-07T09:52:11.886+00:00" />
+    <versionId value="6" />
+    <lastUpdated value="2021-12-01T13:36:32.968+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-subprocedure-gastronet" />
   <name value="GastronetSubProcedure" />
   <title value="Gatronet Sub Procedure" />
   <status value="draft" />
-  <date value="2021-09-07T09:52:11.3647563+00:00" />
+  <date value="2021-12-01T13:36:32.2267866+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

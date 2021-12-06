@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="2e5d3627-b0df-4be5-a66e-af3d005d7e4e" />
   <meta>
-    <versionId value="3" />
-    <lastUpdated value="2021-11-24T16:16:29.351+00:00" />
+    <versionId value="5" />
+    <lastUpdated value="2021-11-26T16:14:35.851+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet" />
   <name value="GastronetBundle" />
   <title value="Gastronet Bundle" />
   <status value="draft" />
-  <date value="2021-11-24T16:16:28.8298603+00:00" />
+  <date value="2021-11-26T16:14:35.1473257+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -79,21 +79,11 @@
     </element>
     <element id="Bundle.entry:SubProcedure.resource">
       <path value="Bundle.entry.resource" />
+      <min value="1" />
       <type>
         <code value="Resource" />
         <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-subprocedure-gastronet" />
       </type>
-    </element>
-    <element id="Bundle.entry:SubProcedure.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:SubProcedure.search">
       <path value="Bundle.entry.search" />
