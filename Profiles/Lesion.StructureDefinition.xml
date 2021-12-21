@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="db5c06a1-f334-441e-aed4-b35858d995f3" />
   <meta>
-    <versionId value="23" />
-    <lastUpdated value="2021-09-29T15:02:34.668+00:00" />
+    <versionId value="26" />
+    <lastUpdated value="2021-12-21T09:53:37.63+00:00" />
   </meta>
   <url value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
   <name value="Lesion" />
   <title value="Colonoscopy Report Lesion" />
   <status value="draft" />
-  <date value="2021-09-29T14:53:06.6339402Z" />
+  <date value="2021-12-21T09:53:36.6762068+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="no-colonoscopy-report" />
@@ -167,7 +167,6 @@
     <element id="Observation.component:TissueRemovingMethod">
       <path value="Observation.component" />
       <sliceName value="TissueRemovingMethod" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:TissueRemovingMethod.code.coding">
