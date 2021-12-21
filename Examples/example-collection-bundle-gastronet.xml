@@ -187,6 +187,41 @@
       </Procedure>
     </resource>
   </entry>
+  <entry>
+    <fullUrl value="http://testdata.no/fhir/MedicationStatement/1"/>
+    <resource>     
+      <MedicationStatement>
+        <id value="1"/>
+        <meta>
+          <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet"/>
+        </meta>
+        <!-- var nr. 30 -->
+        <partOf>
+          <reference value="http://testdata.no/fhir/Procedure/1"/>
+        </partOf>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387560008"/>
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="http://testdata.no/fhir/Patient/1"/>
+        </subject>
+        <dosage>
+          <doseAndRate>
+            <doseQuantity>
+              <value value="10"/>
+              <unit value="mg"/>
+              <system value="http://unitsofmeasure.org"/>
+              <code value="mg"/>      
+            </doseQuantity>               
+          </doseAndRate>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
   <entry>   
     <fullUrl value="http://testdata.no/fhir/DiagnosticReport/1"/>
     <resource>

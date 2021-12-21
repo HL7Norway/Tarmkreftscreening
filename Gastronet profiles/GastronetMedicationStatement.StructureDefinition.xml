@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="f218583b-5a00-410a-907f-6e90afd7d2e8" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-12-21T10:57:27.793+00:00" />
+  </meta>
+  <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
+  <name value="GastronetMedicationStatement" />
+  <title value="Gastronet MedicationStatement" />
+  <status value="draft" />
+  <date value="2021-12-21T10:54:21.7448906Z" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="no-colonoscopy-report" />
+    <name value="Norwegian Colonoscopy Report" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement.basedOn">
+      <path value="MedicationStatement.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.partOf">
+      <path value="MedicationStatement.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-colonoscopy-gastronet" />
+      </type>
+    </element>
+    <element id="MedicationStatement.statusReason">
+      <path value="MedicationStatement.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.category">
+      <path value="MedicationStatement.category" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Indication of which medication was used before or during the procedure. Coded with SCT Substance, but one can consider mapping FEST directly if it isn't included in a national mapping" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <definition value="The person, animal or group who is/was taking the medication." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-patient-gastronet" />
+      </type>
+    </element>
+    <element id="MedicationStatement.context">
+      <path value="MedicationStatement.context" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.effective[x]">
+      <path value="MedicationStatement.effective[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dateAsserted">
+      <path value="MedicationStatement.dateAsserted" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.informationSource">
+      <path value="MedicationStatement.informationSource" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.derivedFrom">
+      <path value="MedicationStatement.derivedFrom" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.reasonCode">
+      <path value="MedicationStatement.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.reasonReference">
+      <path value="MedicationStatement.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.note">
+      <path value="MedicationStatement.note" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.sequence">
+      <path value="MedicationStatement.dosage.sequence" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.text">
+      <path value="MedicationStatement.dosage.text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.additionalInstruction">
+      <path value="MedicationStatement.dosage.additionalInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.patientInstruction">
+      <path value="MedicationStatement.dosage.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.timing">
+      <path value="MedicationStatement.dosage.timing" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.asNeeded[x]">
+      <path value="MedicationStatement.dosage.asNeeded[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.site">
+      <path value="MedicationStatement.dosage.site" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.route">
+      <path value="MedicationStatement.dosage.route" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.method">
+      <path value="MedicationStatement.dosage.method" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.type">
+      <path value="MedicationStatement.dosage.doseAndRate.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.rate[x]">
+      <path value="MedicationStatement.dosage.doseAndRate.rate[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerPeriod">
+      <path value="MedicationStatement.dosage.maxDosePerPeriod" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerAdministration">
+      <path value="MedicationStatement.dosage.maxDosePerAdministration" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.dosage.maxDosePerLifetime">
+      <path value="MedicationStatement.dosage.maxDosePerLifetime" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

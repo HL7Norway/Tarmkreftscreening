@@ -2,14 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="2e5d3627-b0df-4be5-a66e-af3d005d7e4e" />
   <meta>
-    <versionId value="5" />
-    <lastUpdated value="2021-11-26T16:14:35.851+00:00" />
+    <versionId value="9" />
+    <lastUpdated value="2021-12-21T11:03:20.187+00:00" />
   </meta>
   <url value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-bundle-gastronet" />
   <name value="GastronetBundle" />
   <title value="Gastronet Bundle" />
   <status value="draft" />
-  <date value="2021-11-26T16:14:35.1473257+00:00" />
+  <date value="2021-12-21T11:03:19.6971885+00:00" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -100,6 +100,29 @@
     <element id="Bundle.entry:MedicationStatement">
       <path value="Bundle.entry" />
       <sliceName value="MedicationStatement" />
+    </element>
+    <element id="Bundle.entry:MedicationStatement.link">
+      <path value="Bundle.entry.link" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:MedicationStatement.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource" />
+        <profile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-medicationstatement-gastronet" />
+      </type>
+    </element>
+    <element id="Bundle.entry:MedicationStatement.search">
+      <path value="Bundle.entry.search" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:MedicationStatement.request">
+      <path value="Bundle.entry.request" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry:MedicationStatement.response">
+      <path value="Bundle.entry.response" />
       <max value="0" />
     </element>
     <element id="Bundle.entry:ProblemList">
