@@ -113,7 +113,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <max value="6" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:Morphology">
