@@ -93,16 +93,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="DiagnosticReport.result:Lumen">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Lumen" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lumen" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
       <mustSupport value="true" />
