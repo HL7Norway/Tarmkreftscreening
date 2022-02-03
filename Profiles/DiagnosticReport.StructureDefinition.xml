@@ -64,15 +64,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="DiagnosticReport.result:Lesion">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Lesion" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="DiagnosticReport.result:BostonBowelPreparationScale">
       <path value="DiagnosticReport.result" />
       <sliceName value="BostonBowelPreparationScale" />
