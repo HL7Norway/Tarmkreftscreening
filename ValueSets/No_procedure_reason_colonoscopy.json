@@ -163,7 +163,7 @@
                         ]
                     },
                     {
-                        "code": "tidligere-funn-kolo",
+                        "code": "indikasjon-funn-koloskopi",
                         "display": "Funn ved tidligere koloskopi",
                         "designation": [
                             {
@@ -193,7 +193,7 @@
                         ]
                     },
                     {
-                        "code": "prim-screening",
+                        "code": "indikasjon-primar-screening",
                         "display": "Primær koloskopiscreening i screeningprogram",
                         "designation": [
                             {
@@ -208,7 +208,7 @@
                         ]
                     },
                     {
-                        "code": "pos-ifobt-screening",
+                        "code": "indikasjon-positiv-ifobt",
                         "display": "Positiv iFOBT i screeningprogram",
                         "designation": [
                             {
@@ -238,7 +238,7 @@
                         ]
                     },
                     {
-                        "code": "ufullstendig-tidl-kolo",
+                        "code": "indikasjon-ufullstendig",
                         "display": "Ufullstendig tidligere koloskopi",
                         "designation": [
                             {
