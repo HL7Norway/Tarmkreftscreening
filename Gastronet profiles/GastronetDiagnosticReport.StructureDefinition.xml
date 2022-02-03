@@ -76,6 +76,7 @@
         <code value="Reference" />
         <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lumen-gastronet" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.imagingStudy">
       <path value="DiagnosticReport.imagingStudy" />
