@@ -53,14 +53,6 @@
       <path value="DiagnosticReport.specimen" />
       <max value="0" />
     </element>
-    <element id="DiagnosticReport.result:Lesion">
-      <path value="DiagnosticReport.result" />
-      <sliceName value="Lesion" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://kvalitetsregistre.no/fhir/StructureDefinition/colonoscopyreport-lesion-gastronet" />
-      </type>
-    </element>
     <element id="DiagnosticReport.result:BostonBowelPreparationScale">
       <path value="DiagnosticReport.result" />
       <sliceName value="BostonBowelPreparationScale" />
