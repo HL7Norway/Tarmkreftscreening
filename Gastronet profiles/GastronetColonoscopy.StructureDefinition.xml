@@ -85,6 +85,13 @@
       <path value="Procedure.asserter" />
       <max value="0" />
     </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://ehelse.no/fhir/valueset/no-colonoscopy-procedure-reason-gastronet" />
+      </binding>
+    </element>
     <element id="Procedure.reasonReference">
       <path value="Procedure.reasonReference" />
       <max value="0" />

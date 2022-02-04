@@ -491,10 +491,6 @@
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://ehelse.no/fhir/valueset/no-colonoscopy-procedure-reason" />
-      </binding>
       <mapping>
         <identity value="no-colonoscopy-report" />
         <map value="11" />
