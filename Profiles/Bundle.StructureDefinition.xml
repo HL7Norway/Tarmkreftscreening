@@ -157,18 +157,6 @@
         <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-diagnosticreport" />
       </type>
     </element>
-    <element id="Bundle.entry:Lesion">
-      <path value="Bundle.entry" />
-      <sliceName value="Lesion" />
-    </element>
-    <element id="Bundle.entry:Lesion.resource">
-      <path value="Bundle.entry.resource" />
-      <min value="1" />
-      <type>
-        <code value="Resource" />
-        <profile value="http://kreftregisteret.no/fhir/StructureDefinition/colonoscopyreport-lesion" />
-      </type>
-    </element>
     <element id="Bundle.entry:NumberOfLesions">
       <path value="Bundle.entry" />
       <sliceName value="NumberOfLesions" />
