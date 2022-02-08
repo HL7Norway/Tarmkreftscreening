@@ -37,27 +37,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
   <derivation value="constraint" />
   <differential>
-    <element id="Bundle.identifier">
-      <path value="Bundle.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.identifier:messageIdentifier">
-      <path value="Bundle.identifier" />
-      <sliceName value="messageIdentifier" />
-      <patternIdentifier>
-        <system value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id" />
-      </patternIdentifier>
-      <mustSupport value="true" />
-    </element>
-    <element id="Bundle.identifier:messageIdentifier.system">
+    <element id="Bundle.identifier.system">
       <path value="Bundle.identifier.system" />
-      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://kreftregisteret.no/fhir/NamingSystem/colonoscopy-report-id" />
+      </binding>
     </element>
     <element id="Bundle.type">
       <path value="Bundle.type" />
