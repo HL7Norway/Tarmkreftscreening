@@ -208,30 +208,6 @@
                         ]
                     },
                     {
-                        "code": "49832006",
-                        "display": "Rektosigmoid overgang",
-                        "designation": [
-                            {
-                                "language": "en",
-                                "use": {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "900000000000003001",
-                                    "display": "Fully specified name"
-                                },
-                                "value": "Rectosigmoid structure (body structure)"
-                            },
-                            {
-                                "language": "no",
-                                "use": {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "900000000000003001",
-                                    "display": "Fully specified name"
-                                },
-                                "value": "rectosigmoid overgang"
-                            }
-                        ]
-                    },
-                    {
                         "code": "34402009",
                         "display": "Rektum",
                         "designation": [
