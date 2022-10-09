@@ -58,12 +58,12 @@
     <element id="Procedure.code.coding:NKPK">
       <path value="Procedure.code.coding" />
       <sliceName value="NKPK" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:SNOMED-CT">
       <path value="Procedure.code.coding" />
       <sliceName value="SNOMED-CT" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.subject">
