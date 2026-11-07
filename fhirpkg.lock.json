@@ -5,10 +5,5 @@
     "hl7.fhir.core": "4.0.1",
     "hl7.fhir.r4.core": "4.0.1"
   },
-  "missing": {
-    "hl7.fhir.r3.core": "4.0.1",
-    "hl7.fhir.r3.examples": "4.0.1",
-    "hl7.fhir.r3.expansions": "4.0.1",
-    "hl7.fhir.r3.elements": "4.0.1"
-  }
+  "missing": {}
 }

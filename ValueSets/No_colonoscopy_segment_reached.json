@@ -2,11 +2,11 @@
     "resourceType": "ValueSet",
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Lesion</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-lesion</tt><p>Used to indicate which part of the colon a lesion has been found</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Colonoscopy Report Segment Reached</h2><tt>http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-reached</tt><p>Can be used to indicate which segment (part) of colon that has been examined</p></div>"
     },
     "url": "http://ehelse.no/fhir/ValueSet/no-colonoscopy-segment-reached",
     "name": "No-colonoscopy-segment-reached",
-    "title": "Colonoscopy Report Segment Lesion",
+    "title": "Colonoscopy Report Segment Reached",
     "status": "draft",
     "publisher": "Norwegian Directorate of e-health",
     "description": "Can be used to indicate which segment (part) of colon that has been examined",
